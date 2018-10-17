@@ -5,7 +5,7 @@ author: zcourts
 post_excerpt: ""
 layout: post
 permalink: >
-  https://beta.hypi.io/blog/solutions/identity-and-access-management-aka-authentication-authorisation/
+  https://beta.hypi.io/docs/technical-docs/identity-and-access-management-aka-authentication-authorisation/
 published: true
 post_date: 2018-10-17 18:39:36
 ---
