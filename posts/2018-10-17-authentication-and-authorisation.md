@@ -8,7 +8,7 @@ post_excerpt: >
   section explains how this works
 layout: post
 permalink: >
-  https://beta.hypi.io/blog/solutions/authentication-and-authorisation/
+  https://beta.hypi.io/docs/technical-docs/authentication-and-authorisation/
 published: true
 post_date: 2018-10-17 09:37:10
 ---
