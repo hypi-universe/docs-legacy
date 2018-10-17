@@ -10,7 +10,7 @@ post_excerpt: >
   define and use them.
 layout: post
 permalink: >
-  https://beta.hypi.io/blog/solutions/models-data-structures-compute-resources/
+  https://beta.hypi.io/docs/technical-docs/models-data-structures-compute-resources/
 published: true
 post_date: 2018-10-17 09:05:41
 ---
