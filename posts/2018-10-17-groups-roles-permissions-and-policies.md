@@ -9,7 +9,7 @@ post_excerpt: >
   authorisation policies.
 layout: post
 permalink: >
-  https://beta.hypi.io/blog/solutions/groups-roles-permissions-and-policies/
+  https://beta.hypi.io/docs/technical-docs/groups-roles-permissions-and-policies/
 published: true
 post_date: 2018-10-17 09:36:41
 ---
