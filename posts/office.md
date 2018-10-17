@@ -4,7 +4,7 @@ post_title: Office
 author: zcourts
 post_excerpt: ""
 layout: page
-permalink: https://beta.hypi.io/office-1/
+permalink: https://hypi.io/office/
 published: true
 post_date: 2018-10-02 14:15:43
 ---
