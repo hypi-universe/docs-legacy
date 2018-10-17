@@ -5,7 +5,7 @@ author: zcourts
 post_excerpt: ""
 layout: post
 permalink: >
-  https://beta.hypi.io/blog/solutions/welcome-to-the-gutenberg-editor/
+  https://beta.hypi.io/uncategorized/welcome-to-the-gutenberg-editor/
 published: true
 post_date: 2018-10-17 07:27:47
 ---
