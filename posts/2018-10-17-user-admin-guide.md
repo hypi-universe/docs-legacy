@@ -5,7 +5,7 @@ author: zcourts
 post_excerpt: ""
 layout: post
 permalink: >
-  https://beta.hypi.io/docs/user-guide/user-admin-guide/
+  https://hypi.io/docs/user-guide/user-admin-guide/
 published: true
 post_date: 2018-10-17 08:45:34
 ---
