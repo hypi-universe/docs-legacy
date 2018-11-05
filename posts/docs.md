@@ -1,6 +1,6 @@
 ---
 ID: 519
-post_title: Hypi Documentation
+post_title: Documentation
 author: zcourts
 post_excerpt: ""
 layout: page
