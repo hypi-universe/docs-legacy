@@ -10,6 +10,6 @@ post_date: 2018-10-17 07:51:52
 ---
 <!-- wp:paragraph -->
 
-Welcome to the Hypi Docs.
+Welcome to Hypi Documentation.
 
 <!-- /wp:paragraph -->
