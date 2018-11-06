@@ -4,7 +4,7 @@ post_title: Documentation
 author: zcourts
 post_excerpt: ""
 layout: page
-permalink: https://hypi.io/docs/
+permalink: https://hypi.io/documentation/
 published: true
 post_date: 2018-10-17 07:51:52
 ---
