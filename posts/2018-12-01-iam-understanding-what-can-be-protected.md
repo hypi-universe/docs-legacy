@@ -8,7 +8,7 @@ post_excerpt: >
   authorisation to your Hypi apps.
 layout: post
 permalink: >
-  https://hypi.io/blog/solutions/iam-understanding-what-can-be-protected/
+  https://hypi.io/docs/technical-docs/iam-understanding-what-can-be-protected/
 published: true
 post_date: 2018-12-01 01:05:52
 ---
@@ -97,7 +97,7 @@ A thorough treatment of OAuth 2 is outside the scope of this guide, an [introduc
 <!-- wp:list {"ordered":true} -->
 
 1.  **Resource Server** - Hosts the protected resources (The Hypi API is the resource server)
-2.  **Authorisation Server** - Verifies the identity and checks if they can do what they're trying to.
+2.  **Authorisation Server** - Verifies the identity and checks if they can do what they're trying to. To you this is also the Hypi API but internally it is delegated to a dedicated authorisation server.
 3.  **Resource Owner** - Owns the protected resources (e.g. a `Post` record)
 4.  **Client** - An agent trying to access the protected resource e.g. the browser or a mobile app 
 5.  **Scope** - A "bounded context" which limits what can be accessed
