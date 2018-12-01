@@ -113,7 +113,7 @@ Authorisation is granular to the field level. Every GraphQL query is executed vi
 
 <!-- wp:list {"ordered":true} -->
 
-1.  GraphQL functions on a per app basis, this protection is Type based
+1.  [GraphQL functions][4] on a per app basis, this protection is Type based
 2.  Records created by these functions, this protection is Type:ID based
 3.  Non-record assets e.g. images/files, this protection is HTTP URI based
 
@@ -127,7 +127,7 @@ Further more, restrictions can be applied on a per `Client` basis. Every image
 
 <!-- wp:heading {"level":3} -->
 
-### [][4]Concepts
+### [][5]Concepts
 
 <!-- /wp:heading -->
 
@@ -172,7 +172,7 @@ A `Subject` owns `Resource`s of which there are a few types:
 
 <!-- wp:heading {"level":3} -->
 
-### [][5]Authorisation in Hypi
+### [][6]Authorisation in Hypi
 
 <!-- /wp:heading -->
 
@@ -276,5 +276,6 @@ Let's break these down into concepts involved as far as authorisation is concern
  [1]: https://gist.github.com/zcourts/274edf43a528230f4b8bb432bb0ee81e#overview
  [2]: https://gist.github.com/zcourts/274edf43a528230f4b8bb432bb0ee81e#authentication
  [3]: https://gist.github.com/zcourts/274edf43a528230f4b8bb432bb0ee81e#authorisation
- [4]: https://gist.github.com/zcourts/274edf43a528230f4b8bb432bb0ee81e#concepts
- [5]: https://gist.github.com/zcourts/274edf43a528230f4b8bb432bb0ee81e#authorisation-in-hypi
+ [4]: https://hypi.io/docs/technical-docs/iam-understanding-what-can-be-protected/
+ [5]: https://gist.github.com/zcourts/274edf43a528230f4b8bb432bb0ee81e#concepts
+ [6]: https://gist.github.com/zcourts/274edf43a528230f4b8bb432bb0ee81e#authorisation-in-hypi
