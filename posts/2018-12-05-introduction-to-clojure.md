@@ -11,35 +11,31 @@ post_date: 2018-12-05 20:21:18
 ---
 <!-- wp:paragraph -->
 
-[Clojure][1] is a modern dialect of Lisp designed to run on the Java Virtual Machine and the Common Language Runtime.  Descending from Lisp, Clojure has a strong emphasis on [functional programming][2] and a philosophy of treating [code as data][3].  Learning Lisp will challenge you to think about programs and programming in a new way from procedure oriented languages.  Clojure is a very accessible dialect of Lisp that runs on most computers.  
-
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
-This gentle introduction assumes that you are coming from a procedural language language like C or Java with little or no exposure to Lisp. 
+[Clojure][1] is a modern dialect of Lisp designed to run on the Java Virtual Machine and the Common Language Runtime.  Descending from Lisp, Clojure has a strong emphasis on [functional programming][2] and a philosophy of treating [code as data][3].  Learning Lisp will challenge you to think about programs and programming in a new way from procedure oriented languages.  Clojure is a very accessible dialect of Lisp that runs on most computers.
 
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 
-**The REPL**  
-
-
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-
-If you’re approaching Clojure from a compiled language like C or Java, the [Clojure REPL][4] might be an unfamiliar way of working with a language.  REPL stands for **R**ead **E**valuate **P**rint **L**oop is an interactive programming environment which allows you to develop Clojure code one expression at a time.  We’ll start demonstrating Clojure through the Clojure REPL tool clj.   
-
+This gentle introduction assumes that you are coming from a procedural language language like C or Java with little or no exposure to Lisp.
 
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 
-To run our sample code, you will need to install Clojure locally or you can run it from a online interpreter.  Instructions for installing Clojure locally can be found on the [Getting Started page at Clojure.org][5].  If you would prefer to start with an online interpreter, you can try [repl.it][6] or any of the  other sites that come up following a search.  
+**The REPL**
 
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+
+If you’re approaching Clojure from a compiled language like C or Java, the [Clojure REPL][4] might be an unfamiliar way of working with a language.  REPL stands for **R**ead **E**valuate **P**rint **L**oop is an interactive programming environment which allows you to develop Clojure code one expression at a time.  We’ll start demonstrating Clojure through the Clojure REPL tool clj. 
+
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+
+To run our sample code, you will need to install Clojure locally or you can run it from a online interpreter.  Instructions for installing Clojure locally can be found on the [Getting Started page at Clojure.org][5].  If you would prefer to start with an online interpreter, you can try [repl.it][6] or any of the  other sites that come up following a search.
 
 <!-- /wp:paragraph -->
 
@@ -53,8 +49,7 @@ Assuming that you are running your code locally, launch clj from the command lin
 
 <!-- wp:paragraph -->
 
-The prompt tells us we are running version 1.9.0 of Clojure and that you can now start typing expressions for the interpreter to evaluate.  (You can press Control + D at any time to quit.) We’ll start by typing in some basic mathematical expressions in Clojure.  
-
+The prompt tells us we are running version 1.9.0 of Clojure and that you can now start typing expressions for the interpreter to evaluate.  (You can press Control + D at any time to quit.) We’ll start by typing in some basic mathematical expressions in Clojure.
 
 <!-- /wp:paragraph -->
 
@@ -74,8 +69,7 @@ Our basic math expressions consist of a prefix operator and a dynamic number of 
 
 <!-- wp:paragraph -->
 
-More complex expressions can be built up by combining expressions into larger expressions:  
-
+More complex expressions can be built up by combining expressions into larger expressions:
 
 <!-- /wp:paragraph -->
 
@@ -91,8 +85,7 @@ In Clojure, the primary data structure used in the language is lists.  We’ve 
 
 <!-- wp:paragraph -->
 
-In the two expression above, we treat our list as a data object by using `quote (')`.   Quote is a function that returns the unevaluated form of the list - the interpreter doesn’t try to evaluate 1 as a function.  Here we use the function `first` to get the first element of the list and `rest` to get the remainder (as a list).  
-
+In the two expression above, we treat our list as a data object by using `quote (')`.   Quote is a function that returns the unevaluated form of the list - the interpreter doesn’t try to evaluate 1 as a function.  Here we use the function `first` to get the first element of the list and `rest` to get the remainder (as a list).
 
 <!-- /wp:paragraph -->
 
@@ -107,15 +100,13 @@ Clojure allows you to create a function using the `defn` special form.  You’v
 
 <!-- wp:paragraph -->
 
-Our function definition is event an expression that evaluates to a value.  It starts with the name (hello-world) followed by a list of arguments (in this case none) and an expression to perform our computation.  In this case, which is slightly unusual, our expression has a side effect which is to print the message “Hello World!”.  
-
+Our function definition is event an expression that evaluates to a value.  It starts with the name (hello-world) followed by a list of arguments (in this case none) and an expression to perform our computation.  In this case, which is slightly unusual, our expression has a side effect which is to print the message “Hello World!”.
 
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 
-Now, let’s create a function add-one that increments a value:  
-
+Now, let’s create a function add-one that increments a value:
 
 <!-- /wp:paragraph -->
 
@@ -123,8 +114,7 @@ Now, let’s create a function add-one that increments a value:
 
 <!-- wp:paragraph -->
 
-Our expression consists of a name (`add-one`) , a single parameter (`x`) and an expression representing our computation. Notice that even `defn` evaluates to a value, namely the symbol for the function.  We can call our function once it’s defined in another expression:  
-
+Our expression consists of a name (`add-one`) , a single parameter (`x`) and an expression representing our computation. Notice that even `defn` evaluates to a value, namely the symbol for the function.  We can call our function once it’s defined in another expression:
 
 <!-- /wp:paragraph -->
 
@@ -140,8 +130,7 @@ Now let’s go back and try running our `hello-world` function:
 
 <!-- wp:paragraph -->
 
-Notice we get a slightly different result, `nil`.  In Clojure, every expression evaluates to a value, so if a function returns no value that is represented by nil.  Nil is the absence of value   
-
+Notice we get a slightly different result, `nil`.  In Clojure, every expression evaluates to a value, so if a function returns no value that is represented by nil.  Nil is the absence of value 
 
 <!-- /wp:paragraph -->
 
@@ -161,8 +150,7 @@ The if form allows us to build expressions that return different values based on
 
 <!-- wp:paragraph -->
 
-It is very important to remember that if evaluates to the first expression if the test is true and the second expression if the test is false.  Those expressions could be far more complex than just `true` or `false`.  
-
+It is very important to remember that if evaluates to the first expression if the test is true and the second expression if the test is false.  Those expressions could be far more complex than just `true` or `false`.
 
 <!-- /wp:paragraph -->
 
@@ -176,15 +164,13 @@ The let special form allows us to create a local binding (similar to a local var
 
 <!-- wp:paragraph -->
 
-With let, we define a sequence of bindings between symbols and the result of an expression.  Notice here we use `let` in the context of a simple expression, you don’t necessarily have to use it within a function.  
-
+With let, we define a sequence of bindings between symbols and the result of an expression.  Notice here we use `let` in the context of a simple expression, you don’t necessarily have to use it within a function.
 
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
 
-Finally, recursive expressions are one of the basic building blocks in Clojure for building repeated computations.  We can build a simple recursive factorial function:  
-
+Finally, recursive expressions are one of the basic building blocks in Clojure for building repeated computations.  We can build a simple recursive factorial function:
 
 <!-- /wp:paragraph -->
 
@@ -207,8 +193,7 @@ The map function applies it’s first argument (the function) to each element of
 
 <!-- wp:paragraph -->
 
-** **while the reduce function take a two argument function, applies it to the first two arguments in the list then successively applies the next argument in the list to the previous result until a single element is returned:  
-
+while the reduce function take a two argument function, applies it to the first two arguments in the list then successively applies the next argument in the list to the previous result until a single element is returned:
 
 <!-- /wp:paragraph -->
 
@@ -224,7 +209,7 @@ Finally the apply function applies the named function to the parameter list:
 
 <!-- wp:paragraph -->
 
-This article touches on the basics of using Clojure - building up expressions from simple expressions, special forms, and higher order functions.  Clojure is a rich language that includes a variety of built-in data structures in addition to lists, a package system, and the ability to load and access Java code in the JVM.  For more information on working with Clojure, see the [Getting Started][5] section on [Clojure.org][1]. 
+This article touches on the basics of using Clojure - building up expressions from simple expressions, special forms, and higher order functions.  Clojure is a rich language that includes a variety of built-in data structures in addition to lists, a package system, and the ability to load and access Java code in the JVM.  For more information on working with Clojure, see the [Getting Started][5] section on [Clojure.org][1].
 
 <!-- /wp:paragraph -->
 
