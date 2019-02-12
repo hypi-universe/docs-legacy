@@ -5,7 +5,7 @@ author: pj
 post_excerpt: ""
 layout: post
 permalink: >
-  https://hypi.io/blog/solutions/good-enough-the-enemy-of-innovation/
+  https://hypi.io/blog/good-enough-the-enemy-of-innovation/
 published: true
 post_date: 2019-02-12 19:10:45
 ---
