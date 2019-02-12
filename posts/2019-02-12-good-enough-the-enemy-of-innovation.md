@@ -9,14 +9,6 @@ permalink: >
 published: true
 post_date: 2019-02-12 19:10:45
 ---
-<!-- wp:image {"id":768,"align":"center","width":198,"height":132} -->
-
-<div class="wp-block-image">
-  <figure class="aligncenter is-resized"><img src="https://hypi.io/wp-content/uploads/2019/02/creativity-and-innovation-51139425.jpg" alt="" class="wp-image-768" width="198" height="132" /></figure>
-</div>
-
-<!-- /wp:image -->
-
 <!-- wp:paragraph -->
 
 The building of modern technology, application development, and all that goes along with it is anchored in the idealization of innovation. For years, the web and mobile application development has rooted itself in the idea of pushing things forward, building a better world for the people living in it.  
