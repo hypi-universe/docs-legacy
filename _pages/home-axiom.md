@@ -31,7 +31,7 @@ Hypi's Arc platform includes granular access management based on the user manage
 ![][3] ![][2] 
 ###### severless
 
-### Serverless Tan 
+### Tan 
 
 Offers flexibility in fast and inexpensive way to develop applications. Build your serverless functions in a language of your choice and wire them up to your GraphQL model to act as resolvers.
 
