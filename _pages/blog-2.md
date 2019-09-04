@@ -4,7 +4,7 @@ post_title: Hypi Blog
 author: zcourts
 post_excerpt: ""
 layout: page
-permalink: https://hypi.io/home-masonry-blog/
+permalink: https://hypi.io/blog-2/
 published: true
 post_date: 2018-01-18 13:10:20
 ---
