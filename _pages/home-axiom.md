@@ -44,7 +44,7 @@ GraphQL for data modelling and querying enabling applications to decide how muc
   
 Hypi includes the powerful query language, ArcQL enabling you to search data in your application using many full text search query types.
 
-![][3] ![][1] ![][1] <a href="hypi.io" data-elementor-open-lightbox=""> <img width="768" height="368" src="https://hypi.io/wp-content/uploads/2018/10/purple@2x-768x368.png" alt="" srcset="https://hypi.io/wp-content/uploads/2018/10/purple@2x-768x368.png 768w, https://hypi.io/wp-content/uploads/2018/10/purple@2x-300x144.png 300w, https://hypi.io/wp-content/uploads/2018/10/purple@2x-1024x491.png 1024w" sizes="(max-width: 768px) 100vw, 768px" /> </a>
+![][3] ![][1] ![][1] <a href="https://hypi.io" data-elementor-open-lightbox=""> <img width="768" height="368" src="https://hypi.io/wp-content/uploads/2018/10/purple@2x-768x368.png" alt="" srcset="https://hypi.io/wp-content/uploads/2018/10/purple@2x-768x368.png 768w, https://hypi.io/wp-content/uploads/2018/10/purple@2x-300x144.png 300w, https://hypi.io/wp-content/uploads/2018/10/purple@2x-1024x491.png 1024w" sizes="(max-width: 768px) 100vw, 768px" /> </a>
 
  [1]: https://import.themovation.com/stratus/wp-content/uploads/2019/03/circle1.png ""
  [2]: https://import.themovation.com/stratus/wp-content/uploads/2019/04/SaaS-2.png ""
