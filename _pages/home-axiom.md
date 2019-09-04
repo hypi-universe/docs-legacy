@@ -4,7 +4,7 @@ post_title: 'Hypi &#8211; Axiom'
 author: Rochelle Singh
 post_excerpt: ""
 layout: page
-permalink: https://hypi.io/home-axiom/
+permalink: https://hypi.io/
 published: true
 post_date: 2019-09-04 11:01:32
 ---
