@@ -1,6 +1,6 @@
 ---
 ID: 875
-post_title: 'Home &#8211; Masonry Blog'
+post_title: Hypi Blog
 author: zcourts
 post_excerpt: ""
 layout: page
