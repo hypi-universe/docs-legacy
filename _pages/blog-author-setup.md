@@ -8,5 +8,8 @@ permalink: https://hypi.io/blog-author-setup/
 published: true
 post_date: 2019-09-14 22:44:11
 ---
-Contribute a relevant blog post
+<p>Contribute a relevant blog post<br /><br /></p>
+
+<!-- wp:html -->
 [wpuf-registration]
+<!-- /wp:html -->
