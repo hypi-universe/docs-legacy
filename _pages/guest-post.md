@@ -9,10 +9,7 @@ published: true
 post_date: 2019-09-15 00:02:15
 ---
 <!-- wp:shortcode -->
-[usp_visitor]
-[usp-login-form]
-[/usp_visitor]
-
+[ap-form]
 <!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->
