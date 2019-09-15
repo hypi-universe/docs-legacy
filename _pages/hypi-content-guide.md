@@ -25,7 +25,7 @@ post_date: 2019-09-15 12:54:15
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
-<p>Use categories and tags. <strong>You MUST set either the review or tutorial categories and have AT LEAST one tag for your post.</strong> Posts with images/diagrams are preferred. Use <a href="https://www.pexels.com/">Pexels</a> to get free stock images that can be used in your posts.</p>
+<p>Use categories and tags. <strong>You MUST set either the <a href="https://hypi.io/blog/category/blog/platform/technical-blog/reviews/">review</a> or <a href="https://hypi.io/blog/category/blog/platform/technical-blog/tutorial/">tutorial</a> categories and have AT LEAST one tag for your post.</strong> Posts with images/diagrams are preferred. Use <a href="https://www.pexels.com/">Pexels</a> to get free stock images that can be used in your posts.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
