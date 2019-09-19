@@ -1,7 +1,7 @@
 ---
 ID: 1224
 post_title: State of the Internet of Things in 2019
-author: Guest
+author: Masoora Syed
 post_excerpt: "In this post we take a look at IoT addressing what it is, what it's made of and some applications."
 layout: post
 permalink: >
