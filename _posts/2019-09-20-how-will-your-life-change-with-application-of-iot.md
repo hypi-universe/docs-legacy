@@ -12,7 +12,7 @@ published: true
 post_date: 2019-09-20 08:00:18
 ---
 <!-- wp:image {"id":1216,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://hypi.io/wp-content/uploads/2019/09/Internet-of-Things-1024x427.jpg" alt="Application of IoT is limitless. " class="wp-image-1216" /><figcaption>Internet of Things is changing our life</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://hypi.io/wp-content/uploads/2019/09/Internet-of-Things-1024x427.jpg" alt="Application of IoT is limitless. " class="wp-image-1216"/><figcaption>Internet of Things is changing our life</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -29,7 +29,7 @@ role in shaping our near future.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Although much remains to be invented, the Internet of Things is beginning to sneak into our lives. It is already a lot more present in our daily lives, even though we may not even think about it. </p>
+<p>Although much remains to be invented, the Internet of Things is beginning to sneak into our lives. It is already a lot more present in our daily lives, even though we may not even think about it.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -126,7 +126,7 @@ subsequent actions.</p>
 <!-- /wp:heading -->
 
 <!-- wp:image {"id":1217,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://hypi.io/wp-content/uploads/2019/09/communication-1439131_1920-1024x456.jpg" alt="IoT application areas " class="wp-image-1217" /><figcaption>IoT application areas</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://hypi.io/wp-content/uploads/2019/09/communication-1439131_1920-1024x456.jpg" alt="IoT application areas " class="wp-image-1217"/><figcaption>IoT application areas</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -293,7 +293,7 @@ with the internal environment (for example light management and electricity).</p
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The world of  Smart Building continues on a double track, with a component that looks mainly at the domestic world (smart homes)  and that is turning on attention phenomena towards the consumer world and a professional component (smart building)  that has now become the common heritage of development and design by designers and architects. </p>
+<p>The world of&nbsp; Smart Building continues on a double track, with a component that looks mainly at the domestic world (smart homes)&nbsp; and that is turning on attention phenomena towards the consumer world and a professional component (smart building)&nbsp; that has now become the common heritage of development and design by designers and architects.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -335,7 +335,7 @@ products need digital solutions.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The experiences are many and only linked to the use of drones, to sensors that refer to the themes of  IoT to innovative logistics solutions for Smart Agriculture, or to solutions for agro energy or operations that aim to improve the relationship linked to food and sustainability.</p>
+<p>The experiences are many and only linked to the use of drones, to sensors that refer to the themes of&nbsp; IoT to innovative logistics solutions for Smart Agriculture, or to solutions for agro energy or operations that aim to improve the relationship linked to food and sustainability.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -347,7 +347,7 @@ products need digital solutions.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong> 6. Smart Manufacturing or Industry 4.0</strong></p>
+<p><strong>&nbsp;6. Smart Manufacturing or Industry 4.0</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -365,7 +365,7 @@ the digital factory.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Industry 4.0 or Industry 4.0 is a real reality research data that shows how this market is growing at a rate of 20% and represents a real boost towards how the manufacturing industry is changing with IoT. </p>
+<p>Industry 4.0 or Industry 4.0 is a real reality research data that shows how this market is growing at a rate of 20% and represents a real boost towards how the manufacturing industry is changing with IoT.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -373,7 +373,7 @@ the digital factory.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"center","id":1218,"sizeSlug":"large"} -->
-<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://hypi.io/wp-content/uploads/2019/09/industry-2738405_1280-1024x682.jpg" alt="IoT and smart products or devices" class="wp-image-1218" /><figcaption>IoT and smart products or devices</figcaption></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://hypi.io/wp-content/uploads/2019/09/industry-2738405_1280-1024x682.jpg" alt="IoT and smart products or devices" class="wp-image-1218"/><figcaption>IoT and smart products or devices</figcaption></figure></div>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -442,7 +442,7 @@ collection solutions that act as a security endpoint.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":1219,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://hypi.io/wp-content/uploads/2019/09/cyber-security-cybersecurity-device-60504-1024x683.jpg" alt="Cybersecurity and Internet of Things " class="wp-image-1219" /><figcaption>Cybersecurity and Internet of Things </figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://hypi.io/wp-content/uploads/2019/09/cyber-security-cybersecurity-device-60504-1024x683.jpg" alt="Cybersecurity and Internet of Things " class="wp-image-1219"/><figcaption>Cybersecurity and Internet of Things </figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -526,7 +526,7 @@ experience.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":1220,"sizeSlug":"large"} -->
-<figure class="wp-block-image size-large"><img src="https://hypi.io/wp-content/uploads/2019/09/industry-2496198_1920-1024x683.jpg" alt="IoT made industry automated" class="wp-image-1220" /><figcaption>IoT made industry automated</figcaption></figure>
+<figure class="wp-block-image size-large"><img src="https://hypi.io/wp-content/uploads/2019/09/industry-2496198_1920-1024x683.jpg" alt="IoT made industry automated" class="wp-image-1220"/><figcaption>IoT made industry automated</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -548,7 +548,7 @@ products.&nbsp;</p>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>In conclusion, we observe that from utilities to healthcare. From production to public administration there is now many sectors and fields of work involved in the technological innovation of the IoT (internet of things), with different levels of maturity. </p>
+<p>In conclusion, we observe that from utilities to healthcare. From production to public administration there is now many sectors and fields of work involved in the technological innovation of the IoT (internet of things), with different levels of maturity.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
