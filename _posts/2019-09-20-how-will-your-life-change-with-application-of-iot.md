@@ -87,7 +87,7 @@ virtual worlds to be brought together.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The term IoT ("Internet of Things")  is used for the first time by Kevin Ashton, a researcher at MIT (Massachusetts Institute of Technology) where the standard for RFID( Radio-frequency Identification) and other sensors were founded. But even if the term is new, we have talked about these concepts for a long time, basically from the birth of the internet and the semantic web.</p>
+<p>The term IoT ("Internet of Things")&nbsp; is used for the first time by Kevin Ashton, a researcher at MIT (Massachusetts Institute of Technology) where the standard for RFID( Radio-frequency Identification) and other sensors were founded. But even if the term is new, we have talked about these concepts for a long time, basically from the birth of the internet and the semantic web.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -189,17 +189,11 @@ activated and deactivated "on their own" and as needed.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>For
-example, in Switzerland, there are intelligent traffic lights, which turn green
-when they "see" that a car is near traffic lights, and that on the
-other side is not passing any car.&nbsp;</p>
+<p>For example, in Switzerland, there are intelligent traffic lights, which turn green when they "see" that a vehicle is nearing traffic lights, and that there are no other passing vehicles. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This,
-like others, are examples of how objects take "life" , and how these
-objects can be connected to each other and to real-life everyday. Here is the
-future described by Orwell and dystopian novels, in the present.</p>
+<p>This, like others, are examples of how objects take "life", and how these objects can be connected to each other and to real-life everyday. Here is the future described by Orwell and dystopian novels, in the present.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -520,7 +514,7 @@ products.&nbsp;</p>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>In conclusion, we observe that from utilities to healthcare. From production to public administration there is now many sectors and fields of work involved in the technological innovation of the IoT (Internet of Things), with different levels of maturity. </p>
+<p>In conclusion, we observe that from utilities to healthcare. From production to public administration there is now many sectors and fields of work involved in the technological innovation of the IoT (Internet of Things), with different levels of maturity.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
