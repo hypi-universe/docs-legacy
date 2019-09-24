@@ -189,7 +189,7 @@ activated and deactivated "on their own" and as needed.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>For example, in Switzerland, there are intelligent traffic lights, which turn green when they "see" that a vehicle is nearing traffic lights, and that there are no other passing vehicles. </p>
+<p>For example, in Switzerland, there are intelligent traffic lights, which turn green when they "see" that a vehicle is nearing traffic lights, and that there are no other passing vehicles.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -205,7 +205,7 @@ the way to Big Data.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>There are many examples and applications of IoT, from smart cities to companies. </p>
+<p>There are many examples and applications of IoT, from smart cities to companies.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -244,7 +244,7 @@ with the internal environment (for example light management and electricity).</p
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The world of  Smart Building continues on a double track, with a component that looks mainly at the domestic world (smart homes) is turning it's attention phenomena towards the consumer world and a professional component (smart building) that has now become the common heritage of development and design by designers and architects. </p>
+<p>The world of&nbsp; Smart Building continues on a double track, with a component that looks mainly at the domestic world (smart homes) is turning it's attention phenomena towards the consumer world and a professional component (smart building)&nbsp;that has now become the common heritage of development and design by designers and architects.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -272,21 +272,15 @@ is the impact of the Internet of Things on the environment?</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Precision
-farming or Smart Agriculture is one of the sectors with the highest development
-opportunities and with digitized solutions.</p>
+<p>Precision farming or Smart Agriculture is one of the sectors with the highest development opportunities for digitized solutions.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>This
-is a sector that in terms of sensors for the environment and the land,
-applications for the weather, automation of equipment for the increasingly
-precise management of water, fertilizers, fertilizers and crop protection
-products need digital solutions.</p>
+<p>This is a sector that requires sensors for the environment and the land, for example applications for weather, automation of equipment for the increasingly precise management of water, fertilizers and crop protection products, which all need digital solutions.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The experiences are many and only linked to the use of drones, to sensors that refer to the themes of&nbsp; IoT to innovative logistics solutions for Smart Agriculture, or to solutions for agro energy or operations that aim to improve the relationship linked to food and sustainability.</p>
+<p>The possibilities are vast and not only linked to the use of drones as commonly seen, but also to sensors that compliment the themes of IoT to innovate logistics and drive solutions for Smart Agriculture, agro energy and operations that aim to improve the relationship linked to food and sustainability.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -294,7 +288,7 @@ products need digital solutions.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p> Today, public administrations play a fundamental role in the development of internal affairs. Often technology is regulated, financed and managed by the public sector also from the perspective of the Intelligent Transport System. </p>
+<p>Today, public administrations play a fundamental role in the development of technical affairs. Often technology is regulated, financed and managed by the public sector as seen with the development of Intelligent Transport Systems. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -307,16 +301,11 @@ Manufacturing also called the 4.0 Industry.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Smart
-Manufacturing also overlaps with the world of Industry 4.0, that is to say with
-a real development policy to extend the introduction of digital in the
-industrial world that was born in Germany with the industry 4.0 phenomenon and
-that has found its consideration in the United States with the phenomenon of
-the digital factory.&nbsp;</p>
+<p>Smart Manufacturing overlaps with the Industry 4.0 world, though work is still to be done to implement development policies to influence the introduction of digital in the industrial world that was born in Germany with the Industry 4.0 phenomenon. Industry 4.0 has also made ground in the United States with the phenomenon of the digital factory. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Industry 4.0 or Industry 4.0 is a real reality research data that shows how this market is growing at a rate of 20% and represents a real boost towards how the manufacturing industry is changing with IoT.&nbsp;</p>
+<p>Industry 4.0 or 4.0 Industry has real life research data that shows how this market is growing. At a rate of 20% growth, this is evidence of how the manufacturing industry is changing with IoT. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
