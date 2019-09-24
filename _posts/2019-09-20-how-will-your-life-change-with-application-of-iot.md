@@ -205,13 +205,11 @@ the way to Big Data.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>There
-are also many examples and applications of IoT, from smart cities to
-companies.&nbsp;</p>
+<p>There are many examples and applications of IoT, from smart cities to companies. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Below all the examples of IoT and the Internet of Things in everyday life.</p>
+<p>Below are examples of the Internet of Things in everyday life.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -219,24 +217,15 @@ companies.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The
-smart cities (some call them sensitive city) relate to urban planning
-strategies that improve the quality of life in the city and try to meet the
-needs and the needs of citizens.</p>
+<p>Smart cities (some call them sensitive city) relates to urban planning strategies that improve the quality of life in the city to try and meet the needs of citizens.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The
-technologies adopted to create smart cities (or parts of them) allow relating
-infrastructures (objects) with the inhabitants of the city. Examples are
-intelligent traffic lights (which turn green when there are no cars running in
-the opposite direction) or innovative systems for waste management and
-disposal, other environmental, energy, mobility, communication and urban
-planning innovations.</p>
+<p>The technologies adopted to create smart cities (or parts of them) allow relating infrastructures (objects) to fulfil the needs of the inhabitants of the city. Examples of this are intelligent traffic lights (which turn green when there are no cars running in the opposite direction) or innovative systems for waste management and disposal, other environmental, energy, mobility, communication and urban planning innovations.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Among the sectors in which there is a greater interest in industrial and public administration, we find the whole world of Smart Cities that are accompanied by issues related to public administration projects and more strategic issues such as those related to Open Data. Here more details.</p>
+<p>The sectors in which there are greatest interest are industrial and public administration. The whole world of Smart Cities is accompanied by issues related to public administration projects and more strategic issues such as those related to Open Data. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -244,11 +233,7 @@ planning innovations.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The
-substantial differences between buildings and smart homes are that, while smart
-homes are aimed primarily at a “consumer” public or consumers and final users
-of services (examples can be to regulate the temperature of the home remotely,
-or sensors surveying for people in the house.)</p>
+<p>The substantial differences between buildings and smart homes are that, smart homes are aimed primarily at a “consumer” public or final users of services (examples can be to regulate the temperature of the home remotely, or sensors surveying for people in the house.)</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -259,7 +244,7 @@ with the internal environment (for example light management and electricity).</p
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The world of&nbsp; Smart Building continues on a double track, with a component that looks mainly at the domestic world (smart homes)&nbsp; and that is turning on attention phenomena towards the consumer world and a professional component (smart building)&nbsp; that has now become the common heritage of development and design by designers and architects.&nbsp;</p>
+<p>The world of  Smart Building continues on a double track, with a component that looks mainly at the domestic world (smart homes) is turning it's attention phenomena towards the consumer world and a professional component (smart building) that has now become the common heritage of development and design by designers and architects. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -274,7 +259,7 @@ there is no&nbsp;Smart Mobility. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>There are many companies that are heavily investing in this sector also because, in the dimension of Smart Car and Connected Car but also applications related to the world of rail transport with trains controlled by IoT, it opens up huge business opportunities.</p>
+<p>There are many companies that are heavily investing in this sector, in the dimension of Smart Car and Connected Car but also applications related to the world of rail transport with trains controlled by IoT, it opens up huge business opportunities.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
