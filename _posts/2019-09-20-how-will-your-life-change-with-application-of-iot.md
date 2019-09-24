@@ -20,12 +20,7 @@ post_date: 2019-09-20 08:00:18
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>One
-of the technological advances with the most potential in recent years is the
-“Internet of Things” or IoT. The possibility of connecting all kinds of objects
-to the network and creating connections between them that optimize our time is
-a field that is still developing. The creativity of programmers plays a key
-role in shaping our near future.</p>
+<p>One of the technological advances with the most potential in recent years is the “Internet of Things” or IoT. The possibility of connecting all kinds of objects to a network and creating connections between them to optimize our time is a field that is still developing. The creativity of programmers plays a key role in shaping our near future.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -33,7 +28,7 @@ role in shaping our near future.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong>How the Internet of Things Will Change Our Life</strong></p>
+<p><strong>How the Internet of Things Will Change Our Lives</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -44,11 +39,7 @@ daily routine and our way of understanding technology.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Today
-we have smartphones, tablets, laptops, televisions ... and all this is
-connected to the Internet. But the Internet of Things goes further; it means
-that the network reaches all things, that everything is connected to the
-Internet.</p>
+<p>Today we have smartphones, tablets, laptops, televisions ... all of these are connected to the Internet. But the Internet of Things goes further; it means that the network reaches all things, that everything is connected to the Internet.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -65,23 +56,19 @@ everything.&nbsp;</em></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Both
-professionally and domestically, the Internet of Things could change
-everything, from our way of working to have part of it automated, to how we
-move in our own home since their domestic applications are also diverse, for
-example, sensors and controllers in the different elements of the house.&nbsp;</p>
+<p>Both professionally and domestically, the Internet of Things could change everything, from our way of working - automated tasks, to how we navigate in our homes. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>What
-would happen if the toothbrush alerted you that you have tooth decay and
-directly ask for an appointment at the dentist, or if the refrigerator informed
-you when your food is going to expire or which ones are running out and you
-have to buy?</p>
+<p>What would it be like to have your toothbrush alert you to your tooth decay and schedule your dentist appointment for you. Or to have your refrigerator inform you of food near it's expiration or what is running low and prompts you to stock up.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>With the potential of the Internet of things, our cities will also be smarter. For example, our cars will communicate with traffic signals and reduce the speed of cars, telling us what to do at all time and analyzing the flow of movement to achieve the most efficient traffic.</p>
+<p>With the potential of the Internet of Things, our cities will also be smarter. Our cars could communicate with traffic signals prompting a speed reduction, instructing manoeuvres, analyzing the flow of movement amongst, transport and people to achieve the most efficient traffic management.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The Internet of Things is changing how we live. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -100,21 +87,11 @@ virtual worlds to be brought together.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The
-term IoT ("Internet of Things")&nbsp; is used for the first time by
-Kevin Ashton, a researcher at MIT (Massachusetts Institute of Technology) where
-the standard for RFID( Radio-frequency Identification) and other sensors were
-found. But even if the term is new, we talk about these concepts for a long
-time, basically from the birth of the internet and the semantic web.</p>
+<p>The term IoT ("Internet of Things")  is used for the first time by Kevin Ashton, a researcher at MIT (Massachusetts Institute of Technology) where the standard for RFID( Radio-frequency Identification) and other sensors were founded. But even if the term is new, we have talked about these concepts for a long time, basically from the birth of the internet and the semantic web.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong><em>But
-what does IoT mean in practice?</em></strong><strong> </strong>With
-the Internet of things, we mean a set of technologies that allow you to connect
-any type of device to the Internet. The purpose of this type of solution is
-basically to monitor and control and transfer information and then perform
-subsequent actions.</p>
+<p><strong><em>But what does IoT mean in practice?</em> </strong>With the Internet of Things, we mean a set of technologies that allow you to connect any type of device to the Internet. The purpose of this type of solution is basically to monitor and control and transfer information and then perform subsequent actions.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -130,12 +107,12 @@ subsequent actions.</p>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>The main areas of application of the Internet of Things (both for end consumers like me and you, for companies and manufacturing) are represented by those contexts in which there are “things” that can " talk " and generate new information such as for example:</p>
+<p>The main areas of application of the Internet of Things (both for end consumers like me and you, for companies and manufacturing) are represented by those contexts in which there are “things” that can "talk" and generate new information such as for example:</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group -->
 <div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:list -->
-<ul><li>Home,      smart home, home automation</li><li>Smart      buildings, smart building, building automation</li><li>Industrial      monitoring, Robotics, Collaborative Robotics</li><li>The      automotive industry, automotive, self-driving car</li><li>Smart      health, healthcare, the biomedical world</li><li>All      areas of telemetry</li><li>All      areas of surveillance and security</li><li>Smart      city, smart mobility</li><li>New      forms of digital payment through objects</li><li>Smart      agrifood, precision farming, field sensors</li><li>Animal      husbandry, wearable for animals</li></ul>
+<ul><li>Home      smart home, home automation</li><li>Smart      buildings, smart building, building automation</li><li>Industrial      monitoring, Robotics, Collaborative Robotics</li><li>The      automotive industry, automotive, self-driving car</li><li>Smart      health, healthcare, the biomedical world</li><li>All      areas of telemetry</li><li>All      areas of surveillance and security</li><li>Smart      city, smart mobility</li><li>New      forms of digital payment through objects</li><li>Smart      agrifood, precision farming, field sensors</li><li>Animal      husbandry, wearable for animals</li></ul>
 <!-- /wp:list -->
 
 <!-- wp:paragraph -->
@@ -157,9 +134,7 @@ many objects are connected?</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The
-major research companies, such as Accenture among others, argue that more than
-25 billion IoT devices will be reached by 2020.</p>
+<p>Major research companies, such as Accenture among others, argue that more than 25 billion IoT devices will be reached by 2020.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -170,10 +145,7 @@ in the sector.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Authors
-such as Adrian McEwen (with the book Designing the Internet of Things ) talk
-about creativity and IoT, and how the next winning ideas and products will need
-to connect everyday objects with the internet and technology.</p>
+<p>Authors such as Adrian McEwen (with the book Designing the Internet of Things) talks about creativity and IoT, and how the next winning ideas and products will need to connect everyday objects with the internet and technology.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -204,7 +176,7 @@ will represent an important development opportunity.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong>Examples and applications of the Internet of things in real life</strong></p>
+<p><strong>Examples and applications of the Internet of Things in real life</strong></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -245,7 +217,7 @@ companies.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Below all the examples of IoT and the internet of things in everyday life.</p>
+<p>Below all the examples of IoT and the Internet of Things in everyday life.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -548,7 +520,7 @@ products.&nbsp;</p>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>In conclusion, we observe that from utilities to healthcare. From production to public administration there is now many sectors and fields of work involved in the technological innovation of the IoT (internet of things), with different levels of maturity.&nbsp;</p>
+<p>In conclusion, we observe that from utilities to healthcare. From production to public administration there is now many sectors and fields of work involved in the technological innovation of the IoT (Internet of Things), with different levels of maturity. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
