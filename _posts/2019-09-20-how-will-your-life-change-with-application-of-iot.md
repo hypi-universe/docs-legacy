@@ -323,31 +323,15 @@ that "network" their ability to collect information in any context.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>When
-the connected products are «connected» to the production systems already in the
-production phase they allow having data that make available the possibility to
-modify the PROCESSES. When the connected product is added with a processing
-capacity (even minimal) these become Connected and Intelligent products. So we
-enter the Smart product range: SMART PRODUCT = CONNECTION + INTELLIGENCE.</p>
+<p>When the connected products are «connected» to a production system that already operates in a production phase, they allow the product to access data that enables the connected products to modify the PROCESSES. When the connected product is added with a processing abilities (even minimal) these become Connected and Intelligent products. So we enter the Smart product range: SMART PRODUCT = CONNECTION + INTELLIGENCE.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>But
-when can we say that Smart Products change companies and competition? When on
-the basis of intelligent and connected products, there is a SMART PRODUCT
-ECOSYSTEM - A network of intelligent products that put the result of their respective
-processing capacity online to create new services and new value for users.</p>
+<p>But when can we say that Smart Products change companies and competition? When, there is a SMART PRODUCT ECOSYSTEM - A network of intelligent products that put the result of their respective processing capacity online to create new services and new value for users.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>In
-2015 the “How Smart, Connected Products Are Transforming Companies” by Michael
-E. Porter and James E. Heppelmann appeared on the Harward Business Review HBR,
-dedicated to the perspectives of the Internet of Things in terms of developing
-smart products that change companies while the previous year the same authors
-published “How Smart, Connected Products Are Transforming Competition” which
-analyzed the impact on competition of Smart Product development
-companies.&nbsp;</p>
+<p>In 2015 the “How Smart, Connected Products Are Transforming Companies” by Michael E. Porter and James E. Heppelmann appeared on the Harward Business Review HBR, dedicated to the perspectives of the Internet of Things in terms of developing smart products that change companies while the previous year the same authors published “How Smart, Connected Products Are Transforming Competition” which analyzed the impact of competition of Smart Product development companies. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -359,20 +343,11 @@ companies.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>If
-it is true that by 2021, as Ericsson's forecasts will support, we will have 1.5
-billion Internet of Things devices with cellular connectivity, most of which
-with 5G solutions, a new business will open for mobile operators huge linked to
-the data collection first, to the data communication and, not least to the
-analytics data associated with the IoT.</p>
+<p>If it is true that by 2021, as Ericsson's forecasts support, we will have 1.5 billion Internet of Things devices with cellular connectivity, most of which with 5G solutions, new business will open for mobile operators linked to initial data collection, then to the data communication and, not least to the analytics data associated with the IoT.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The
-connected devices increase and the data produced increases. Unfortunately, in
-the face of a scenario that increases business and wealth opportunities,
-threats will also increase, which will also bring a security problem in general
-and the security associated with the protection of personal data.</p>
+<p>As connected devices increases, the data produced increases. Unfortunately, in the face of scenarios that increase business and wealth opportunities, threats will also increase, which will also bring about general security problems and the security associated with the protection of personal data.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -386,18 +361,11 @@ collection solutions that act as a security endpoint.</p>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>The
-Internet of Things is effective and productive only if each system interacts
-with others because integration requires control, scalability, flexibility,
-efficiency. And the answer to this security question comes primarily from the
-data themselves, or rather from the ability to know more and more precisely the
-needs that underlie the projects and to design the solutions that best enable
-them to achieve those objectives without minimizing exposure to all known risk
-factors.</p>
+<p>The Internet of Things is effective and productive only if each system interacts with others - integration requires control, scalability, flexibility, efficiency. And the answer to this security question comes primarily from the data themselves, or rather from the ability to know more and more. More precisely the needs that underlie the projects to effectively design solutions that best enable them to achieve those objectives without minimizing exposure to all known risk factors.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The IoT is, on the one hand, a new source of threats but also it is also a source of data and knowledge to reduce exposure to risks.</p>
+<p>The IoT is, on the one hand, a new source of threats but also a source of data and knowledge to reduce exposure to risks.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -405,19 +373,15 @@ factors.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>In
-the context of the application of the simplest solutions, the diffusion is in
-strong growth. In December 2011 almost all the meters installed in Italy were
-smart and the objects connected to each other by the cellular network were 3.9
-million: 10% more than the previous year. </p>
+<p>In terms of implementing the simplest solution, a diffusion approach continues to show strong growth. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Today
-the most relevant area is the Smart Car, the connected objects related to this
-technology are 43% of the total connected objects. It is expected that this
-percentage will rise next year, above all as regards the monitoring applications
-of cars for insurance and info mobility purposes.</p>
+<p>In December 2011 almost all the meters installed in Italy were smart and the objects connected to each other by the cellular network were 3.9 million: 10% more than the previous year. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Today the most relevant area is the Smart Car, the connected objects related to this technology are 43% of the total connected objects. It is expected that this percentage will rise next year, significantly with regards to the monitoring applications of cars for insurance and mobility info purposes.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -427,21 +391,15 @@ such as privacy and security, terminologies such as:</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><li><strong>IPv6</strong> (successor to the IPv4
-     Internet Protocol) which simplifies configuration and management of IP
-     networks.&nbsp;</li></ul>
+<ul><li><strong>IPv6</strong> (successor to the IPv4 Internet Protocol) which simplifies configuration and management of IP networks. </li></ul>
 <!-- /wp:list -->
 
 <!-- wp:list -->
-<ul><li><strong>Cloud
-     computing</strong>,
-     or the technology that allows you to save data on a virtual cloud (cloud)
-     where these data can be found without the need to be on a physical
-     machine, such as a desktop computer or a laptop</li></ul>
+<ul><li><strong>Cloud computing</strong>, or the technology that allows you to save data on a virtual cloud (cloud) where these data can be found without the need to be on a physical machine, such as a desktop computer or a laptop</li></ul>
 <!-- /wp:list -->
 
 <!-- wp:list -->
-<ul><li><strong>Big      Data</strong>,      which has already been discussed, that is a large amount of data available now that the objects are connected and communicate data on their use. This theme, in particular, raises doubts about the security deriving from the      IoT, and on topics such as privacy and processing of personal data and sensitive data.</li></ul>
+<ul><li><strong>Big Data</strong>, which has already been discussed- a large amount of data available now that the objects are connected and are communicating data on their use. This theme, in particular, raises doubts about the security deriving from the IoT, and on topics such as privacy and processing of personal data and sensitive data.</li></ul>
 <!-- /wp:list -->
 
 <!-- wp:heading {"level":4} -->
@@ -457,12 +415,7 @@ and allows the development and implementation of new business models.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>With
-the IoT, the Data-Driven Enterprise project starts and thanks to an IoT that
-" communicates " with the CRM, we can guarantee and develop the
-centrality of the customer experience in a context in which more than 80% of
-consumers agree to pay a premium price in exchange for better user
-experience.&nbsp;</p>
+<p>With thanks to an IoT that " communicates " with the CRM and Data-Driven Enterprise projects, we can guarantee and develop the centrality of the customer experience in a context in which more than 80% of consumers agree to pay a premium price in exchange for better user experience. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":1220,"sizeSlug":"large"} -->
