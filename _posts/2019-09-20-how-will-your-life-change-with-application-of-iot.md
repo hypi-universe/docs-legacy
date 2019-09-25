@@ -280,7 +280,7 @@ is the impact of the Internet of Things on the environment?</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The possibilities are vast and not only linked to the use of drones as commonly seen, but also to sensors that compliment the themes of IoT to innovate logistics and drive solutions for Smart Agriculture, agro energy and operations that aim to improve the relationship linked to food and sustainability.</p>
+<p>The possibilities are vast and not only linked to the use of drones as commonly seen, but also to sensors that compliment the themes of&nbsp;IoT to innovate logistics and drive solutions for Smart Agriculture, agro energy and operations that aim to improve the relationship linked to food and sustainability.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -301,11 +301,11 @@ Manufacturing also called the 4.0 Industry.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Smart Manufacturing overlaps with the Industry 4.0 world, though work is still to be done to implement development policies to influence the introduction of digital in the industrial world that was born in Germany with the Industry 4.0 phenomenon. Industry 4.0 has also made ground in the United States with the phenomenon of the digital factory. </p>
+<p>Smart Manufacturing overlaps with the Industry 4.0 world, though work is still to be done to implement development policies to influence the introduction of digital in the industrial world that was born in Germany with the Industry 4.0 phenomenon. Industry 4.0 has also made ground in the United States with the phenomenon of the digital factory.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Industry 4.0 or 4.0 Industry has real life research data that shows how this market is growing. At a rate of 20% growth, this is evidence of how the manufacturing industry is changing with IoT. </p>
+<p>Industry 4.0 or 4.0 Industry has real life research data that shows how this market is growing. At a rate of 20% growth, this is evidence of how the manufacturing industry is changing with IoT.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -331,7 +331,7 @@ that "network" their ability to collect information in any context.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>In 2015 the “How Smart, Connected Products Are Transforming Companies” by Michael E. Porter and James E. Heppelmann appeared on the Harward Business Review HBR, dedicated to the perspectives of the Internet of Things in terms of developing smart products that change companies while the previous year the same authors published “How Smart, Connected Products Are Transforming Competition” which analyzed the impact of competition of Smart Product development companies. </p>
+<p>In 2015 the “How Smart, Connected Products Are Transforming Companies” by Michael E. Porter and James E. Heppelmann appeared on the Harward Business Review HBR, dedicated to the perspectives of the Internet of Things in terms of developing smart products that change companies while the previous year the same authors published “How Smart, Connected Products Are Transforming Competition” which analyzed the impact of competition of Smart Product development companies.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -391,7 +391,7 @@ such as privacy and security, terminologies such as:</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:list -->
-<ul><li><strong>IPv6</strong> (successor to the IPv4 Internet Protocol) which simplifies configuration and management of IP networks. </li></ul>
+<ul><li><strong>IPv6</strong> (successor to the IPv4 Internet Protocol) which simplifies configuration and management of IP networks.&nbsp;</li></ul>
 <!-- /wp:list -->
 
 <!-- wp:list -->
@@ -415,7 +415,7 @@ and allows the development and implementation of new business models.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>With thanks to an IoT that " communicates " with the CRM and Data-Driven Enterprise projects, we can guarantee and develop the centrality of the customer experience in a context in which more than 80% of consumers agree to pay a premium price in exchange for better user experience. </p>
+<p>With thanks to an IoT that " communicates " with the CRM and Data-Driven Enterprise projects, we can guarantee and develop the centrality of the customer experience in a context in which more than 80% of consumers agree to pay a premium price in exchange for better user experience.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":1220,"sizeSlug":"large"} -->
@@ -433,7 +433,7 @@ products.&nbsp;</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Here it is important to read and analyze the experiences of those who are "doing" as in the case of realities that are interpreting the digital transformation and serialization in the manufacturing world that we tell in this service: With Intelligent Manufacturing towards the data economy thanks to IoT, connected product and serialization.</p>
+<p>Here it is important to read and analyze the experiences of those who are in reality "doing" and are interpreting the digital transformation and serialization in the manufacturing world: Intelligent Manufacturing contributes towards the data economy, there are connected products and serialization thanks to IoT.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3} -->
@@ -441,7 +441,7 @@ products.&nbsp;</p>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>In conclusion, we observe that from utilities to healthcare. From production to public administration there is now many sectors and fields of work involved in the technological innovation of the IoT (Internet of Things), with different levels of maturity.&nbsp;</p>
+<p>In conclusion, we observe that from utilities to healthcare, from production to public administration there are now many sectors and fields of work involved in the technological innovation of the IoT (Internet of Things), with different levels of maturity. </p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
