@@ -10,11 +10,13 @@ published: true
 post_date: 2019-09-25 19:57:42
 ---
 <!-- wp:heading {"level":3} -->
-<h3>Introduction </h3>
+<h3>Introduction</h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Text classification is a supervised machine learning task where text documents are classified into different categories depending upon the content of the text. Some of the most common examples of text classification include sentimental analysis, spam or ham email detection, intent classification, public opinion mining, etc. Rule-based, machine learning and deep learning approaches have been developed for text classification. Deep learning approaches for text classification are further divided into two types: Supervised learning and unsupervised learning. In this article, you will study a supervised deep learning technique for text classification.  </p>
+
+Text classification is a supervised machine learning task where text documents are classified into different categories depending upon the content of the text. Some of the most common examples of text classification include sentimental analysis, spam or ham email detection, intent classification, public opinion mining, etc. Rule-based, machine learning and deep learning approaches have been developed for text classification. Deep learning approaches for text classification are further divided into two types: Supervised learning and unsupervised learning. In this article, you will study a supervised deep learning technique for text classification.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -22,7 +24,9 @@ post_date: 2019-09-25 19:57:42
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>The main goal of this article is to demonstrate how to perform text classification with deep learning using Python deep learning libraries. As an example, you will create a deep learning model capable of detecting spam messages. After reading this article you will be able to solve general text classification problems such as sentimental analysis, intent detection, news article classification, etc with Python. You will also learn word embeddings that are used as input for a variety of natural language tasks such as topic modeling, text generation, chatbot development, etc. You will be using Python's <strong>Keras</strong> library to implement your deep learning model.</p>
+
+The main goal of this article is to demonstrate how to perform text classification with deep learning using Python deep learning libraries. As an example, you will create a deep learning model capable of detecting spam messages. After reading this article you will be able to solve general text classification problems such as sentimental analysis, intent detection, news article classification, etc with Python. You will also learn word embeddings that are used as input for a variety of natural language tasks such as topic modeling, text generation, chatbot development, etc. You will be using Python's <strong>Keras</strong> library to implement your deep learning model.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -30,7 +34,9 @@ post_date: 2019-09-25 19:57:42
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>The code provided in this article is written in Python 3, therefore you are expected to have at least an intermediate level of Python knowledge. The code has been executed and tested with <a href="https://colab.research.google.com">Google Colaboratory</a> which is an online deep learning platform. You can also run the code locally on your PC. You will need to install TensorFlow's Keras library in order to execute the code.  Here is a very good article on <a href="https://towardsdatascience.com/installing-keras-tensorflow-using-anaconda-for-machine-learning-44ab28ff39cb">how to install TensorFlow Keras on Windows</a>. Linux users can check out <a href="https://www.pyimagesearch.com/2019/01/30/ubuntu-18-04-install-tensorflow-and-keras-for-deep-learning/">this tutorial</a>. Basic knowledge of machine learning is also assumed. </p>
+
+The code provided in this article is written in Python 3, therefore you are expected to have at least an intermediate level of Python knowledge. The code has been executed and tested with <a href="https://colab.research.google.com">Google Colaboratory</a> which is an online deep learning platform. You can also run the code locally on your PC. You will need to install TensorFlow's Keras library in order to execute the code. Here is a very good article on <a href="https://towardsdatascience.com/installing-keras-tensorflow-using-anaconda-for-machine-learning-44ab28ff39cb">how to install TensorFlow Keras on Windows</a>. Linux users can check out <a href="https://www.pyimagesearch.com/2019/01/30/ubuntu-18-04-install-tensorflow-and-keras-for-deep-learning/">this tutorial</a>. Basic knowledge of machine learning is also assumed.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -38,11 +44,15 @@ post_date: 2019-09-25 19:57:42
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Given a set of text messages, we want to develop a deep learning model capable of telling which of the messages are spam. Machine learning and deep learning models learn from datasets. Therefore, we need a dataset that contains ham and spam messages. </p>
+
+Given a set of text messages, we want to develop a deep learning model capable of telling which of the messages are spam. Machine learning and deep learning models learn from datasets. Therefore, we need a dataset that contains ham and spam messages.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>The dataset we are going to use to develop our deep learning model can be downloaded from <a href="https://www.kaggle.com/team-ai/spam-text-message-classification/data">this kaggle link</a>.  Download the CSV file into local computers, or if you are training your models with any cloud library, you will need to upload your CSV file to the corresponding platform. </p>
+
+The dataset we are going to use to develop our deep learning model can be downloaded from <a href="https://www.kaggle.com/team-ai/spam-text-message-classification/data">this kaggle link</a>. Download the CSV file into local computers, or if you are training your models with any cloud library, you will need to upload your CSV file to the corresponding platform.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -50,7 +60,9 @@ post_date: 2019-09-25 19:57:42
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Execute the following script to import the Python libraries required to execute scripts in this article. </p>
+
+Execute the following script to import the Python libraries required to execute scripts in this article.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -89,7 +101,9 @@ from numpy import zeros
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>In this step, we will import the dataset into our application and will perform some exploratory data analysis. The <code>read_csv</code> method from the Pandas library can be used to import the dataset.</p>
+
+In this step, we will import the dataset into our application and will perform some exploratory data analysis. The <code>read_csv</code> method from the Pandas library can be used to import the dataset.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -97,7 +111,9 @@ from numpy import zeros
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>We will remove all those rows where the dataset contains a null value. </p>
+
+We will remove all those rows where the dataset contains a null value.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -105,7 +121,9 @@ from numpy import zeros
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>The <code>shape</code> attribute of the pandas dataframe can be used to view the shape of the dataset.</p>
+
+The <code>shape</code> attribute of the pandas dataframe can be used to view the shape of the dataset.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -113,11 +131,15 @@ from numpy import zeros
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>In the output, you should see (5572, 2) which shows that the dataset contains 5572 rows and 2 columns. </p>
+
+In the output, you should see (5572, 2) which shows that the dataset contains 5572 rows and 2 columns.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Let's now see the first five rows of the dataset using the <code>head</code> method of the pandas dataframe.</p>
+
+Let's now see the first five rows of the dataset using the <code>head</code> method of the pandas dataframe.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -125,21 +147,31 @@ from numpy import zeros
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Here is the output:</p>
+
+Here is the output:
+
 <!-- /wp:paragraph -->
 
-<!-- wp:core-embed/imgur {"url":"https://imgur.com/QQF2ZAi","type":"rich","providerNameSlug":"imgur","className":""} -->
-<figure class="wp-block-embed-imgur wp-block-embed is-type-rich is-provider-imgur"><div class="wp-block-embed__wrapper">
-https://imgur.com/QQF2ZAi
-</div></figure>
-<!-- /wp:core-embed/imgur -->
+<!-- wp:image {"align":"center","id":1270,"sizeSlug":"large"} -->
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img class="wp-image-1270" src="https://hypi.io/wp-content/uploads/2019/09/data_header.png" alt="" /></figure>
+</div>
+<!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>The output shows that the dataset contains two columns: <code>Category</code> and <code>Message</code>. The Category column contains information regarding whether a text message is spam or ham, while the Message column contains the actual text of a message. </p>
+
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Let's plot a pie graph which shows the distribution of ham and spam messages in the dataset. Let's first increase the plot size since the default plot size is a bit too small. </p>
+
+The output shows that the dataset contains two columns: <code>Category</code> and <code>Message</code>. The Category column contains information regarding whether a text message is spam or ham, while the Message column contains the actual text of a message.
+
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+
+Let's plot a pie graph which shows the distribution of ham and spam messages in the dataset. Let's first increase the plot size since the default plot size is a bit too small.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -150,7 +182,9 @@ plt.rcParams["figure.figsize"] = plot_size </code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>The following script plots the pie graph for two categories of messages in the dataset.</p>
+
+The following script plots the pie graph for two categories of messages in the dataset.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -158,17 +192,21 @@ plt.rcParams["figure.figsize"] = plot_size </code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Here is the output:</p>
+
+Here is the output:
+
 <!-- /wp:paragraph -->
 
-<!-- wp:core-embed/imgur {"url":"https://imgur.com/q7ygeXk","type":"rich","providerNameSlug":"imgur","className":""} -->
-<figure class="wp-block-embed-imgur wp-block-embed is-type-rich is-provider-imgur"><div class="wp-block-embed__wrapper">
-https://imgur.com/q7ygeXk
-</div></figure>
-<!-- /wp:core-embed/imgur -->
+<!-- wp:image {"align":"center","id":1271,"sizeSlug":"large"} -->
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img class="wp-image-1271" src="https://hypi.io/wp-content/uploads/2019/09/spam-and-ham-pie-graph.png" alt="" /></figure>
+</div>
+<!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>The output shows that 87% of the messages are ham while only 13% of the messages are spam. </p>
+
+The output shows that 87% of the messages are ham while only 13% of the messages are spam.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -176,7 +214,9 @@ https://imgur.com/q7ygeXk
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Text messages contain multiple empty spaces, punctuations, special characters, etc. It is a good practice to clean the text by removing special characters and punctuations before classification. Hence, we will write a method that accepts a text string as a parameter and returns a text string without punctuations and special characters. </p>
+
+Text messages contain multiple empty spaces, punctuations, special characters, etc. It is a good practice to clean the text by removing special characters and punctuations before classification. Hence, we will write a method that accepts a text string as a parameter and returns a text string without punctuations and special characters.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -195,7 +235,9 @@ https://imgur.com/q7ygeXk
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>The following script cleans the text messages in our dataset:</p>
+
+The following script cleans the text messages in our dataset:
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -210,11 +252,15 @@ for text in texts:
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>In order to create robust deep learning models, the dataset used is divided into train and test sets. The deep learning models are trained on the training set. The performance of the trained models is evaluated by making predictions on the test sets. An ideal deep learning algorithm should perform equally well on training and test set. </p>
+
+In order to create robust deep learning models, the dataset used is divided into train and test sets. The deep learning models are trained on the training set. The performance of the trained models is evaluated by making predictions on the test sets. An ideal deep learning algorithm should perform equally well on training and test set.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Deep learning algorithm works with numeric data. However, the categories in our dataset have two unique text values i.e. <code>ham</code> and <code>spam</code>. We will replace <code>ham</code> by 0 and <code>spam</code> by 1. To do so, execute the following script:</p>
+
+Deep learning algorithm works with numeric data. However, the categories in our dataset have two unique text values i.e. <code>ham</code> and <code>spam</code>. We will replace <code>ham</code> by 0 and <code>spam</code> by 1. To do so, execute the following script:
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -224,7 +270,9 @@ labels = np.array(list(map(lambda x: 1 if x=="spam" else 0, labels)))</code></pr
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>The following script divides our data into training and test sets. 80% of the data will be used to train our deep learning model while 20% of the data will be used for evaluating the model performance. </p>
+
+The following script divides our data into training and test sets. 80% of the data will be used to train our deep learning model while 20% of the data will be used for evaluating the model performance.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -236,11 +284,15 @@ labels = np.array(list(map(lambda x: 1 if x=="spam" else 0, labels)))</code></pr
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>In the previous section, you saw we replaced text labels by binary digits 1 and 0. To train deep learning models, we also need to convert our text messages into the numeric format. There are different approaches to convert text two numbers such as a <a href="https://en.wikipedia.org/wiki/Bag-of-words_model">bag of words</a>, <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TFIDFI</a>, <a href="https://en.wikipedia.org/wiki/N-gram">n-grams</a>, etc. Furthermore, a variety of prebuild word embeddings also exist such as Google <a href="https://code.google.com/archive/p/word2vec/">Word2Vec</a>, Stanford's <a href="https://nlp.stanford.edu/projects/glove/">Glove</a>, etc.  We will be using Stanford's Glove word embedding in this article. </p>
+
+In the previous section, you saw we replaced text labels by binary digits 1 and 0. To train deep learning models, we also need to convert our text messages into the numeric format. There are different approaches to convert text two numbers such as a <a href="https://en.wikipedia.org/wiki/Bag-of-words_model">bag of words</a>, <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TFIDFI</a>, <a href="https://en.wikipedia.org/wiki/N-gram">n-grams</a>, etc. Furthermore, a variety of prebuild word embeddings also exist such as Google <a href="https://code.google.com/archive/p/word2vec/">Word2Vec</a>, Stanford's <a href="https://nlp.stanford.edu/projects/glove/">Glove</a>, etc. We will be using Stanford's Glove word embedding in this article.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>First of all, we need to convert our text to a series of integers, depending upon the words in the text. To do so, we can use the <code>Tokenizer</code> class from the <code>keras.preprocessing.text</code> library. </p>
+
+First of all, we need to convert our text to a series of integers, depending upon the words in the text. To do so, we can use the <code>Tokenizer</code> class from the <code>keras.preprocessing.text</code> library.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -252,7 +304,9 @@ X_test = tokenizer.texts_to_sequences(X_test)</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>The <code>Tokenizer</code> class converts text to numbers. However, since text messages can be of different lengths, the integer representations created by <code>Tokenizer</code> class also vary by length. In order to create uniform length vectors, we can specify a specific length for all the vector and then truncate the vectors longer than that length.  For the vectors, smaller than the specified length, we can add zeros at the end. This process is called padding. Padding can be implemented via <code>pad_sequences</code> class from the <code> Keras.preprocessing.sequence </code> . Look at the following script:</p>
+
+The <code>Tokenizer</code> class converts text to numbers. However, since text messages can be of different lengths, the integer representations created by <code>Tokenizer</code> class also vary by length. In order to create uniform length vectors, we can specify a specific length for all the vector and then truncate the vectors longer than that length. For the vectors, smaller than the specified length, we can add zeros at the end. This process is called padding. Padding can be implemented via <code>pad_sequences</code> class from the <code> Keras.preprocessing.sequence </code> . Look at the following script:
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -265,11 +319,15 @@ X_test = pad_sequences(X_test, padding='post', maxlen=sen_length )</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p> The <code>vocabulary</code> variable contains the total number of unique words in the dataset.  The sentence length is 200 which means that each sentence will be represented by a numeric vector of 200 integers. </p>
+
+The <code>vocabulary</code> variable contains the total number of unique words in the dataset. The sentence length is 200 which means that each sentence will be represented by a numeric vector of 200 integers.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Next, we need to create a dictionary that contains words and their corresponding vector representation as specified by Stanford's Glove library. The following script does that:</p>
+
+Next, we need to create a dictionary that contains words and their corresponding vector representation as specified by Stanford's Glove library. The following script does that:
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -285,7 +343,9 @@ glove_file.close()</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Finally, we will create an embedding matrix where each row index will correspond to the integer value of the words as specified by the `Tokenizer` class. The value for each row will be the corresponding Glove representations for the words.</p>
+
+Finally, we will create an embedding matrix where each row index will correspond to the integer value of the words as specified by the `Tokenizer` class. The value for each row will be the corresponding Glove representations for the words.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -301,7 +361,9 @@ for word, index in tokenizer.word_index.items():
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>In the previous steps, we converted our data into a format that is required to train deep learning algorithms. Now is the time to train the model itself. Several deep learning models can be used for text classification. However, <a href="https://en.wikipedia.org/wiki/Long_short-term_memory">Long Short Term Memory (LSTM) </a>network has shown excellent performance with sequential data. Since sentences are basically sequences of words, we will use LSTM to create text classification model. With Keras, LSTM can be implemented in less than 10 lines of code as shown below:</p>
+
+In the previous steps, we converted our data into a format that is required to train deep learning algorithms. Now is the time to train the model itself. Several deep learning models can be used for text classification. However, <a href="https://en.wikipedia.org/wiki/Long_short-term_memory">Long Short Term Memory (LSTM) </a>network has shown excellent performance with sequential data. Since sentences are basically sequences of words, we will use LSTM to create text classification model. With Keras, LSTM can be implemented in less than 10 lines of code as shown below:
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -315,11 +377,15 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['acc'])</co
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>In the above script, we create LSTM model with 16 neurons. The <code>Embedding</code> layer specifies the word embeddings that will be used to convert input text to numbers. The activation function is <code>sigmoid</code>, the loss function is <code>binary_crossentropy</code> since there are only two possible outputs. In the case of more than two output labels, you will use <code>categorical_crossentropy</code>, the performance metrics is accuracy. </p>
+
+In the above script, we create LSTM model with 16 neurons. The <code>Embedding</code> layer specifies the word embeddings that will be used to convert input text to numbers. The activation function is <code>sigmoid</code>, the loss function is <code>binary_crossentropy</code> since there are only two possible outputs. In the case of more than two output labels, you will use <code>categorical_crossentropy</code>, the performance metrics is accuracy.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>To train the model, you simply need to call the <code>fit</code> method and pass it our training set.  </p>
+
+To train the model, you simply need to call the <code>fit</code> method and pass it our training set.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -327,7 +393,9 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['acc'])</co
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>And that's pretty much. The above script trains the model. When you run the above script, you should see the following output:</p>
+
+And that's pretty much. The above script trains the model. When you run the above script, you should see the following output:
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -355,7 +423,9 @@ Epoch 10/10
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Our model achieves training accuracy of 84.30%. </p>
+
+Our model achieves training accuracy of 84.30%.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -363,7 +433,9 @@ Epoch 10/10
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>To evaluate the performance of the trained model on the test set, you can use the <code>evaluate</code> method.</p>
+
+To evaluate the performance of the trained model on the test set, you can use the <code>evaluate</code> method.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -372,7 +444,9 @@ print("Accuracy on Test Data:", score[1])</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Here is the output:</p>
+
+Here is the output:
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -381,11 +455,15 @@ Accuracy on Test Data: 0.8663677136994263 </code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>The output shows an accuracy of 86.63% which means that out of 100 predictions, 86.63% of the time our model correctly predicts whether or not a message is a spam. </p>
+
+The output shows an accuracy of 86.63% which means that out of 100 predictions, 86.63% of the time our model correctly predicts whether or not a message is a spam.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p>Let's now plot the training and validation loss and accuracy achieved while training the model.</p>
+
+Let's now plot the training and validation loss and accuracy achieved while training the model.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
@@ -411,17 +489,21 @@ plt.show()</code></pre>
 <!-- /wp:code -->
 
 <!-- wp:paragraph -->
-<p>Here is output:</p>
+
+Here is output:
+
 <!-- /wp:paragraph -->
 
-<!-- wp:core-embed/imgur {"url":"https://imgur.com/prTfEDi","type":"rich","providerNameSlug":"imgur","className":""} -->
-<figure class="wp-block-embed-imgur wp-block-embed is-type-rich is-provider-imgur"><div class="wp-block-embed__wrapper">
-https://imgur.com/prTfEDi
-</div></figure>
-<!-- /wp:core-embed/imgur -->
+<!-- wp:image {"align":"center","id":1272,"sizeSlug":"large"} -->
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img class="wp-image-1272" src="https://hypi.io/wp-content/uploads/2019/09/accuracy_loss.png" alt="" /></figure>
+</div>
+<!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p>The output show that the model achieves maximum accuracy in its first epoch (one epoch refers to one training cycle on the complete dataset). On the other hand, the model achieves minimum loss at around second epoch. </p>
+
+The output shows that the model achieves maximum accuracy in its first epoch (one epoch refers to one training cycle on the complete dataset). On the other hand, the model achieves minimum loss at around second epoch.
+
 <!-- /wp:paragraph -->
 
 <!-- wp:heading -->
@@ -429,5 +511,7 @@ https://imgur.com/prTfEDi
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p>Text classification is one of the most common natural language processing tasks. This article explains the basics of text classification with deep learning. In this article, you saw how to identify whether a text message is spam or ham. The trained deep learning model achieves an accuracy of 86.63 on the test set without any parameter tuning. I would suggest you change the parameter and see if you can get better results. Feel free to comment in case if you have something to say or if you want to ask any question. </p>
+
+Text classification is one of the most common natural language processing tasks. This article explains the basics of text classification with deep learning. In this article, you saw how to identify whether a text message is spam or ham. The trained deep learning model achieves an accuracy of 86.63 on the test set without any parameter tuning. I would suggest you change the parameter and see if you can get better results. Feel free to comment in case if you have something to say or if you want to ask any question.
+
 <!-- /wp:paragraph -->
