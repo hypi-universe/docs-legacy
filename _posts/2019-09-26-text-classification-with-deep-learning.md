@@ -5,9 +5,9 @@ author: usmanmalik57
 post_excerpt: ""
 layout: post
 permalink: >
-  https://hypi.io/blog/2019/09/25/text-classification-with-deep-learning/
+  https://hypi.io/blog/2019/09/26/text-classification-with-deep-learning/
 published: true
-post_date: 2019-09-25 19:57:42
+post_date: 2019-09-26 08:28:21
 ---
 <!-- wp:heading {"level":3} -->
 <h3>Introduction</h3>
