@@ -358,7 +358,7 @@ func Router() *gin.Engine  {
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code class="">{{define "link"}}
+<pre class="wp-block-code"><code lang="markdown" class="language-markdown">{{define "link"}}
     &lt;link rel="shortcut icon" href="https://hypi.io/wp-content/uploads/2018/10/cropped-purple@2x-square-white-bg-32x32.png?x83512">
     &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
     &lt;link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&amp;display=swap" rel="stylesheet">
@@ -370,7 +370,7 @@ func Router() *gin.Engine  {
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code class="">{{ define "meta"}}
+<pre class="wp-block-code"><code lang="markdown" class="language-markdown">{{ define "meta"}}
 &lt;meta charset="UTF-8">
 {{ end }}</code></pre>
 <!-- /wp:code -->
@@ -380,7 +380,7 @@ func Router() *gin.Engine  {
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code class="">{{define "scripts_foot"}}
+<pre class="wp-block-code"><code lang="markdown" class="language-markdown">{{define "scripts_foot"}}
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">&lt;/script>
 &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">&lt;/script>
 {{end }}</code></pre>
@@ -391,7 +391,7 @@ func Router() *gin.Engine  {
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code class="">{{define "scripts_head"}}
+<pre class="wp-block-code"><code lang="markdown" class="language-markdown">{{define "scripts_head"}}
 {{end }}</code></pre>
 <!-- /wp:code -->
 
@@ -400,7 +400,7 @@ func Router() *gin.Engine  {
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code class="">{{define "title"}}
+<pre class="wp-block-code"><code lang="markdown" class="language-markdown">{{define "title"}}
 &lt;title>{{.title}}&lt;/title>
 {{end}}</code></pre>
 <!-- /wp:code -->
@@ -410,7 +410,7 @@ func Router() *gin.Engine  {
 <!-- /wp:paragraph -->
 
 <!-- wp:code -->
-<pre class="wp-block-code"><code class="">{{define "content"}}
+<pre class="wp-block-code"><code lang="markdown" class="language-markdown">{{define "content"}}
     &lt;div class="ui stackable grid">
         &lt;div class="ui equal width row row-vh-f">
             &lt;div class="ui column brand-bg-img row-vh-f">&lt;/div>
