@@ -1,18 +1,20 @@
 const config = {
 	"gatsby": {
 		"pathPrefix": "/",
-		"siteUrl": "https://learn.hasura.io",
+		"siteUrl": "https://docs.hypi.app",
 		"gaTrackingId": null
 	},
 	"header": {
 		"logo": "https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/favicon.png",
-		"logoLink": "https://learn.hasura.io",
-		"title": "Gatsby Gitbook Boilerplate",
-		"githubUrl": "https://github.com/hasura/gatsby-gitbook-boilerplate",
+		"logoLink": "https://docs.hypi.app?utm_source=docs-logo-header",
+		"title": "Hypi Documentation",
+		"githubUrl": "https://github.com/hypi-universe/docs",
 		"helpUrl": "",
 		"tweetText": "",
 		"links": [
-			{ "text": "", "link": ""}
+      { "text": "Hypi", "link": "https://hypi.io?utm_source=docs-links-header"},
+      { "text": "Register", "link": "https://hypi.app/register?utm_source=docs-links-header"},
+      { "text": "Login", "link": "https://hypi.app/login?utm_source=docs-links-header"}
 		],
 		"search": {
 			"enabled": false,
@@ -28,16 +30,16 @@ const config = {
     		"/codeblock"
 		],
 		"links": [
-			{ "text": "Hasura", "link": "https://hasura.io"},
+			{ "text": "Hypi", "link": "https://hypi.io"},
 		],
 		"frontline": false,
 		"ignoreIndex": true,
 	},
 	"siteMetadata": {
-		"title": "Gatsby Gitbook Boilerplate | Hasura",
-		"description": "Documentation built with mdx. Powering learn.hasura.io ",
+		"title": "Hypi Documentation",
+		"description": "Hypi platform documentation. Learn to build scalable data driven applications at lightening speed",
 		"ogImage": null,
-		"docsLocation": "https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content",
+		"docsLocation": "https://github.com/hypi-universe/docs/tree/master/content",
 		"favicon": "https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg"
 	},
 };
