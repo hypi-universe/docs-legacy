@@ -6,15 +6,15 @@ const config = {
 	},
 	"header": {
 		"logo": "https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/favicon.png",
-		"logoLink": "https://docs.hypi.app?utm_source=docs-logo-header",
+		"logoLink": "https://docs.hypi.app?utm_source=docs&utm_medium=header&utm_campaign=logo",
 		"title": "Hypi Documentation",
 		"githubUrl": "https://github.com/hypi-universe/docs",
 		"helpUrl": "",
 		"tweetText": "",
 		"links": [
-      { "text": "Hypi", "link": "https://hypi.io?utm_source=docs-links-header"},
-      { "text": "Register", "link": "https://hypi.app/register?utm_source=docs-links-header"},
-      { "text": "Login", "link": "https://hypi.app/login?utm_source=docs-links-header"}
+      { "text": "Hypi", "link": "https://hypi.io?utm_source=docs&utm_medium=header&utm_campaign=hypi"},
+      { "text": "Register", "link": "https://hypi.app/register?utm_source=docs&utm_medium=header&utm_campaign=register"},
+      { "text": "Login", "link": "https://hypi.app/login?utm_source=docs&utm_medium=header&utm_campaign=login"}
 		],
 		"search": {
 			"enabled": false,
@@ -27,10 +27,11 @@ const config = {
 	"sidebar": {
 		"forcedNavOrder": [
 			"/introduction",
-    		"/codeblock"
+    	"/tutorials",
+      "/reference"
 		],
 		"links": [
-			{ "text": "Hypi", "link": "https://hypi.io"},
+			{ "text": "Hypi", "link": "https://hypi.io?utm_source=docs&utm_medium=sidebar&utm_campaign=hypi"},
 		],
 		"frontline": false,
 		"ignoreIndex": true,
