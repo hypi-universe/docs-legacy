@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from "./link";
-import './styles.css';
+import './styles.scss';
 class NextPrevious extends React.Component {
   render() {
     const { mdx, nav } = this.props;
@@ -40,7 +40,7 @@ class NextPrevious extends React.Component {
     }
     return (
       <div className={'nextPreviousWrapper'}>
-        {previousInfo.url && currentIndex >= 0 ? 
+        {previousInfo.url && currentIndex >= 0 ?
           (<Link to={nav[currentIndex-1].url} className={'previousBtn'}>
             <div className={'leftArrow'}>
               <svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor" className="_13gjrqj"><g><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></g></svg>

@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import GitHubButton from 'react-github-btn'
 import Link from './link';
-import './styles.css';
+import './styles.scss';
 import config from '../../config.js';
 
 import Search from './search/index';

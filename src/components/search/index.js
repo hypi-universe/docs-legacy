@@ -15,7 +15,7 @@ import { PoweredBy } from "./styles"
 import { Search } from "styled-icons/fa-solid/Search"
 import Input from "./input"
 import * as hitComps from "./hitComps"
-import '../styles.css';
+import '../styles.scss';
 
 const SearchIcon = styled(Search)`
   width: 1em;

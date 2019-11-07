@@ -2,7 +2,7 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import styled from "react-emotion";
 import Link from "./link";
-import './styles.css';
+import './styles.scss';
 import config from '../../config';
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;

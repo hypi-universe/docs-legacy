@@ -39,7 +39,7 @@ const LeftSideBarWidth = styled('div')`
   width: 298px;
 `;
 const RightSideBarWidth = styled('div')`
-  width: 224px;
+  width: 424px;
 `;
 const Layout = ({ children, location }) => (
   <ThemeProvider location={location}>
