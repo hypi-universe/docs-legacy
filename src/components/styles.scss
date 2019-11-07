@@ -5,7 +5,7 @@ $headings-font-family: 'Poppins', sans-serif !important;
 $headings-font-weight: 600;
 $font-weight-bold: 600;
 $font-weight-normal: 400;
-
+$black: #1f2531;
 :root {
   font-size: 16px;
 }
@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header section starts here */
 .navBarDefault {
-  background-color: #1f2531;
+  background-color: $black;
   border-radius: 0;
   border-top: 0;
   margin-bottom: 0;
@@ -245,10 +245,22 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.d-flex {
+  display: flex;
+}
+
+.mr-3, .mx-3 {
+  margin-right: 1rem !important;
+}
+
 .navBarBrand img {
-  width: 40px;
-  margin-right: 16px;
+  max-width: 80px;
   display: inline-block;
+}
+
+.headerTitle {
+  font-weight: 100;
+  font-size: 22px;
 }
 
 .navBarUL li a {
@@ -269,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mainWrapper {
-  color: rgb(59, 69, 78);
+  color: $black;
   max-width: 750px;
 }
 
@@ -381,7 +393,7 @@ pre {
 }
 
 .hideFrontLine .active > a {
-  background-color: #1f2531;
+  background-color: $black;
   color: #fff !important;
 }
 
@@ -417,7 +429,7 @@ pre {
 }
 
 .sideBarUL .item > a:hover {
-  background-color: #1f2531;
+  background-color: $black;
   color: #fff !important;
 }
 
@@ -548,7 +560,7 @@ pre {
 
 .smallContent span {
   font-size: 12px;
-  line-height: 1.625;
+  line-height: 1.92;
   font-weight: 400;
 }
 

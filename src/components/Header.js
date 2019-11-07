@@ -42,7 +42,7 @@ const Header = ({location}) => (
         }
         `}
     render={(data) => {
-      const logoImg = require('./images/logo.svg');
+      const logoImg = require('./images/logo-white.svg');
       const twitter = require('./images/twitter.svg');
       const {
         site: {
@@ -67,6 +67,7 @@ const Header = ({location}) => (
                   :
                   (<img className={'img-responsive'} src={logoImg} alt={'logo'} />)
                 }
+                <div className={"divider hidden-xs"}></div>
                 <div className={"headerTitle"} dangerouslySetInnerHTML={{__html: headerTitle}} />
               </Link>
               <button type="button" className={'navbar-toggle collapsed navBarToggle'} data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">

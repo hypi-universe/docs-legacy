@@ -14,7 +14,7 @@ export default {
   h4: props => <Heading id={props.children.replace(/\s+/g, '').toLowerCase()} {...props} is="h4" fontSize={2} />,
   h5: props => <Heading id={props.children.replace(/\s+/g, '').toLowerCase()} {...props} is="h5" fontSize={1} />,
   h6: props => <Heading id={props.children.replace(/\s+/g, '').toLowerCase()} {...props} is="h6" fontSize={0} />,
-  p: props => <Text {...props} is="p" lineHeight={1.625} mt={3} mb={4} />,
+  p: props => <Text {...props} is="p" lineHeight={1.92} mt={3} mb={4} />,
   pre: Pre,
   code: CodeBlock,
   inlineCode: props => <Code {...props} />,
