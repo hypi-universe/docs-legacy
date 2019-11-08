@@ -7,7 +7,7 @@ $font-weight-bold: 600;
 $font-weight-normal: 400;
 $black: #1f2531;
 :root {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 
@@ -20,7 +20,7 @@ html, body {
   background-color: white;
   transition: all .25s ease;
   @media (max-width: 991px) {
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.5em;
   }
 
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .divider {
   height: 30px;
-  margin: 0 15px;
+  margin: 0 1rem;
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .githubIcon {
-  width: 15px;
+  width: 1rem;
   margin-right: 5px;
 }
 
@@ -203,8 +203,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logoContent {
-  margin-left: 16px;
-  font-size: 28px;
+  margin-left: 1rem;
+  font-size: 2rem;
   line-height: 1.5;
   font-weight: $font-weight-bold;
   padding-right: 10px;
@@ -224,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-box-shadow: -1px 0px 4px 1px rgba(175, 158, 232, .8);
   -o-box-shadow: -1px 0px 4px 1px rgba(175, 158, 232, .4);
   z-index: 1;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .navBarHeader {
@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navBarBrand {
   height: auto;
-  font-size: 28px;
+  font-size: 2rem;
   line-height: 1.5;
   font-weight: $font-weight-bold;
   color: #fff !important;
@@ -245,13 +245,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.d-flex {
-  display: flex;
-}
-
-.mr-3, .mx-3 {
-  margin-right: 1rem !important;
-}
 
 .navBarBrand img {
   max-width: 80px;
@@ -265,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navBarUL li a {
   color: #fff !important;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: $font-weight-bold;
   line-height: 1em;
   opacity: 1;
@@ -304,7 +297,7 @@ pre {
 }
 
 .mainWrapper ul li, .mainWrapper ol li {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.8;
   font-weight: 400;
 }
@@ -313,7 +306,7 @@ pre {
 .headerNav {
   padding: 0px 24px;
   color: rgb(116, 76, 188);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: $font-weight-bold;
   line-height: 1em;
 }
@@ -346,7 +339,7 @@ pre {
   font-size: 14px;
   font-weight: $font-weight-bold;
   line-height: 1.5;
-  padding: 7px 24px 7px 16px;
+  padding: 7px 24px 7px 1rem;
   padding-left: 10px;
   padding-right: 25px;
   border-style: solid none solid solid;
@@ -360,7 +353,7 @@ pre {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  padding: 7px 24px 7px 16px;
+  padding: 7px 24px 7px 1rem;
   border-left: 1px solid #e6ecf1;
   border-left-color: rgb(230, 236, 241);
   color: #9DAAB6;
@@ -380,7 +373,7 @@ pre {
   font-size: 12px;
   font-weight: $font-weight-bold;
   line-height: 1.5;
-  padding: 7px 24px 7px 16px;
+  padding: 7px 24px 7px 1rem;
 }
 
 .hideFrontLine .collapser {
@@ -426,7 +419,7 @@ pre {
   position: relative;
   width: 100%;
   padding-right: 35px;
-  padding-left: 15px;
+  padding-left: 1rem;
 }
 
 .sideBarUL .item > a:hover {
@@ -444,7 +437,7 @@ pre {
 }
 
 .sideBarUL .item .item {
-  margin-left: 16px;
+  margin-left: 1rem;
 }
 
 .firstLevel > ul > .item {
@@ -455,7 +448,7 @@ pre {
   border-left: 1px solid #e6ecf1;
   border-left-color: rgb(230, 236, 241);
   padding: 0;
-  width: calc(100% - 16px) !important;
+  width: calc(100% - 1rem) !important;
 }
 
 .showFrontLine .item .active > a {
@@ -480,7 +473,7 @@ pre {
   line-height: 1.5;
   /*font-weight: $font-weight-bold;*/
   border-left: 2px solid rgb(116, 76, 188);
-  padding: 0 16px;
+  padding: 0 1rem;
   flex: 1;
   margin-top: 0;
 }
@@ -493,7 +486,7 @@ pre {
 }
 
 .gitBtn img {
-  width: 15px;
+  width: 1rem;
   display: inline-block;
   margin-right: 5px;
 }
@@ -540,15 +533,15 @@ pre {
   flex: 0 0 auto;
   font-size: 24px;
   transition: color 200ms ease 0s;
-  padding: 16px;
-  padding-right: 16px;
+  padding: 1rem;
+  padding-right: 1rem;
 }
 
 .preRightWrapper {
   display: block;
   margin: 0px;
   flex: 1 1 0%;
-  padding: 16px;
+  padding: 1rem;
   text-align: right;
 }
 
@@ -573,7 +566,7 @@ pre {
 }
 
 .nextPreviousTitle span {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   font-weight: $font-weight-bold;
 }
@@ -603,8 +596,8 @@ pre {
   flex: 0 0 auto;
   font-size: 24px;
   transition: color 200ms ease 0s;
-  padding: 16px;
-  padding-left: 16px;
+  padding: 1rem;
+  padding-left: 1rem;
   display: block;
   margin: 0px;
   color: rgb(157, 170, 182);
@@ -613,7 +606,7 @@ pre {
 .nextRightWrapper {
   display: block;
   margin: 0px;
-  padding: 16px;
+  padding: 1rem;
   flex: 1 1 0%;
 }
 
@@ -677,9 +670,9 @@ img {
 .githubBtn {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 10px 0px;
-  padding-left: 15px;
+  padding-left: 1rem;
 }
 
 .githubBtn span span {
@@ -779,13 +772,13 @@ img {
 
   .navBarBrand {
     font-size: 20px;
-    padding: 15px;
+    padding: 1rem;
     padding-left: 0;
     flex: 1;
   }
 
   .titleWrapper {
-    padding: 0 15px;
+    padding: 0 1rem;
     display: block;
   }
 
@@ -798,12 +791,12 @@ img {
   }
 
   .mainWrapper {
-    padding: 0 15px;
+    padding: 0 1rem;
   }
 
   .nextPreviousWrapper {
     display: block;
-    padding: 0 15px;
+    padding: 0 1rem;
   }
 
   .previousBtn {

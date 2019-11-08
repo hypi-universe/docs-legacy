@@ -32,7 +32,7 @@ const ListItem = styled(({className, active, level, subItems, ...props}) => {
       <ul className={"pl-4"}>
         {subItems.map((subLink) => {
           return <li className={className} key={subLink.url}>
-            <a href={subLink.url}>{subLink.title}</a>
+            <a href={subLink.url} key={subLink.url}>{subLink.title}</a>
           </li>
         })
         }

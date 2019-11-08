@@ -1,24 +1,8 @@
 ---
-title: "GraphQL Introduction"
+title: "Introduction"
 metaTitle: "Hypi tutorial introducing GraphQL"
 metaDescription: "Introduction to GraphQL on the Hypi platform"
 ---
-
-## Introduction
-GraphQL is **a syntax that represents how to request data** and is generally used to load data from a server to a client. The GraphQL data query language is:
-
-* **A Specification**, that determines the validity of the schema on the API server. The schema defines the validity of client calls.
-
-* **Strongly typed**, all GraphQL query corresponds to a particular type, and each type describes an available set of fields.  Furthermore,  GraphQL provides descriptive error messages before performing a query.
-
-* **Introspective**, allowing a client can ask the server for details about the schema.
-
-* **Hierarchical**, the shape of a GraphQL query mirrors the shape of the `JSON` data it returns. Query and receive only the data you specify in a single round trip.
-
-> The purpose of GraphQL is to decrease the load on the server. **Users can make a single call to fetch the required data rather than to construct multiple REST requests.** The key idea is to `POST` a **"query"** to an HTTP endpoint, instead of hitting different HTTP endpoints for various resources. It makes fetching clients data from their backend APIs convenient.
-
-**GraphQL** is now considered one of the most modern ways of building and querying APIs. 
- 
 
 ## So, what is GraphQL
 GraphQL is an open-source server-side library created by Facebook to enhance RESTful API calls. The 
@@ -73,10 +57,3 @@ GraphQL is unapologetic, and is driven by the data requirements of products and 
 
 ## Why GraphQL
   Hypi chose GraphQL becasue it offers significantly more fexibility than rest. Giving us the  ability define precisely the data you need—and only the data you need— a powerful advantage over the REST APIs.
-
-## GraphQL on Hypi
-
-## Hypi GraphQL Scalars
-### Header
-### test2
- 

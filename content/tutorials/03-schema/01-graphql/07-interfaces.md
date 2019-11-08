@@ -1,5 +1,5 @@
 ---
-title: "GraphQL Interfaces"
+title: "Interfaces"
 metaTitle: "Hypi tutorial introducing GraphQL Interfaces"
 metaDescription: "Introduction to GraphQL interfaces on the Hypi platform"
 ---
