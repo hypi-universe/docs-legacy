@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:100,400,600,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:100,400,600,700&display=swap');
 $font-family-sans-serif: 'Open Sans', sans-serif !important;
 $headings-font-family: 'Poppins', sans-serif !important;
 $headings-font-weight: 600;
 $font-weight-bold: 600;
 $font-weight-normal: 400;
 $black: #1f2531;
+
 :root {
   font-size: 14px;
 }
@@ -44,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $headings-font-family;
   font-weight: $font-weight-bold;
 }
+
 
 .video-responsive {
   position: relative;
@@ -259,7 +261,6 @@ h1, h2, h3, h4, h5, h6 {
 .navBarUL li a {
   color: #fff !important;
   font-size: 1rem;
-  font-weight: $font-weight-bold;
   line-height: 1em;
   opacity: 1;
 }
