@@ -5,17 +5,7 @@ metaDescription: "Introduction to GraphQL on the Hypi platform"
 ---
 
 ## Introduction
-GraphQL is **a syntax that represents how to request data** and is generally used to load data from a server to a client.  There are three main features of GQL:
-
-1. Client specifies precisely the data it needs.                              
-2. Aggregate data from multiple sources.
-3. GQL uses a type system to describe data.
-  
-**GraphQL** is now considered one of the most modern ways of building and querying APIs. 
-
-
-## So, what is GraphQL
-GraphQL is an open-source server-side library created by Facebook to enhance RESTful API calls. The GraphQL data query language is:
+GraphQL is **a syntax that represents how to request data** and is generally used to load data from a server to a client. The GraphQL data query language is:
 
 * **A Specification**, that determines the validity of the schema on the API server. The schema defines the validity of client calls.
 
@@ -27,12 +17,18 @@ GraphQL is an open-source server-side library created by Facebook to enhance RES
 
 > The purpose of GraphQL is to decrease the load on the server. **Users can make a single call to fetch the required data rather than to construct multiple REST requests.** The key idea is to `POST` a **"query"** to an HTTP endpoint, instead of hitting different HTTP endpoints for various resources. It makes fetching clients data from their backend APIs convenient.
 
+**GraphQL** is now considered one of the most modern ways of building and querying APIs. 
+ 
+
+## So, what is GraphQL
+GraphQL is an open-source server-side library created by Facebook to enhance RESTful API calls. The 
+
 **GraphQL**, makes getting server information much more comfortable and a lot faster.
 A GraphQL "query" gets parsed to a string which is sent to a server to be interpreted and fulfilled, which returns JSON to the client.
 
 <div className={"d-flex"}>
 
-<div>
+<div className={"m-1"}>
 
      {
        Movie {
@@ -44,7 +40,7 @@ A GraphQL "query" gets parsed to a string which is sent to a server to be interp
      }
      
 </div>  
-<div>
+<div className={"m-1"}>
 
     {
            "data": {
