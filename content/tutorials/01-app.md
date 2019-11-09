@@ -74,6 +74,10 @@ Once an instance is created, the domain is then used as the hypi-domain header t
 <br/>
 
 ### Editing Fields
+  ![Editing field](../assets/img/editing-fields.gif "Editing fields")
 
 ### API Editor
+  ![API Editor](../assets/img/api-editor.gif "API Editor")
+
 ### Metrics
+  ![Metrics](../assets/img/metrics.gif "Metrics")
