@@ -1,11 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Poppins:100,400,600,700&display=swap');
+
 $font-family-sans-serif: 'Open Sans', sans-serif !important;
 $headings-font-family: 'Poppins', sans-serif !important;
 $headings-font-weight: 600;
 $font-weight-bold: 600;
 $font-weight-normal: 400;
 $black: #1f2531;
+$gray-500: #676c79;
 
 :root {
   font-size: 14px;
@@ -20,6 +21,7 @@ html, body {
   letter-spacing: 0.3px;
   background-color: white;
   transition: all .25s ease;
+  @extend .section-scroll-bar;
   @media (max-width: 991px) {
     font-size: 1rem;
     line-height: 1.5em;
@@ -46,6 +48,34 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weight-bold;
 }
 
+.css-1u7ohul {
+  font-size: 1.2rem;
+  @extend .section-scroll-bar;
+
+}
+
+.code-column {
+  width: 50%;
+  margin: .5rem
+}
+
+.section-scroll-bar {
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba($gray-500, 0.5);
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+
+}
 
 .video-responsive {
   position: relative;

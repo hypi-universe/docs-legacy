@@ -56,4 +56,14 @@ GraphQL is unapologetic, and is driven by the data requirements of products and 
 
 
 ## Why GraphQL
-  Hypi chose GraphQL becasue it offers significantly more fexibility than rest. Giving us the  ability define precisely the data you need—and only the data you need— a powerful advantage over the REST APIs.
+  Hypi chose GraphQL because it offers significantly more flexibility than rest. Giving us the ability to define precisely the data you need—and only the data you need— a powerful advantage over the REST APIs.
+
+### Why adopting GraphQL and Hypi will help you ship apps faster
+
+Modern applications and managing data can present many challenges. Developers are aggregating data from multiple sources, scatter upon numerous platforms, and fathom it into an app's UI. Furthermore, developers are deciding how to manage state on the client, simultaneously executing complex features such as caching and optimistic UI.
+
+Adopting Hypi in your organisation will ease these pain points considerably. Using GraphQL's declarative approach to data fetching will simplify data transformation and speed up your API and app development. Using the Hypi platform enables faster development cycles thanks to its advanced ecosystem of tooling and excellent developer experience.
+
+
+### Explore your API
+Hypi loves GraphQL's strongly typed query language because it enables developers to take advantage of incredible tooling for exploring App Instance  APIs. Developers can query a Release schema for information about what queries and types it supports. Introspection at our fingertips; automatic documentation, autocomplete, and more.
