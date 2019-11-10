@@ -7,6 +7,7 @@ $font-weight-bold: 600;
 $font-weight-normal: 400;
 $black: #1f2531;
 $gray-500: #676c79;
+$white: #fff;
 $blue: #4201ff;
 $primary: $blue;
 $border-color: rgba($primary, .27);
@@ -15,7 +16,6 @@ $border-color: rgba($primary, .27);
 :root {
   font-size: 14px;
 }
-
 
 html, body {
   font-family: $font-family-sans-serif;
@@ -61,6 +61,10 @@ h1, h2, h3, h4, h5, h6 {
 .code-container {
   display: flex;
   margin: 1rem 0;
+
+  padding: .5rem;
+  background: rgba($primary, .129);
+  border-radius: .5rem;
 }
 
 .code-column {
@@ -76,6 +80,16 @@ h1, h2, h3, h4, h5, h6 {
 pre {
   background-color: $black !important;
   @extend .section-scroll-bar;
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $white !important;
+
+  }
+}
+
+// temp img fix
+.gatsby-resp-image-background-image {
+  display: none !important;
 }
 
 .section-scroll-bar {
@@ -153,7 +167,7 @@ pre {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff !important;
+  background-color: $white !important;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
@@ -180,7 +194,7 @@ pre {
 }
 
 .formElement svg path {
-  fill: #fff;
+  fill: $white;
 }
 
 .searchInput {
@@ -208,7 +222,7 @@ pre {
 }
 
 .hitWrapper {
-  background-color: #fff;
+  background-color: $white;
   padding: 4px;
   border-radius: 4px;
   position: absolute;
@@ -236,7 +250,7 @@ pre {
 }
 
 .headerTitle a {
-  color: #fff;
+  color: $white;
 }
 
 .headerTitle a:hover {
@@ -301,7 +315,7 @@ pre {
   font-size: 2rem;
   line-height: 1.5;
   font-weight: $font-weight-bold;
-  color: #fff !important;
+  color: $white !important;
   padding: 0px 0px;
   display: flex;
   align-items: center;
@@ -320,7 +334,7 @@ pre {
 }
 
 .navBarUL li a {
-  color: #fff !important;
+  color: $white !important;
   font-size: 1rem;
   line-height: 1em;
   opacity: 1;
@@ -448,11 +462,11 @@ pre {
 
 .hideFrontLine .active > a {
   background-color: $black;
-  color: #fff !important;
+  color: $white !important;
 }
 
 .hideFrontLine .active > .collapser svg path {
-  fill: #fff !important;
+  fill: $white !important;
 }
 
 .firstLevel ul li .collapser svg path {
@@ -473,7 +487,7 @@ pre {
 }
 
 .sideBarUL .item > a {
-  /*color: #fff;*/
+  /*color: $white;*/
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -484,7 +498,7 @@ pre {
 
 .sideBarUL .item > a:hover {
   background-color: $black;
-  color: #fff !important;
+  color: $white !important;
 }
 
 .showFrontLine .item > a:hover {
@@ -492,7 +506,7 @@ pre {
 }
 
 .showFrontLine .active > a {
-  color: #fff;
+  color: $white;
   background-color: #473485;
 }
 
@@ -516,7 +530,7 @@ pre {
   border-style: solid none solid solid;
   border-width: 1px 0px 1px 1px;
   background-color: #542683;
-  color: #fff;
+  color: $white;
 }
 
 

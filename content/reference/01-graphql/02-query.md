@@ -76,7 +76,10 @@ GraphQL Variables makes queries more dynamic and powerful, and they reduce compl
     query($limit:Int!) {
          todos(Limit: $limit) {
            item {
-             name
+             description
+             hypi {
+              id
+             }
            }
        }
     }
