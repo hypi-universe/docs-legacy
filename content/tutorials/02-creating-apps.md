@@ -1,5 +1,5 @@
 ---
-title: "Create an app"
+title: "Creating an app"
 metaTitle: "Hypi tutorial for creating an app"
 metaDescription: "How to create an app on the Hypi platform"
 ---
@@ -74,10 +74,21 @@ Once an instance is created, the domain is then used as the hypi-domain header t
 <br/>
 
 ### Editing Fields
+Fields in Hypi are key value pairs that allow you to define configuration options that an app needs. On each release, you define one or more field and later populate values for those fields for each instance that you create. Fields that you create in a release become accessible as a $settings variable so $settings.fieldName gives the value of the field called fieldName
+
   ![Editing field](../assets/img/editing-fields.gif "Editing fields")
 
 ### API Editor
+**An in-browser IDE for exploring your Instance GraphQL API.** You can run queries and mutations against API or quickly the see the docs and schema for you Instance API.
+
   ![API Editor](../assets/img/api-editor.gif "API Editor")
 
 ### Metrics
+**1. Monitoring.**
+Hypi automatically collects some metrics about your API usage. The monitoring page on each instance can be used to see some of the available metrics.
+
+**2. Logs.**
+Application logs are crucial to debugging issues. Hypi automatically generates some logs for your apps. To make the most of this feature however, your app should capture and submit its log data which you can then browse/search.
+
+
   ![Metrics](../assets/img/metrics.gif "Metrics")

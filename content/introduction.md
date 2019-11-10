@@ -7,6 +7,15 @@ metaDescription: "Introduces the concepts involved in building data driven apps 
 **Before** getting started with Hypi, it's worth having a general understanding of the concepts involved in working with the platform.
 The aim of this introduction is to get you familiar with these concepts.
 
+## Realm
+A  **realm is a namespace** for all your apps. This is used in URLs and cannot be changed  once created.
+
+### Organisations
+Name of your company/team/group/organisation. You can create as many organisations as you desire. But, there must be one at least one organisation in a realm 
+
+If your organisation has a Hypi account / realm, please ask your administrator to add you as a member of the team. **Do not register separately; doing so will create an independent organisation.**
+
+    
 ## App
 At the heart of everything in Hypi is the idea of an app.
 Hypi uses the concept of an App to encapsulate a collection of models, serverless functions and any resources they need to serve their purpose. 

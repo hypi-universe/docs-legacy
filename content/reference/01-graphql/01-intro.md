@@ -8,34 +8,36 @@ metaDescription: "Introduction to GraphQL on the Hypi platform"
 GraphQL is an open-source server-side library created by Facebook to enhance RESTful API calls. The 
 
 **GraphQL**, makes getting server information much more comfortable and a lot faster.
-A GraphQL "query" gets parsed to a string which is sent to a server to be interpreted and fulfilled, which returns JSON to the client.
+A GraphQL `query` gets parsed to a string which is sent to a server to be interpreted and fulfilled, which returns JSON to the client.
 
-<div className={"d-flex"}>
+<div className={"code-container"}>
 
-<div className={"m-1"}>
+<div className={"code-column"}>
 
      {
-       Movie {
+       Songs {
          name
          # Queries can have comments!
-         name
+         author
          year
        }
      }
      
 </div>  
-<div className={"m-1"}>
+<div className={"code-column"}>
 
     {
            "data": {
-             "movie": [
+             "songs": [
                {
-                  "name": "R2-D2",
-                  "year":"2019",
+                  "name": "It's A Beautiful Day",
+                  "author": "Queen",
+                  "year":"1995",
                },
                {
-                  "name": "justice league",
-                  "year": "2017"
+                  "name": "Let's Make A Night To Remember",
+                  "author": "Bryan Adams",
+                  "year": "1996"
                }
                ]
              }

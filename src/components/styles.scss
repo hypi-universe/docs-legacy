@@ -7,6 +7,10 @@ $font-weight-bold: 600;
 $font-weight-normal: 400;
 $black: #1f2531;
 $gray-500: #676c79;
+$blue: #4201ff;
+$primary: $blue;
+$border-color: rgba($primary, .27);
+
 
 :root {
   font-size: 14px;
@@ -54,9 +58,24 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.code-container {
+  display: flex;
+  margin: 1rem 0;
+}
+
 .code-column {
   width: 50%;
-  margin: .5rem
+  margin-right: .125rem;
+
+  pre {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+pre {
+  background-color: $black !important;
+  @extend .section-scroll-bar;
 }
 
 .section-scroll-bar {
@@ -262,7 +281,19 @@ h1, h2, h3, h4, h5, h6 {
 .navBarHeader {
   min-width: 335px;
   padding-right: 20px;
-  flex: 1;
+}
+
+.css-1o7wuc9 {
+  h3 {
+    color: $black;
+    font-size: 1.5rem;
+
+    &:before {
+      content: '> ';
+      margin-right: 1rem;
+      color: $primary;
+    }
+  }
 }
 
 .navBarBrand {
@@ -336,14 +367,14 @@ pre {
 /* Header section ends here */
 .headerNav {
   padding: 0px 24px;
-  color: rgb(116, 76, 188);
+  color: $primary;
   font-size: 1rem;
   font-weight: $font-weight-bold;
   line-height: 1em;
 }
 
 .headerNav a {
-  color: rgb(116, 76, 188);
+  color: $primary;
   text-decoration: none;
 }
 
@@ -385,8 +416,7 @@ pre {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   padding: 7px 24px 7px 1rem;
-  border-left: 1px solid #e6ecf1;
-  border-left-color: rgb(230, 236, 241);
+  border-left: 1px solid $border-color;
   color: #9DAAB6;
 }
 
@@ -396,8 +426,7 @@ pre {
 
 .rightSideBarUL li {
   list-style-type: none;
-  border-left: 1px solid #e6ecf1;
-  border-left-color: rgb(230, 236, 241);
+  border-left: 1px solid $border-color;
 }
 
 .rightSideBarUL li a {
@@ -435,7 +464,7 @@ pre {
 }
 
 .firstLevel ul .item ul .item {
-  border-left: 1px solid #b9b9b9;
+  border-left: 1px solid $border-color;
 }
 
 .sideBarUL .item {
@@ -500,10 +529,8 @@ pre {
 }
 
 .title {
-  /*font-size: 32px;*/
   line-height: 1.5;
-  /*font-weight: $font-weight-bold;*/
-  border-left: 2px solid rgb(116, 76, 188);
+  border-left: 5px solid $primary;
   padding: 0 1rem;
   flex: 1;
   margin-top: 0;
@@ -642,13 +669,13 @@ pre {
 }
 
 .nextBtn:hover, .previousBtn:hover {
-  color: rgb(116, 76, 188);
+  color: $primary;
   text-decoration: none;
-  border: 1px solid rgb(116, 76, 188);
+  border: 1px solid $primary;
 }
 
 .nextBtn:hover .rightArrow, .previousBtn:hover .leftArrow {
-  color: rgb(116, 76, 188);
+  color: $primary;
 }
 
 /* tables.css */

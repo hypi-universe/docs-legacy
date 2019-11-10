@@ -21,14 +21,17 @@ A directive is an identifier preceded by a `@` character, optionally followed by
            }
          }
        }
-  Variables
-  
+ 
+        #Variables
+      
        {
          "episode": "JEDI",
          "withFriends": false
        }
-       
+<br/>
+
 ## Built in directives
+
 ### @http 
 
 ### @tan 
