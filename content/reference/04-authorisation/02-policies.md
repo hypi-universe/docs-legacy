@@ -5,10 +5,8 @@ metaDescription: "Introduction to application instance authorisation policies on
 ---
 
 ## Introduction
-TODO
-
-## Available Policies
-TODO
+If `Permission`s are about the "what" then policies are about the "who".
+A policy controls who a permission applies to.
 
 ### Role Based Policy 
 Role based policies allow controlling access based on roles assigned to a subject.

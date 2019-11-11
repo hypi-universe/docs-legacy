@@ -5,41 +5,63 @@ metaDescription: "Introduction to GraphQL directives on the Hypi platform."
 ---
 
 ## Introduction
-As we mentioned before variables allow us to bypass doing manual string interpolation to build dynamic queries. Well, directives effectively, enable us to change the structure and shape of queries using variables dynamically. 
 
- A directive can be added to a field or fragment insertion and can modify the execution of the 'query'. The core GraphQL specification includes exactly two directives:
-`@include(if: Boolean)` Only include this field in the result if the argument is true.
-`@skip(if: Boolean) ` Skip this field if the argument is true.
-
+A directive allows you to customise the behaviour of your data model.
+Hypi's built in directives allow you to tell Hypi how to interact with your fields.
 
 ## So, what is a directive
-A `@` character identifies a directive, optionally followed by a list of named arguments, which can appear after almost any form of syntax in the GraphQL query or schema languages. 
+A `@` character followed by a series of character identifies a directive, optionally followed by a list of named arguments, which can appear after almost any form of syntax in the GraphQL query or schema languages. 
 
 For example, we can imagine a UI component that has a summarised and detailed view, where one includes more fields than the other.
   
- ![Directive](../../assets/img/directives.gif "directives examples")
+      type Item {
+           slug: String! @field(indexed: true, type: Keyword)
+           title: String! @field(indexed: true)
+           description: String @field(indexed: true)
+           comments: [Comment!]
+      }
 
+Here, the `@field` part of the model is a directive. It tells Hypi to index the field it appears next to so that data in that field is searchable with [ArcQL](/reference/02-arcql)
 
 ## Built-in directives
-Here is some of the built-in directives in the Hypi platform.
+The Hypi platform provides many directives for you to use in your app.
 
 ### @http 
- TODO
+When applied causes the value of the field it is applied to to be resolved using an HTTP query configured with the given parameters
+Variable substitution is supported of the form `$variable.name` (See [velocity template guide](http://velocity.apache.org/engine/1.7/user-guide.html))
+The following may be referenced `vars` and `settings`
+`vars` refers to any arguments on the field the directive is applied to so `$vars.firstName` refers to the firstName arg of the field
+`settings` refers to any instance settings provided in the app
  
 ### @tan 
 A directive which allows any GraphQL definition's field to be provided by a Hypi Arc Tan function.
+This means that any field in your GraphQL model can get its value from a serverless function.
 
 ### @api 
 If present on an object then it controls which Hypi CRUD functions will be generated for the type.
+It can be used to prevent e.g. the `create` function from being generated.
 
 ### @secret 
- TODO
+Fields annotated with the `@secret` directive are never returned. They can only be compared using ArcQL.
+This is good for password fields. 
+*Note*: The value of these fields **CANNOT** be retrieved. You can only run queries to check if the original value matches.
+
+Secrets are encrypted using one of three available algorithms:
+1. SHA3
+2. BCRYPT
+3. PKCS5 
 
 ### @field 
- TODO
+The `@field` directive is used to tell Hypi how to treat the field it is applied to.
+The `indexed` parameter, if true tells Hypi to index the contents of the field so that it can be searched.
+The `type` parameter tells Hypi how to index the field. There are two options, `Keyword` and `Text`.
+`Keyword` should be used for fields like IDs which need to be matched exactly.
+`Text` should be used for field that need free form search e.g. like using a search engine.
 
 ### @length
- TODO
+Valid on String, Object and Array fields.
+Check if the string or array length matches the range.
+Checks if the object's list of non-null fields matches the range
 
 ### @notNull
 Check if the value is not null

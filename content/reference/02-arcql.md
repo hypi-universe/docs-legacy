@@ -15,25 +15,29 @@ ArcQL is modelled off of the Apache Lucene query language. We went further and i
 
 
 
-`<query> <sort> <from> <limit>`  i.e. it is very SQL like. Designed intentionally so to help make the learning curve as small as possible for third party developers. 
-If they’re familiar with SQL or the Lucene query language they’ll probably be able to write ArcQL queries by just guessing at it.
+`<query> <sort> <from> <limit>`  i.e. it is very SQL like. Designed intentionally so to help make the learning curve as small as possible for our developers. 
+If you’re familiar with SQL or the Lucene query language you’ll probably be able to write ArcQL queries by just guessing at it.
 ‌Let’s break the four components down but leave query for last since it is the most complex.
-
-
 
 
 ### ArcQL Pagination
 For specifying a paging token
-`FROM` 'some token'  this is all there is to it. When you search, every object returned by the API includes their paging token in the special hypi   field. Take the token from the last object we returned to you and pass it back. We will then send back results after this object.  
+`FROM 'some token'`  this is all there is to it. When you search, every object returned by the API includes their paging token in the special hypi field. 
+Take the token from the last object we returned to you and pass it back. We will then send back results after this object.  
 **Examples:** `${_arcql} LIMIT ${limit} FROM ${fromToken}`
 
 ### ArcQL: Sorting
 For specifying how to sort matching results
 **Examples:** `{arcql: fieldName SORT hypi.created ASC|DES}‌`                       
-1. `SORT` a  2. `SORT` a `ASC` 3. `SORT` a `DESC` 4. `SORT` a, b.c `DESC`, c
+
+1. `SORT a`  
+2. `SORT a ASC` 
+3. `SORT a DESC` 
+4. `SORT a, b.c DESC, c`
 
 ### ArcQL Limiting
-For limiting the number of results returned, `LIMIT 50`  this is all there is to it, when you search we will impose a max limit the query, currently `1024`.
+For limiting the number of results returned, `LIMIT 50`  this is all there is to it, when you search we will impose a max limit the query, currently `100`.
+
 **Examples:** `${_arcql} LIMIT ${limit}`                      
 
 ### ArcQL Term Query
@@ -63,9 +67,11 @@ A phrase query is similar to what an end user might expect a search engine to do
 
     
 ### ArcQL EXIST
-TODO
+**Example** `EXIST a`
+This asserts that the field `a` exists i.e. only data where the field exists will match
 ### ArcQL NOT EXIST
-TODO
+**Example** `NOT EXIST b`
+This asserts that the field `b` does *not* exist i.e. only data where the field does NOT exist will match
 
 ### ArcQL Prefix Query
 A prefix query will take the terms you’ve searched for and match any object where the contents of the field starts with those terms
@@ -74,7 +80,6 @@ A prefix query will take the terms you’ve searched for and match any object wh
     a ^ 123
      
     a ^ 'some string' OR 123
-.
     
 ### ArcQL Wildcard Query
 A wildcard query takes the terms searched for and treats  `*` and `?` as special characters.
@@ -85,9 +90,11 @@ A wildcard query takes the terms searched for and treats  `*` and `?` as special
      
     a * 123 
      
-    a * 'some?str*' OR 123
-.   
-   
+    a * 'some?str*' OR 123  
+
+<div></div>
+<br/>   
+
 ### ArcQL Fuzzy Query
 A fuzzy query takes the terms searched for and tries to match words that are similar even if spelt slightly differently e.g. `tame` `name` and `game`  would match if you searched for `tame`
     

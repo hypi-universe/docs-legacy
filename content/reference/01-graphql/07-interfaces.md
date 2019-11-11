@@ -6,7 +6,7 @@ metaDescription: "Introduction to GraphQL interfaces on the Hypi platform"
 
 
 ## Introduction
-Similar to other type system, GraphQL supports interfaces. Interfaces are abstract types that holds a certain set of fields that a type must include to implement the interface.
+Similar to other type systems, GraphQL supports interfaces. Interfaces are abstract types that holds a certain set of fields that a type must include to implement the interface.
 
 Interfaces are powerful, and a great way to build and use GraphQL schemas through the use of abstract types. Abstract types can't be used directly in schema, but can be used as building blocks for creating explicit types.
 
@@ -28,14 +28,20 @@ For example, here are some types of brands that might implement Car:
       model: string
     }
     
-    type Bentley  implements Car {
+    type Bentley implements Car {
       id: ID!
       name: String!
       model: string
     }
-<br/>
-<br/>
 
-TODO
+Now it can be used in another type like this:
 
-Especially talk about providing `hypi.impl` field when performing mutations.
+    type Customer {
+      owns: [Car!]
+    }
+
+The `owns` field uses the `Car` interface. This allows `owns` to have values of type `Audi` and `Bently`.
+
+**IMPORTANT**
+When creating or updating a customer object, the `hypi.impl` field MUST be specified on each object in the `owns` field.
+Each object must tell Hypi if it is an Audi or a Bently.    

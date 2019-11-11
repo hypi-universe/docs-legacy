@@ -4,7 +4,7 @@ metaTitle: "Hypi tutorial for creating an app"
 metaDescription: "How to create an app on the Hypi platform"
 ---
 
-**Hypi** is centered around Apps. An App acts as a container or namespace for a group of related features including but not limited to the Data Models, Scripts, Blocks, Auth Policies and more. 
+**Hypi** is centered around Apps. An App acts as a container or namespace for a group of related features including but not limited to the Data Models, Scripts, Auth Policies and more. 
 
 Hypi is an App oriented Platform, so much so almost every operation possible on the platform is done through an existing app, even creating an app uses the Hypi store app to create other apps.
 
@@ -14,8 +14,8 @@ Hypi is an App oriented Platform, so much so almost every operation possible on 
 ## Releases   
 A release represents a version of an App. Versioning is a critical component of your app updates and maintenance strategy. Versioning is important because:
 
-* Each release/version can be independent.
-* Other apps — including other apps that are created, can depend on other apps.
+* Each release/version is independent.
+* Other apps — apps can depend on other apps, when adding a dependency the release is required.
 
 ### Create a release
 To create a new release go to the Hypi dashboard of the desired Realm.   
@@ -66,7 +66,7 @@ Once an Instance is created, the domain is then used as the hypi-domain header t
     {
       "url": "https://api.hypi.app/graphql/",
       "headers": {
-         "Authorization":"Auth Token here. It can be copied from the Developer Hub",
+         "Authorization":"Auth Token here. Generate one by login a user into their account or the current one be copied from the Developer Hub",
          "hypi-domain": "my-domain.com"
       }
     },

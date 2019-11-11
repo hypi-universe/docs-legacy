@@ -5,9 +5,9 @@ metaDescription: "Introduction to GraphQL on the Hypi platform"
 ---
 
 ## So, what is GraphQL
-GraphQL is an open-source server-side library created by Facebook to enhance RESTful API calls. The 
+GraphQL was created by Facebook to enhance RESTful API calls. 
 
-**GraphQL**, makes getting server information much more comfortable and a lot faster.
+**GraphQL** makes getting server information much more comfortable and a lot faster.
 A GraphQL `query` gets parsed to a string which is sent to a server to be interpreted and fulfilled, which returns JSON to the client.
 
 <div className={"code-container"}>
@@ -58,13 +58,16 @@ GraphQL is unapologetic, and is driven by the data requirements of products and 
 
 
 ## Why GraphQL
-  Hypi chose GraphQL because it offers significantly more flexibility than rest. Giving us the ability to define precisely the data you need—and only the data you need— a powerful advantage over the REST APIs.
+  Hypi chose GraphQL because it includes both a query language and schema definition language (SDL). 
+  Giving us the ability to let our customers define precisely the data, structure and relationships they need.
 
 ### Why adopting GraphQL and Hypi will help you ship apps faster
 
-Modern applications and managing data can present many challenges. Developers are aggregating data from multiple sources, scatter upon numerous platforms, and fathom it into an app's UI. Furthermore, developers are deciding how to manage state on the client, simultaneously executing complex features such as caching and optimistic UI.
+Modern applications and managing data can present many challenges. Developers are aggregating data from multiple sources that they need to merge into an app's UI. Furthermore, developers are deciding how to manage state on the client, simultaneously executing complex features such as caching and optimistic UI.
 
-Adopting Hypi in your organisation will ease these pain points considerably. Using GraphQL's declarative approach to data fetching will simplify data transformation and speed up your API and app development. Using the Hypi platform enables faster development cycles thanks to its advanced ecosystem of tooling and excellent developer experience.
+Adopting Hypi in your organisation will ease these pain points considerably. 
+Using GraphQL's declarative approach to data modelling and fetching will simplify data transformation and speed up your API and app development. 
+Using the Hypi platform enables faster development cycles thanks to its ability to understand a GraphQL model's relationships and generate most (in some cases all) of the backend APIs instantly.
 
 
 ### Explore your API

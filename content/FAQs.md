@@ -17,7 +17,7 @@ It is simpler to work with, Hypi brings together all the features needed in a mo
 The Hypi market place allows developers to earn revenue and the only cost to the developer is the initial development since Hypi hosts and manages their apps after they’re launched.
 The Hypi community makes it easy for businesses to find developers to build cloud software solutions for them
 
-## Q. What types of apps can I built using the features released today? 
+## Q. What types of apps can I build using the features released today? 
 Hypi's serverless development platform is capable of developing any CRUD or data driven application. Declare what you want, code if you want. 
 
 The Hypi platform provides storage and distribution for your application. By simply writing a Hypi data model an organisation can instantly get a data driven application that would otherwise have taken weeks or months to build.
@@ -63,7 +63,7 @@ Hypi broadcasts real time updates to any connected client. Disconnected clients 
 ## Q. How can I do complex queries with Hypi? 
 Hypi allows you to take full advantage of its platform, your services or external systems such as databases or APIs.
 
-Hypi recommends that you don't think about the query you would like to run but instead about your data model. Focus on designed your GraphQL data model that ideally represents your use case. Once you have this model, Hypi's model annotations can be used to connect the parts of your model to the the system or service where it should resolve your data from. This approach ensures your model fits your use case as best as possible and avoids the need to restructure data after Hypi returns it to your application.
+Hypi recommends that you don't think about the query you would like to run but instead about your data model. Focus on designing your GraphQL data model that ideally represents your use case. Once you have this model, Hypi's model annotations can be used to connect the parts of your model to the the system or service where it should resolve your data from. This approach ensures your model fits your use case as best as possible and avoids the need to restructure data after Hypi returns it to your application.
 
 
 

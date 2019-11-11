@@ -11,9 +11,9 @@ The aim of this introduction is to get you familiar with these concepts.
 A  **realm is a namespace** for all your apps. This is used in URLs and cannot be changed  once created.
 
 ### Organisations
-Name of your company/team/group/organisation. You can create as many organisations as you desire. But, there must be one at least one organisation in a realm 
+Name of your company/team/group/organisation. You can create as many organisations as you desire. But, there must be at least one organisation in a realm 
 
-If your organisation has a Hypi account / realm, please ask your administrator to add you as a member of the team. **Do not register separately; doing so will create an independent organisation.**
+If your organisation has a Hypi account / realm, please ask your administrator to add you as a member of the team. **Do not register separately; doing so will create an independent realm.**
 
     
 ## App

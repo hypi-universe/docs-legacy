@@ -6,17 +6,19 @@ metaDescription: "Introduction to on the Hypi platform"
 
 ## Introduction
 
-As a complete platform we focus on the full cycle of data fetching, but a ways to modify  each app's release data. Similar to queries, mutations field returns an object type, you can ask for any nested fields. Which, are useful for fetching the new state of an object after an update.
+As a complete platform we focus not just on querying but creating and updating your app's data. 
+Similar to queries, mutations must also have data/fields selected. You can ask for any nested fields. 
+This is useful for fetching the new state of an object after an update.
 
 ## Form a mutation
 
 You must specify three things when defining a mutation:
 
-**1.** `Name of the mutation`, traditionally name after the type of modification you want to perform.
+**1.** `Name of the mutation`, typically named after the type of modification you want to perform e.g. `CreateItem`...but it can be anything you want.
 
-**2.** The `Input object`. This should be pass as an argument to the mutation name as the data you want ot send to the server, composed of `input fields`.
+**2.** The `Input variable`. This should be passed as an argument to the mutation name as the data you want to send to the server.
 
-**3.** `Payload object`, The data you want to return from the server, composed of return fields. Pass it as the body of the mutation name.
+**3.** `Payload object`, The data you want to send to the server.
  
 
 <div className={"code-container"}>

@@ -75,20 +75,20 @@ Creating a resource requires that either no scope based permission exist that ap
 All of these operate on existing resources and as such generates an authorisation request which can type, scope and/or resource based permissions.
  
 ### ‌Searching for resources
-The platform uses [ArcQL](02-arcql.md) for finding data. All requests to get data, no matter how trivial the query, goes through ArcQL. During a search, resources that match that search are further filtered down to only those that the subject is allowed to see. The query engine uses the PEP to check if the subject can see the resource and if it says no then the resource is not included in the matching resources.
+The platform uses [ArcQL](/reference/02-arcql) for finding data. All requests to get data, no matter how trivial the query, goes through ArcQL. During a search, resources that match that search are further filtered down to only those that the subject is allowed to see. The query engine uses the PEP to check if the subject can see the resource and if it says no then the resource is not included in the matching resources.
  
 ### Evaluation of authorisation requests
 Evaluation follows a series of rules that may not necessarily be intuitive at first. In the first place, we allow multiple permissions to be defined that affects the same object. When this happens, there is a default decision strategy that applies to the entire Realm. This is used to resolve ambiguity, if not explicitly set, it defaults to Unanimous, meaning all must grant access.
 
 First, permission types are prioritised (most important first)
 
-1. [ResourceBasedPermission](./04-authorisation/01-permissions.md)   
-2. [ScopeBasedPermission](./04-authorisation/01-permissions.md)     
-3. [TypeBasedPermission](./04-authorisation/01-permissions.md)   
+1. [ResourceBasedPermission](/reference/04-authorisation/01-permissions)   
+2. [ScopeBasedPermission](/reference/04-authorisation/01-permissions)     
+3. [TypeBasedPermission](/reference/04-authorisation/01-permissions)   
 
  
 This means that if an object has a `ResourceBasedPermission`, it overrides `ScopeBasedPermission` which in turn overrides `TypeBasedPermission`.
-Regardless of the type of [Permission](./04-authorisation/01-permissions.md) , there are two explicit cases and one implicit.
+Regardless of the type of [Permission](/reference/04-authorisation/01-permissions) , there are two explicit cases and one implicit.
 
 > Any permission that has no policy attached results in a permission denied for any object the permission would otherwise apply to.
 

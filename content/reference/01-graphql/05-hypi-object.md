@@ -6,7 +6,7 @@ metaDescription: "Documentation of the magic hypi field injected into all Hypi s
 
 ## Introduction
 
-We like when things are simple and as automated as possible, especially in programming. Another way Hypi helps to do this is with `Magic Hypi object`. **This object gets attached to every type 'behind the scenes'.** Thus, why we are calling it 'magic' – because its never directly created, and it allows the programmer to do some pretty powerful things. An example will help make this clear.
+We like when things are simple and as automated as possible, especially in programming. Another way Hypi helps to do this is with the `Magic Hypi object`. **This object gets attached to every type automatically.** Thus, why we are calling it 'magic' – because its never directly created, and it allows the programmer to do some pretty powerful things. An example will help make this clear.
 
 **Let's say you have a type:**
 
@@ -17,14 +17,14 @@ We like when things are simple and as automated as possible, especially in progr
          comments: [Comment!]
     }
 
-If you run the `findItem` "operation" , you will notice the Magic Hypi object is attached, and you will also see it in your APIs doc. So, every defined type in your schema will have the Magic Hypi Object auto attached to it for your convenience.
+If you run the `findItem` "operation" , you will notice the Magic Hypi object is attached, and you will also see it in your API's doc. So, every defined type in your schema will have the Magic Hypi Object auto attached to it for your convenience.
 
     type Item {
          slug: String! @field(indexed: true, type: Keyword)
          title: String! @field(indexed: true)
          description: String @field(indexed: true)
          comments: [Comment!]
-        hypi:Hypi // Hypi magic object 
+         hypi:Hypi // Hypi magic object 
     }
 
 

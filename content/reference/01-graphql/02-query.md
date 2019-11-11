@@ -33,7 +33,7 @@ The GraphQL API has a single endpoint: `https://api.hypi.app/graphql`
          
          # Variables
          {
-            "arcql": "*  hypi.updated DESC"
+            "arcql": "* SORT hypi.updated DESC"
          }
      
 </div>  
@@ -92,7 +92,7 @@ GraphQL Variables makes queries more dynamic and powerful, and they reduce compl
     }
     
     variables {
-       "arcql": "Limit 3"
+       "arcql": "hypi.id = 'abc-123'"
     }
 
 
@@ -111,4 +111,4 @@ This process makes the query argument dynamic. You can  change the value in the 
 Using variables as arguments lets you dynamically update values in the variables object without changing the query and using the Hypi `arcql` variable lets you
  filter, sort and paginate data in the platform.
  
- [Learn more about ArcQL Filtering here!](http://localhost:8000/reference/02-arcql)
+ [Learn more about ArcQL Filtering here!](/reference/02-arcql)
