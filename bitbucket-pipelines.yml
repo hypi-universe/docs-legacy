@@ -8,6 +8,7 @@ definitions:
           - node
         script:
           - npm install -g gatsby-cli
+          - npm i
           - gatsby build
           - mv ./public ./docs
           - cp CNAME ./docs
