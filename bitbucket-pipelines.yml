@@ -7,6 +7,7 @@ definitions:
         caches: #https://confluence.atlassian.com/bitbucket/caching-dependencies-895552876.html
           - node
         script:
+          - apk add --update python py-pip
           - npm install -g gatsby-cli
           - npm i
           - gatsby build
