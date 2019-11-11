@@ -5,14 +5,14 @@ const config = {
 		"gaTrackingId": null
 	},
 	"header": {
-		"logo": "https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/favicon.png",
+		"logo": "",
 		"logoLink": "https://docs.hypi.app?utm_source=docs&utm_medium=header&utm_campaign=logo",
-		"title": "Hypi Documentation",
+		"title": "Docs",
 		"githubUrl": "https://github.com/hypi-universe/docs",
 		"helpUrl": "",
 		"tweetText": "",
 		"links": [
-      { "text": "Hypi", "link": "https://hypi.io?utm_source=docs&utm_medium=header&utm_campaign=hypi"},
+      { "text": "Hypi.io", "link": "https://hypi.io?utm_source=docs&utm_medium=header&utm_campaign=hypi"},
       { "text": "Register", "link": "https://hypi.app/register?utm_source=docs&utm_medium=header&utm_campaign=register"},
       { "text": "Login", "link": "https://hypi.app/login?utm_source=docs&utm_medium=header&utm_campaign=login"}
 		],

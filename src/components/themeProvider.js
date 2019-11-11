@@ -2,7 +2,7 @@ import * as React from "react";
 import { ThemeProvider as EmotionThemeProvider } from "emotion-theming";
 import { default as defaultTheme } from "./theme";
 import Header from './Header';
-import './styles.css';
+import './styles.scss';
 export default function ThemeProvider({ children, theme = {}, location }) {
   return (
   	<div>

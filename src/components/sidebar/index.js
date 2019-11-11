@@ -3,7 +3,7 @@ import Tree from './tree';
 import {StaticQuery, graphql} from "gatsby";
 import styled from "react-emotion";
 import {ExternalLink} from "react-feather";
-import '../styles.css';
+import '../styles.scss';
 import config from '../../../config';
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;
@@ -59,18 +59,19 @@ const Sidebar = styled('aside')`
   position: sticky;
   top: 0;
   padding-right: 0;
-  background-color: #372476;
+  background-color: none;
+  border-right: 1px solid #ccc1ff;
   /* Safari 4-5, Chrome 1-9 */
-  background: linear-gradient(#372476, #3b173b);
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#372476), to(#3b173b));
+  // background: linear-gradient(#372476, #3b173b);
+  // background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#372476), to(#3b173b));
   /* Safari 5.1, Chrome 10+ */
-  background: -webkit-linear-gradient(top, #372476, #3b173b);
+  // background: -webkit-linear-gradient(top, #372476, #3b173b);
   /* Firefox 3.6+ */
-  background: -moz-linear-gradient(top, #372476, #3b173b);
+  // background: -moz-linear-gradient(top, #372476, #3b173b);
   /* IE 10 */
-  background: -ms-linear-gradient(top, #372476, #3b173b);
+  // background: -ms-linear-gradient(top, #372476, #3b173b);
   /* Opera 11.10+ */
-  background: -o-linear-gradient(top, #372476, #3b173b);
+  // background: -o-linear-gradient(top, #372476, #3b173b);
   @media only screen and (max-width: 767px) {
     padding-left: 0px;
     background-color: #372476;

@@ -1,6 +1,6 @@
 import React from 'react';
 const githubIcon = require('./components/images/github.svg');
-import './components/styles.css';
+import './components/styles.scss';
 
 const GithubLink = ({link, text}) => {
 	return (

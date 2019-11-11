@@ -4,6 +4,7 @@ const config = require("./config");
 const plugins = [
   'gatsby-plugin-sitemap',
   'gatsby-plugin-sharp',
+  'gatsby-plugin-sass',
   {
     resolve: `gatsby-plugin-layout`,
     options: {
@@ -14,6 +15,13 @@ const plugins = [
   {
     resolve: 'gatsby-plugin-mdx',
     options: {
+      aliases: {
+        sh: "shell",
+        es6: "javascript",
+        env: "bash",
+        mdx: "md",
+        ".json": "json",
+      },
       gatsbyRemarkPlugins: [
         {
           resolve: "gatsby-remark-images",
@@ -26,7 +34,7 @@ const plugins = [
           resolve: 'gatsby-remark-copy-linked-files'
         }
       ],
-      extensions: [".mdx", ".md"]
+      extensions: [".mdx", ".md",]
     }
   },
   'gatsby-plugin-emotion',
