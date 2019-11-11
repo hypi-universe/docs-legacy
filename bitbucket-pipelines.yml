@@ -1,0 +1,26 @@
+image: node:alpine
+definitions:
+  services:
+  steps:
+    - step: &generate
+        name: Generate static site
+        caches: #https://confluence.atlassian.com/bitbucket/caching-dependencies-895552876.html
+          - node
+        script:
+          - npm install -g gatsby-cli
+          - gatsby build
+          - mv ./public ./docs
+          - cp CNAME ./docs
+          - export branch=`git rev-parse --abbrev-ref HEAD`
+          - export branch=`echo $branch|sed 's#/#-#g'` #replace / in branch names with -
+          - export today=`date '+%Y-%m-%d'`
+          - export commit=`git rev-parse HEAD`
+          - export tag="${branch}-${today}-$commit"
+          - git add docs
+          - git commit -m "[skip ci] Deploy docs @ $tag"
+          - git push
+pipelines:
+  default: []
+  branches:
+    master:
+      - step: *generate
