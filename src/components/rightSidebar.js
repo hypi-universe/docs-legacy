@@ -32,8 +32,9 @@ const ListItem = styled(({className, active, level, subItems, ...props}) => {
       <ul className={"pl-4"}>
         {subItems.map((subLink, index) => {
           if (subLink.url) {
-            return <li className={className} key={index}>
-              <a href={subLink.url.replace(/\s+|-/g, '')}>{subLink.title}</a>
+            const url = subLink.url.replace(/\s+|-/g, '');
+            return <li className={className + " sub-level"} key={index}>
+              <a href={url} key={url+index}>{subLink.title}</a>
             </li>
           }
         })
@@ -108,7 +109,6 @@ const SidebarLayout = ({location}) => (
                   const itemId = innerItem.title ? innerItem.title.replace(/\s+/g, '').toLowerCase() : '#';
                   let subItems = []
                   if (innerItem.items) {
-                    console.log(innerItem.items)
                     subItems = innerItem.items;
                   }
                   return (

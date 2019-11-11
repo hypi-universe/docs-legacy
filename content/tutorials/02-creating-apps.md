@@ -43,25 +43,25 @@ Instance fields can later be accessed in serverless functions when they execute.
 
 
 ## Schema
-Each created release have a demo data model, this so you can get started quiclky,  click on the "Editor" link to get access to the editor. You'll notice that the releases are to the left of the editor with a folder named after the created releases. This folder will have your release schema file, of which you can edit and update.
+Each created release have a demo data model, so you can get a quick start,  click on the "Editor" link to get access to the editor. You'll notice that the releases are to the left of the editor with a folder named after each created release.
 
 ![Add Fields](../assets/img/schema.gif "Editing a schema")
   
-In this image there are three releases in the todo app, alpha, beta and gama. The schema editor allows you to enter GraphQL definitions that will serve as the basis for the Apps data model and APIs. 
+In this image there is only one release, the schema editor allows you to enter GraphQL definitions that will serve as the basis for the Apps data model and APIs. 
 
 Currently the editor only have two modes **Save** and **Beautify**, simply click "save" to save your changes, the editor **doesn't save automatically**. Click, "Beautify" to clean up your code once done.
 
 
 ## Instances
-   An instance represents an addressable version of an App, by creating an Instance, you can assign a custom domain or an auto-generated Hypi domain. 
+An Instance represents an addressable version of an App, by creating an Instance, you can assign a custom domain or an auto-generated Hypi domain. 
    
 ### Create an Instance
 To create an Instance, simply click "Create" top right and fill in the required fields in the modal.
 Instances have unique domains in Hypi. **Two instances cannot share the same domain** but multiple instances can be created with custom domains as shown below.
 
-![Add Fields](../assets/img/create-instance.gif "Creating instance")
+![Add Fields](../assets/img/create-instance.gif "Creating Instance")
 
-Once an instance is created, the domain is then used as the hypi-domain header that can be provided when working with an app's API.
+Once an Instance is created, the domain is then used as the hypi-domain header that can be provided when working with an app's API.
    
     {
       "url": "https://api.hypi.app/graphql/",
@@ -74,18 +74,20 @@ Once an instance is created, the domain is then used as the hypi-domain header t
 <br/>
 
 ### Editing Fields
-Fields in Hypi are key value pairs that allow you to define configuration options that an app needs. On each release, you define one or more field and later populate values for those fields for each instance that you create. Fields that you create in a release become accessible as a $settings variable so $settings.fieldName gives the value of the field called fieldName
+Fields in Hypi are **key value pairs** that allow you to define configuration options that an app needs. On each release, you define one or more field and later populate values for those fields for each Instance that you create or you can set a default value when creating a fields. **
+Fields that you create in a release become accessible as a `$settings` variable so `$settings.fieldName` gives the value of the field called `fieldName`.
+**
 
   ![Editing field](../assets/img/editing-fields.gif "Editing fields")
 
 ### API Editor
-**An in-browser IDE for exploring your Instance GraphQL API.** You can run queries and mutations against API or quickly the see the docs and schema for you Instance API.
+**An in-browser IDE for exploring your Instance GraphQL API.** You can run queries and mutations against API or quickly see the docs and schema for you Instance API.
 
   ![API Editor](../assets/img/api-editor.gif "API Editor")
 
 ### Metrics
 **1. Monitoring.**
-Hypi automatically collects some metrics about your API usage. The monitoring page on each instance can be used to see some of the available metrics.
+Hypi automatically collects some metrics about your API usage. The monitoring page on each Instance can be used to see some of the available metrics.
 
 **2. Logs.**
 Application logs are crucial to debugging issues. Hypi automatically generates some logs for your apps. To make the most of this feature however, your app should capture and submit its log data which you can then browse/search.

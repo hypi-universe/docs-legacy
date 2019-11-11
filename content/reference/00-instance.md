@@ -5,11 +5,11 @@ metaDescription: "How to create an instances for an app on the Hypi platform"
 ---
 
 ## Introduction
-**Let's recap.** An instance is an isolated copy of your app. Think of an app as a template and an Instance as a deployed version of that template. Every Instance gets its domain.
+**Let's recap.** An instance is an isolated copy of your app. Think of an app as a template and an Instance as a deployed version of that template. Every Instance gets its own domain.
 
-Every Instance must have a unique domain. By default, Hypi will generate one based on its domain. You're free to use your domain, e.g. api.my-domain.com.
+Every Instance must have a unique domain. By default, Hypi will generate one based on the Hypi domain. You're free to use your domain, e.g. api.my-domain.com.
 
-Instances are isolated, data created in once Instance is not accessible by default from another Instance and only someone with permission can grant access between instances.
+Instances are isolated, data created in one Instance is not accessible by default from another Instance and only someone with permission can grant access between instances.
 
 ### Creating an Instance
 
