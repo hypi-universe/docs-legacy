@@ -6,5 +6,6 @@ gatsby build && \
 rm -rf $DIR/docs && \
 mv $DIR/public $DIR/docs && \
 cp $DIR/CNAME $DIR/docs/CNAME && \
-git commit -a -m "Release docs" && \
+git add docs && \
+git commit -m "Release docs" && \
 git push
