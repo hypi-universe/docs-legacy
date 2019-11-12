@@ -28,13 +28,21 @@ const config = {
 		"forcedNavOrder": [
 			"/introduction",
     	"/tutorials",
+      "/recipes",
       "/reference"
 		],
+    "exclude": [
+      "/",
+      "/404",
+      "/recipes",
+      "/recipes/build-todo-app",
+      "/recipes/create-account",
+      "/recipes/login"
+    ],
 		"links": [
 			{ "text": "Hypi", "link": "https://hypi.io?utm_source=docs&utm_medium=sidebar&utm_campaign=hypi"},
 		],
 		"frontline": false,
-		"ignoreIndex": true,
 	},
 	"siteMetadata": {
 		"title": "Hypi Documentation",
