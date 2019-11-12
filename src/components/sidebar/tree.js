@@ -3,7 +3,7 @@ import config from '../../../config';
 import TreeNode from './treeNode';
 
 const calculateTreeData = edges => {
-  const originalData = config.sidebar.ignoreIndex ? edges.filter(({node: {fields: {slug}}}) => slug !== '/') : edges;
+  const originalData = config.sidebar.exclude ? edges.filter(({node: {fields: {slug}}}) => config.sidebar.exclude.indexOf(slug) == -1) : edges;
   const tree = originalData.reduce((accu, {node: {fields: {slug, title}}}) => {
     const parts = slug.split('/');
     let {items: prevItems} = accu;
