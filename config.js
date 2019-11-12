@@ -2,7 +2,7 @@ const config = {
 	"gatsby": {
 		"pathPrefix": "/",
 		"siteUrl": "https://docs.hypi.app",
-		"gaTrackingId": null
+		"gaTrackingId": "UA-120274358-2"
 	},
 	"header": {
 		"logo": "",
