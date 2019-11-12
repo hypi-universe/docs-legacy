@@ -28,8 +28,9 @@ const config = {
 		"forcedNavOrder": [
 			"/introduction",
     	"/tutorials",
-      "/recipes",
-      "/reference"
+      // "/recipes",
+      "/reference",
+      "FAQ"
 		],
     "exclude": [
       "/",

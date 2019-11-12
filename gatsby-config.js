@@ -31,7 +31,11 @@ const plugins = [
           }
         },
         {
-          resolve: 'gatsby-remark-copy-linked-files'
+          resolve: 'gatsby-remark-copy-linked-files',
+          options: {
+            destinationDir: `assets`,
+            //ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
+          }
         }
       ],
       extensions: [".mdx", ".md",]
