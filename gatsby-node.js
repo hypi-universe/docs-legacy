@@ -71,6 +71,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value = "";
     }
 
+    const reg =/^[0-9]+-|(?<=\/)[0-9]+-/gm;
+    if(value.match(reg)){
+      value = value.replace(reg, '')
+    }
+
     createNodeField({
       name: `slug`,
       node,

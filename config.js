@@ -12,7 +12,7 @@ const config = {
 		"helpUrl": "",
 		"tweetText": "",
 		"links": [
-      { "text": "Hypi.io", "link": "https://hypi.io?utm_source=docs&utm_medium=header&utm_campaign=hypi"},
+      { "text": "hypi.io", "link": "https://hypi.io?utm_source=docs&utm_medium=header&utm_campaign=hypi"},
       { "text": "Register", "link": "https://hypi.app/register?utm_source=docs&utm_medium=header&utm_campaign=register"},
       { "text": "Login", "link": "https://hypi.app/login?utm_source=docs&utm_medium=header&utm_campaign=login"}
 		],
