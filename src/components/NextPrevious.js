@@ -31,8 +31,8 @@ class NextPrevious extends React.Component {
       previousInfo.url = nav[currentIndex-1] ? nav[currentIndex-1].url : null;
       previousInfo.title = nav[currentIndex-1] ? nav[currentIndex-1].title : null;
     } else if (currentIndex) { // any other page
-      nextInfo.url = nav[currentIndex+1].url;
-      nextInfo.title = nav[currentIndex+1].title;
+      nextInfo.url = nav[currentIndex+1]? nav[currentIndex+1].url : null;
+      nextInfo.title = nav[currentIndex+1]? nav[currentIndex+1].title: null;
       if(nav[currentIndex-1]) {
         previousInfo.url = nav[currentIndex-1].url;
         previousInfo.title = nav[currentIndex-1].title;
