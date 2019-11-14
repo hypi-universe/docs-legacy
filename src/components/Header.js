@@ -18,7 +18,7 @@ if (isSearchEnabled && config.header.search.indexName) {
   );
 }
 
-const Header = ({location}) => (
+const Header = (props) => (
   <StaticQuery
     query={
       graphql`
@@ -58,7 +58,7 @@ const Header = ({location}) => (
       } = data;
       const finalLogoLink = logo.link !== '' ? logo.link : '/';
       return (
-        <div className={'navBarWrapper'}>
+        <div className={'navBarWrapper '+ props.hideHeader}>
           <nav className={'navbar navbar-default navBarDefault navbar navbar-expand-lg'}>
             <div className={'navBarHeader'}>
               <Link to={finalLogoLink} className={'navbar-brand navBarBrand'}>
@@ -88,7 +88,7 @@ const Header = ({location}) => (
 
             <div  id="navbarNav" className={'navbar-collapse collapse navBarCollapse'}>
               {/*<div className={'visible-xs'}>*/}
-              {/*  <Sidebar location={location}/>*/}
+              {/*  <Sidebar location={props.location}/>*/}
               {/*  <hr/>*/}
               {/*  {isSearchEnabled ? (*/}
               {/*    <div className={'searchWrapper navBarUL'}>*/}

@@ -60,7 +60,7 @@ const Sidebar = styled('aside')`
   top: 0;
   padding-right: 0;
   background-color: none;
-  border-right: 1px solid #ccc1ff;
+  border-right: 1px solid #1f2531;
   /* Safari 4-5, Chrome 1-9 */
   // background: linear-gradient(#372476, #3b173b);
   // background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#372476), to(#3b173b));
@@ -126,9 +126,7 @@ const SidebarLayout = ({location}) => (
       return (
         <Sidebar>
           <ul className={'sideBarUL'}>
-            <Tree
-              edges={allMdx.edges}
-            />
+            <Tree edges={allMdx.edges}/>
             <Divider />
             {config.sidebar.links.map((link, key) => {
               if (link.link !== '' && link.text !== '') {
