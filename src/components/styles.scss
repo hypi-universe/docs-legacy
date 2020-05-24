@@ -29,7 +29,6 @@ html, body {
   font-size: 100%;
   letter-spacing: 0.3px;
   background-color: white;
-  transition: all .25s ease;
   @extend .section-scroll-bar;
   @media (max-width: 991px) {
     font-size: 1rem;

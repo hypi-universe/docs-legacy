@@ -21,7 +21,7 @@ class ThemeProvider extends React.Component {
   render() {
     return (
       <div>
-        <Header location={location} hideHeader={this.state.isIframeLoaded ? "hideHeader" : ""}/>
+        <Header location={this.location} hideHeader={this.state.isIframeLoaded ? "hideHeader" : ""}/>
         <EmotionThemeProvider theme={{...defaultTheme, ...this.theme}}>
           {this.props.children}
         </EmotionThemeProvider>
