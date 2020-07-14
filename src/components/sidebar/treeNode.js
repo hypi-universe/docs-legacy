@@ -28,9 +28,6 @@ const TreeNode = ({className = '', setCollapsed, collapsed, url, title, items, .
 
       {title && (<Link to={url}>{title}</Link>)}
 
-      {
-        console.log(items)
-      }
       {!isCollapsed && hasChildren ? (
         <ul>
           {items.map((item, index) => (
