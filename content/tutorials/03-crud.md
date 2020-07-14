@@ -4,35 +4,34 @@ In this tutorial we’re going to show you how to use our GraphQL API to perform
 
 For the purpose of this tutorial, we’ve created an app with the name hypi-tutorials, and in the **Editor** section we’ve created a simple **schema** for our application.
 ```graphql
-interface Character {
-	id: ID!
-	name: String!
-	friends: [Character!]
+interface Employee{
+    name: String!
+    age: Int!
+    colleagues: [Employee!]
 }
 
-type Actor implements Character {
-	id: ID!
-	name: String!
-	friends: [Character!]
-	starsIn: [Episode!]
+type Actor implements Employee{
+    name: String!
+    age: Int!
+    colleagues: [Employee!]
+    starsIn: [Episode!]
 }
 
-type Director implements Character {
-	id: ID!
-	name: String!
-	friends: [Character!]
-	hasDirected: [Episode!]
+type Director implements Employee{
+    name: String!
+    age: Int!
+    colleagues: [Employee!]
+    hasDirected: [Episode!]
 }
 
-enum Episode {
-	S01E01
-	S01E02
-	S01E03
-	S01E04
-	S01E05
-	S01E06
+enum Episode{
+    S01E01
+    S01E02
+    S01E03
+    S01E04
+    S01E05
+    S01E06
 }
-
 ```
 
 Now, with a created instance of the app, navigate to the Api Editor of the instance, or do it programmatically with a http request to:
