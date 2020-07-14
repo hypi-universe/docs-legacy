@@ -2,7 +2,17 @@ import React, {useState} from 'react';
 import config from '../../../config';
 import TreeNode from './treeNode';
 
+//see gatsby-node.js for where we do the same when building the page object
+const dropPrefix = value => {
+  const reg = /^[0-9]+-|(?<=\/)[0-9]+-/gm;
+  if (value.match(reg)) {
+    value = value.replace(reg, '')
+  }
+  return value;
+};
+
 const calculateTreeData = edges => {
+  console.log('building sidebar tree');
   const originalData = config.sidebar.exclude ? edges.filter(({node: {fields: {slug}}}) => config.sidebar.exclude.indexOf(slug) == -1) : edges;
   const tree = originalData.reduce((accu, {node: {fields: {slug, title}}}) => {
     const parts = slug.split('/');
@@ -21,12 +31,12 @@ const calculateTreeData = edges => {
     }
     const existingItem = prevItems.find(({label}) => label === parts[parts.length - 1]);
     if (existingItem) {
-      existingItem.url = slug;
+      existingItem.url = dropPrefix(slug);
       existingItem.title = title;
     } else {
       prevItems.push({
         label: parts[parts.length - 1],
-        url: slug,
+        url: dropPrefix(slug),
         items: [],
         title
       });
