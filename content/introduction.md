@@ -11,14 +11,13 @@ The aim of this introduction is to get you familiar with these concepts.
 A  **realm is a namespace** for all your apps. This is used in URLs and cannot be changed  once created.
 
 ### Organisations
-Name of your company/team/group/organisation. You can create as many organisations as you desire. But, there must be at least one organisation in a realm 
+Name of your company/team/group/organisation. You can create as many organisations as you desire. But, there must be at least one organisation in a realm
 
 If your organisation has a Hypi account / realm, please ask your administrator to add you as a member of the team. **Do not register separately; doing so will create an independent realm.**
 
-    
 ## App
 At the heart of everything in Hypi is the idea of an app.
-Hypi uses the concept of an App to encapsulate a collection of models, serverless functions and any resources they need to serve their purpose. 
+Hypi uses the concept of an App to encapsulate a collection of models, serverless functions and any resources they need to serve their purpose.
 
 An App can have data models written in GraphQL as well as other serverless functions written in JavaScript, Go, Java, Kotlin, Node.js, PHP, Python, Ruby, Scala & Shell.
 Think of an app as a way to group related behaviour and resources (there is some similarity to a micro-service).
@@ -52,20 +51,14 @@ This feature promotes software reuse by enabling you to build small reusable app
 Fields in Hypi are key value pairs that allow you to define configuration options that an app needs.
 On each release, you define one or more field and later populate values for those fields for each [instance](#instance) that you create.
 Fields that you create in a release become accessible as a `$settings` variable so `$settings.fieldName` gives the value of the field called `fieldName`.
-
+In some other systems, these are commonly known as "[environment variables](/products/axiom/environment-variables)".
 ### Instance
 An instance is an isolated copy of your app.
 Think of an app as a template and an instance as a deployed version of that template.
-Every instance gets its own [domain](#instance-domain).
+Every instance gets its own [domain](#instancedomain).
 
 ### Instance domain
 Every instance must have a unique domain. By default Hypi will generate one based on its domain. You're free to use your own domain e.g. `api.my-domain.com`.
 
 ### Data
 Instances are isolated, data created in once instance is not accessible by default from another instance and only someone with permission can grant access between instances.
-### Monitoring
-Hypi automatically collects some metrics about your API usage. The monitoring page on each instance can be used to see some of the available metrics.
-
-### Logs
-Application logs are crucial to debugging issues. Hypi automatically generates *some* logs for your apps.
-To make the most of this feature however, your app should capture and submit its log data which you can then browse/search.

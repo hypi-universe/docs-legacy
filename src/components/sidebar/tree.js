@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import config from '../../../config';
 import TreeNode from './treeNode';
+import {dropPrefix} from '../utils';
 
 const calculateTreeData = edges => {
   const originalData = config.sidebar.exclude ? edges.filter(({node: {fields: {slug}}}) => config.sidebar.exclude.indexOf(slug) == -1) : edges;
@@ -21,12 +22,12 @@ const calculateTreeData = edges => {
     }
     const existingItem = prevItems.find(({label}) => label === parts[parts.length - 1]);
     if (existingItem) {
-      existingItem.url = slug;
+      existingItem.url = dropPrefix(slug);
       existingItem.title = title;
     } else {
       prevItems.push({
         label: parts[parts.length - 1],
-        url: slug,
+        url: dropPrefix(slug),
         items: [],
         title
       });
