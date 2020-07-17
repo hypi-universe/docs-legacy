@@ -57,6 +57,7 @@
     "build": "gatsby build --prefix-paths"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "gatsby-plugin-remove-trailing-slashes": "^2.1.2",
     "prism-react-renderer": "^0.1.7"
   }
