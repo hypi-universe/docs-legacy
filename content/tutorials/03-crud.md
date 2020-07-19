@@ -1,3 +1,9 @@
+---
+title: Hypi GraphQL CRUD Tutorial
+metaTitle: Hypi GraphQL CRUD Tutorial
+metaDescription: Hypi GraphQL CRUD Tutorial showing you how to use the generated CRUD API
+---
+
 # Hypi GraphQL CRUD Tutorial
 
 In this tutorial we’re going to show you how to use our GraphQL API to perform CRUD operations on your app.
@@ -50,16 +56,16 @@ Documentation for the queries and mutations mentioned in this tutorial can be fo
 
 ## Create
 
-For this tutorial we would like to create an `Actor` object with the `name` “Will Smith”, `age` 17, and he stars in episodes 1, 2 and 3. 
+For this tutorial we would like to create an `Actor` object with the `name` “Will Smith”, `age` 17, and he stars in episodes 1, 2 and 3.
 The mutation will look like this.
 
 ```graphql
 mutation {
 	upsert(values: {
-			Actor: { 
-			name: "Will Smith", 
-			age: 17, 
-			starsIn: [S01E01, S01E02, S01E03] 
+			Actor: {
+			name: "Will Smith",
+			age: 17,
+			starsIn: [S01E01, S01E02, S01E03]
 			}
 		}
 	) {
@@ -96,12 +102,12 @@ The `mutation` will look like this.
 
 ```graphql
 mutation {
-	upsert(values: { 
-			Actor: { 
-				age: 18, 
-				hypi: { 
-					id: "01ED4X75AG1G96PDC8A231KTC8" 
-				} 
+	upsert(values: {
+			Actor: {
+				age: 18,
+				hypi: {
+					id: "01ED4X75AG1G96PDC8A231KTC8"
+				}
 			}
 		}
 	) {
@@ -125,7 +131,7 @@ For reading the data, we will show you two queries that Hypi provides out of the
 
 **1.  get()**
 
-The **get** `query` provides a way to get a single object by its `hypi.id`. 
+The **get** `query` provides a way to get a single object by its `hypi.id`.
 The query will like this.
 
 ```graphql
@@ -164,7 +170,7 @@ To learn more about **Arcql**, please refer to the **Developer Hub** under the s
 
 In this tutorial we will cover listing of all of the actors and searching them by `name`.
 
-For getting all of the actors we will send the **wildcard** “*” as the `arcql` parameter, indicating that I want all of the actors. In the response, we want the `name` of the actor along with his `hypi.id`. 
+For getting all of the actors we will send the **wildcard** “*” as the `arcql` parameter, indicating that I want all of the actors. In the response, we want the `name` of the actor along with his `hypi.id`.
 The query will look like this.
 
 ```graphql
@@ -222,11 +228,11 @@ As expected, the response is a list of all of the edges of type `Actor`
 }
 ```
 
-Next, we will use **Arcql** to create a typical auto-complete query for the `name` field. 
+Next, we will use **Arcql** to create a typical auto-complete query for the `name` field.
 The arcql will look like this.
 
     “name ^ ‘Will’”
-   
+
 And the query will look like this.
 ```graphql
 query {
@@ -285,8 +291,8 @@ Soft deleting an object in the **Hypi Universe**, is referred to as ‘**trashin
 
 The field “trashed”, which is a part of the **Magic Hypi object** is used to track that.
 
-The **trash** `mutation` accepts two parameters, the `Type` of the object and an `arcql` query. 
-It will trash up to 25 of the objects that match the query. 
+The **trash** `mutation` accepts two parameters, the `Type` of the object and an `arcql` query.
+It will trash up to 25 of the objects that match the query.
 The mutation call looks like this.
 
 ```graphql
@@ -308,7 +314,7 @@ It should not return any data.
 
 You can find include the trashed items in searches by calling find with the parameter `“includeTrashed: True”`
 
-The **untrash** `mutation` accepts two parameters, the `Type` of the object and an `arcql` query. It will untrash all of the objects that match the query. 
+The **untrash** `mutation` accepts two parameters, the `Type` of the object and an `arcql` query. It will untrash all of the objects that match the query.
 
 The mutation call looks like this.
 
