@@ -32,8 +32,15 @@ exports.createPages = ({ graphql, actions }) => {
 
         // Create blog posts pages.
         result.data.allMdx.edges.forEach(({ node }) => {
+          //console.log('creating page',node.fields.slug)
+          //see tree.js dropPrefix and its usage
+          let slug = node.fields.slug ? node.fields.slug : "/";
+          const reg =/^[0-9]+-|(?<=\/)[0-9]+-/gm;
+          if(slug.match(reg)){
+            slug = slug.replace(reg, '')
+          }
           createPage({
-            path: node.fields.slug ? node.fields.slug : "/",
+            path: slug,
             component: path.resolve("./src/templates/docs.js"),
             context: {
               id: node.fields.id
@@ -70,12 +77,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     if (value === "index") {
       value = "";
     }
-
-    const reg =/^[0-9]+-|(?<=\/)[0-9]+-/gm;
-    if(value.match(reg)){
-      value = value.replace(reg, '')
-    }
-
+    //console.log('on create node', parent.relativePath)
     createNodeField({
       name: `slug`,
       node,

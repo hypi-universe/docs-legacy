@@ -2,6 +2,26 @@
 
 Documentation for the [Hypi platform](https://hypi.io).
 Visit [https://docs.hypi.app](https://docs.hypi.app).
+Use a table generator like https://www.tablesgenerator.com/markdown_tables
+
+Use single block quotes to show tips and notes.
+Use double block quotes to show warnings.
+
+e.g.
+
+> Keep in mind
+>
+> This is a tip
+>
+> Second point of the tip
+
+
+>> Be careful
+>>
+>> First point of the warning
+>>
+>> Second point of the warning
+
 
 Credit to [the Hasura Gatsby starter](https://github.com/hasura/gatsby-gitbook-starter).
 

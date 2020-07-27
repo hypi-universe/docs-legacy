@@ -16,6 +16,7 @@ If two objects ARE NOT connected and you want to add a connection between them, 
 ## unlink
 If two objects ARE connected and you want to remove the connection between them without removing the data, use the `link` function.
 
+<!--
 ## REF FROM queries
 ‌Hypi is a polyglot storage service, one of the supported storage paradigms is for graph data, see the API Guide for more information. ArcQL has support for querying graph data.
 
@@ -25,3 +26,4 @@ If two objects ARE connected and you want to remove the connection between them 
 1. `Origin Field` is the name of the field on the Origin Type for which the edge exists
 1. `Origin ID` is the ID of the object/vertex to find references from
 1. `ArcQL filter` is any valid ArcQL query, this is optional and if present will only return edges that match
+-->

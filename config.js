@@ -13,12 +13,12 @@ const config = {
 		"tweetText": "",
 		"links": [
       { "text": "hypi.io", "link": "https://hypi.io?utm_source=docs&utm_medium=header&utm_campaign=hypi"},
-      { "text": "Register", "link": "https://hypi.app/register?utm_source=docs&utm_medium=header&utm_campaign=register"},
-      { "text": "Login", "link": "https://hypi.app/login?utm_source=docs&utm_medium=header&utm_campaign=login"}
+      { "text": "Register", "link": "https://hypi.app/auth/register?utm_source=docs&utm_medium=header&utm_campaign=register"},
+      { "text": "Login", "link": "https://hypi.app/auth/login?utm_source=docs&utm_medium=header&utm_campaign=login"}
 		],
 		"search": {
-			"enabled": false,
-			"indexName": "",
+			"enabled": true,
+			"indexName": "docs",
 			"algoliaAppId": process.env.GATSBY_ALGOLIA_APP_ID,
 			"algoliaSearchKey": process.env.GATSBY_ALGOLIA_SEARCH_KEY,
 			"algoliaAdminKey": process.env.ALGOLIA_ADMIN_KEY
@@ -27,9 +27,12 @@ const config = {
 	"sidebar": {
 		"forcedNavOrder": [
 			"/introduction",
+      "/products",
+      "/products/axiom",
+      "/products/api-gateway",
     	"/tutorials",
+    	"/reference",
       // "/recipes",
-      "/reference",
       "FAQ"
 		],
     "exclude": [
