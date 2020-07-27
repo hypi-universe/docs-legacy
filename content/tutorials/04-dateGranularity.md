@@ -22,7 +22,8 @@ First is looking into the aggregate types for the type that you want to aggregat
 
 ##  Aggregation Types
 
-For each type in your schema, you get two aggregations that you can perform on them. First one is named "[your_type]" and the second one is named "[your_type]With".
+For each type in our schema, we have two aggregations that we can perform on them. 
+The first one is named "[our_type]" and the second one is named "[our_type]With".
 
 Looking at our schema, our aggregations will be
 
