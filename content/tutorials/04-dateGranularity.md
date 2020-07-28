@@ -53,7 +53,7 @@ actorRatingsWith(
 
 In this tutorial we will focus on using `actorRatingsWith` since it is the one that allows grouping data.
 
-## Using Having and GroupBy with dateGranularity
+## Using GroupBy with dateGranularity
 
 Now, let's get into some examples.
 
@@ -102,7 +102,7 @@ The result will look like this.
             "avg": 4.5,
             "groupValues": [
               {
-                "key": "ratedAt",
+                "key": "hypi_created",
                 "value": "2020-07-09"
               }
             ]
@@ -113,7 +113,7 @@ The result will look like this.
             "avg": 4.2,
             "groupValues": [
               {
-                "key": "ratedAt",
+                "key": "hypi_created",
                 "value": "2020-07-10"
               }
             ]
@@ -124,7 +124,7 @@ The result will look like this.
             "avg": 3.3,
             "groupValues": [
               {
-                "key": "ratedAt",
+                "key": "hypi_created",
                 "value": "2020-07-11"
               }
             ]
