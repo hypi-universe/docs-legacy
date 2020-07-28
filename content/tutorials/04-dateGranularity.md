@@ -1,13 +1,16 @@
+---
+title: Timeseries Aggregations with Date Granularity
+metaTitle: Timeseries Aggregations with Date Granularity
+metaDescription: Hypi tutorial showing how to do timeseries aggregations using the dateGranularity feature
+---
 # Timeseries Aggregations with Date Granularity
 
 In this tutorial, we will work with the following schema
 
 ```graphql
 type ActorRatings {
-	actor_id: String!
 	rating: Float!
 	gender: Gender!
-	ratedAt: DateTime!
 }
 enum Gender {
 	Male
@@ -54,15 +57,15 @@ In this tutorial we will focus on using `actorRatingsWith` since it is the one t
 
 Now, let's get into some examples.
 
-Let's say I want to get the  **average** `rating` **for each day** for the actor with `actor_id='actor1'`.
+Let's say I want to get the  **average** `rating` **for each day** for the actor with `hypi.id='actor1'`.
 The aggregation looks like this.
 
 ```graphql	
 {
   aggregate {
     actorRatingsWith(
-      having: "actor_id='actor1'", 
-      groupBy: [{ field: ratedAt, dateGranularity: HOURS }]) {
+      where: "hypi.id='actor1'"
+      groupBy: [{ field: hypi_created, dateGranularity: DAYS }]) {
       rating {
         avg
         groupValues{
@@ -79,7 +82,13 @@ Here we are using the `actorRatingsWith` aggregation with the `groupBy` paramete
 
 As for the data we want to be returned, we specify `avg` and then the `groupValues` so we can know the **value of the field** we are grouping by - `ratedAt`. 
 
-> Note that the groupValues field is mandatory when using the dateGranularity parameter.
+
+>#### Required selections
+>
+> Note that the groupValues field is a mandatory selection when using the dateGranularity parameter. This means it *MUST* be one of the fields you select. 
+> Otherwise you will receive an error.
+
+
 
 The result will look like this.
 
@@ -121,8 +130,6 @@ The result will look like this.
             ]
           }
         }
-        .
-        .
       ]
     }
   }
@@ -138,8 +145,8 @@ Also, just as we did `DAYS` for the `dateGranularity` in this tutorial, you can 
 In conclusion, aggregations using `dateGranularity` boils down to:
 
 1. Using the right aggregation type - which is named "[your_type]With".
-2. Using `groupBy` to specify which **field** and `dateGranularity` you would like to group by. In our example `ratedAt`, `DAYS`.
-3. Using `having` if you want to filter before calculating - it is an **ArcQL** string. For more on ArcQL you can refer to the docs. In our example - `actor_id='actor1'`
-4. Adding the field that you want to aggregate. In our example `rating`
+2. Using `groupBy` to specify which **field** and `dateGranularity` you would like to group by. In our example `hypi_created`, `DAYS`.
+3. Using `where` if you want to filter before calculating - it is an [ArcQL](https://docs.hypi.app/reference/arcql) string. In our example - `hypi.id='actor1'`.
+4. Adding the field that you want to aggregate. In our example `rating`.
 5. Choosing what you want to calculate. In our example `avg` (others include `count`, `min`, `max` and `sum`)
 6. Adding `groupValues` so you can the **value of the field** that you grouped by in the **result set**.
