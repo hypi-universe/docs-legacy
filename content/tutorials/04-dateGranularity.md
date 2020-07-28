@@ -78,9 +78,9 @@ The aggregation looks like this.
 }
 ```
 
-Here we are using the `actorRatingsWith` aggregation with the `groupBy` parameter pointing at the field `ratedAt` and passing the ``dateGranularity: DAYS`` parameter to indicate that we want to group by the `ratedAt` field and have the results grouped **specifically** by the **days**.
+Here we are using the `actorRatingsWith` aggregation with the `groupBy` parameter pointing at the field `hypi_created` and passing the ``dateGranularity: DAYS`` parameter to indicate that we want to group by the `hypi_created` field and have the results grouped **specifically** by the **days**.
 
-As for the data we want to be returned, we specify `avg` and then the `groupValues` so we can know the **value of the field** we are grouping by - `ratedAt`. 
+As for the data we want to be returned, we specify `avg` and then the `groupValues` so we can know the **value of the field** we are grouping by - `hypi_created`. 
 
 
 >#### Required selections
