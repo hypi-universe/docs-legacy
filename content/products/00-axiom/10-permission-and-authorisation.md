@@ -27,17 +27,63 @@ A resource or object is the thing being protected. In Hypi, there are three prim
 
  1. `GroupPolicy` - A group policy applies to list the list of Accounts or Organisations in the groups the policy links to.
 
+      ```
+      type GroupPolicy implements Policy {
+         groups: [Group!]
+      }
+      ```
+
  1. `RolePolicy` - A role policy applies to a list of Roles.
+      ```
+      type RolePolicy implements Policy {
+         roles : [Role!]!
+      }
+      ```
 
  1. `AccountPolicy` - Applies to a set of Accounts.
+      ```
+      type AccountPolicy implements Policy {
+         accounts: [Account!]
+      }
+      ```
 
  1. `RealmPolicy` - Applies to a set of Realms.
+      ```
+      type RealmPolicy implements Policy {
+         realms: [RealmLink!]
+      }
+      ```
 
  1. `TimePolicy` - Allows granting or denying access based on date or time
+      ```
+      type TimePolicy implements Policy {
+         viewable before the given date
+         from: DateTime
+         to: DateTime
+         clients: [AuthClient!]
+         roles : [Role!]
+         groups: [Group!]
+         accounts: [Account!]
+         realms: [RealmLink!]
+      }
+      ```
 
  1. `ClientPolicy` - Controls access based on the client used to access a resource
+      ```
+      type ClientPolicy implements Policy {
+         clients: [AuthClient!]
+      }
+      ```
 
  1. `AggregatePolicy` - allows grouping one or more policies
+      ```
+      type AggregatedPolicy implements Policy @indices(sets: [
+         ["decisionStrategy"]
+      ]){
+         policies: [Policy!]!
+         decisionStrategy: DecisionStrategy
+      }
+      ```
 
 ### ​Permission​
 A permission encapsulates the object involved in authorisation.
