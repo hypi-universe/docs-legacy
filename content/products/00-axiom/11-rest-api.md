@@ -62,7 +62,7 @@ The second is the login using the email method.
 <div className={"code-container"}>
 
 <div className={"code-column"}>
-```
+```bash
 $ curl --location --request GET 'http://localhost:10000/rest/v1/fn/query/loginByEmail?email=x&password=y&type=query' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
@@ -95,7 +95,7 @@ The first is the login using the username method.
 <div className={"code-container"}>
 
 <div className={"code-column"}>
-```
+```bash
 $ curl --location --request POST 'http://localhost:10000/rest/v1/login' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
@@ -130,7 +130,7 @@ The second is the login using the email method.
 <div className={"code-container"}>
 
 <div className={"code-column"}>
-```
+```bash
 $ curl --location --request POST 'http://localhost:10000/rest/v1/login' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
@@ -159,10 +159,17 @@ $ curl --location --request POST 'http://localhost:10000/rest/v1/login' \
 </div>
 </div>
 
-# CRUD Operations
+## CRUD Operations
 
-## POST
-```
+The four basic CRUD operations **C**reate, **R**ead, **U**pdate, and **D**elete can be performed using the semantics of **P**ost, **G**et, **P**ut, and **D**elete HTTP methods. Furthermore, the APIs endpoints can be mapped to resources using the /{{aggregate}} or /{{aggregate}}/{{identifier}} for both GET and DELETE whilst POST and PUT will capture the identifiers from the GraphQL request body to avoid redundancy. Hereby, the RESTful APIs explained herein allow the same functionality as the CRUD operations manifested under [Hypi Platform CRUD Documentation](https://docs.hypi.app/products/axiom/crud)
+
+### POST
+In order to create a resource, send a POST request to the `/rest/v1` endpoint with the body containing the resource signature as defined by the GraphQL types.
+
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+```bash
 $ curl --location --request POST 'http://localhost:10000/rest/v1' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
@@ -179,9 +186,10 @@ $ curl --location --request POST 'http://localhost:10000/rest/v1' \
       }
   }'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "upsert": [
@@ -204,9 +212,15 @@ $ curl --location --request POST 'http://localhost:10000/rest/v1' \
   }
 }
 ```
+</div>
+</div>
 
-## PUT
-```
+### PUT
+In order to update a request, the same endpoint and the payload can be used, however, the HTTP method should be PUT.
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+```bash
 $ curl --location --request PUT 'http://localhost:10000/rest/v1' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
@@ -223,9 +237,10 @@ $ curl --location --request PUT 'http://localhost:10000/rest/v1' \
       }
   }'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "upsert": [
@@ -248,18 +263,27 @@ $ curl --location --request PUT 'http://localhost:10000/rest/v1' \
   }
 }
 ```
+</div>
+</div>
 
-## GET by ID
-Replace URL/url1 with {aggregate}/{id}
-```
+### GET by ID
+
+In order to access a resource, replace `URL/url1` with {{aggregate}}/{{identifier}}
+
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+
+```bash
 $ curl --location --request GET 'http://localhost:10000/rest/v1/URL/url1' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "find": {
@@ -302,18 +326,25 @@ $ curl --location --request GET 'http://localhost:10000/rest/v1/URL/url1' \
   }
 }
 ```
+</div>
+</div>
 
 ## GET by ArcQL
-Replace URL with {aggregate}
-```
+GraphQL find method can be used to access a resource, so replace `URL` with {{aggregate}}
+
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+```bash
 $ curl --location --request GET "http://localhost:10000/rest/v1/URL?first=2&arcql=hypi.id='url1'" \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "find": {
@@ -356,49 +387,66 @@ $ curl --location --request GET "http://localhost:10000/rest/v1/URL?first=2&arcq
   }
 }
 ```
+</div>
+</div>
 
 ## DELETE by ID
-Replace URL/url1 with {aggregate}/{id}
-```
+In order to delete a resource, replace `URL/url1` with {{aggregate}}/{{identifier}}
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+```bash
 $ curl --location --request DELETE 'http://localhost:10000/rest/v1/URL/url1' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "delete": 1
   }
 }
 ```
+</div>
+</div>
 
 ## DELETE by ArcQL
-Replace URL with {aggregate}
-```
+The same can be achieved using GraphQL by passing the identifier as a query parameter `?id=xx` and replace `URL` with {{aggregate}}
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+```bash
 $ curl --location --request DELETE "http://localhost:10000/rest/v1/URL?arcql=hypi.id='url1'" \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "delete": 1
   }
 }
 ```
+</div>
+</div>
 
 # GraphQL/ArcQL Functions
 - Endpoints: /rest/v1/fn/{root}/{fn}
 - Replace {root} with either of query or mutation
 - Replace {fn} with ArcQL functions such as get, find, login, ... etc.
 ## POST
-```
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+```bash
 $ curl --location --request POST 'http://localhost:10000/rest/v1/fn/mutation/upsert' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
@@ -415,9 +463,10 @@ $ curl --location --request POST 'http://localhost:10000/rest/v1/fn/mutation/ups
       }
   }'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "upsert": [
@@ -440,9 +489,14 @@ $ curl --location --request POST 'http://localhost:10000/rest/v1/fn/mutation/ups
   }
 }
 ```
+</div>
+</div>
 
 ## PUT
-```
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+```bash
 $ curl --location --request PUT 'http://localhost:10000/rest/v1/fn/mutation/upsert' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
@@ -459,9 +513,10 @@ $ curl --location --request PUT 'http://localhost:10000/rest/v1/fn/mutation/upse
       }
   }'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "upsert": [
@@ -484,19 +539,25 @@ $ curl --location --request PUT 'http://localhost:10000/rest/v1/fn/mutation/upse
   }
 }
 ```
+</div>
+</div>
 
-## - GET
+### GET
 
-### -- ID
-```
+#### ID
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+```bash
 $ curl --location --request GET "http://localhost:10000/rest/v1/fn/query/get?type=URL&id=url1" \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "get": {
@@ -523,17 +584,22 @@ $ curl --location --request GET "http://localhost:10000/rest/v1/fn/query/get?typ
   }
 }
 ```
+</div>
 
-### -- Find
-```
+#### Find
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+```bash
 $ curl --location --request GET "http://localhost:10000/rest/v1/fn/query/find?first=1&type=URL&arcql=hypi.id='url1'" \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "find": {
@@ -576,3 +642,5 @@ $ curl --location --request GET "http://localhost:10000/rest/v1/fn/query/find?fi
   }
 }
 ```
+</div>
+</div>
