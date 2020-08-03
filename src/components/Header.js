@@ -85,6 +85,9 @@ const Header = (props) => (
                 <Search collapse indices={searchIndices}/>
               </div>
             ) : null}
+            <div className={'searchWrapper hidden-xs navBarUL'}>
+              <input type="text" id="search-inp" placeholder={'Search'} className={'searchInput'}/>
+            </div>
 
             <div  id="navbarNav" className={'navbar-collapse collapse navBarCollapse'}>
               {/*<div className={'visible-xs'}>*/}

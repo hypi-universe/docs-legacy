@@ -17,7 +17,7 @@ const config = {
       { "text": "Login", "link": "https://hypi.app/auth/login?utm_source=docs&utm_medium=header&utm_campaign=login"}
 		],
 		"search": {
-			"enabled": true,
+			"enabled": false,
 			"indexName": "docs",
 			"algoliaAppId": process.env.GATSBY_ALGOLIA_APP_ID,
 			"algoliaSearchKey": process.env.GATSBY_ALGOLIA_SEARCH_KEY,

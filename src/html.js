@@ -42,6 +42,7 @@ export default class HTML extends React.Component {
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
                 crossOrigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
         {this.props.headComponents}
       </head>
       <body {...this.props.bodyAttributes}>
@@ -60,6 +61,24 @@ export default class HTML extends React.Component {
                 $(this).collapse('hide');
               }
             });
+            `
+        }}
+      />
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            $(document).ready(function(){
+              console.log('Ready event')
+              setTimeout(function(){
+                docsearch({
+                  apiKey: '9ae9d65b23569334296974ce321050b6',
+                  indexName: 'hypi',
+                  inputSelector: '#search-inp',
+                  debug: false // Set debug to true if you want to inspect the dropdown
+                });
+              }, 500);
+            })
             `
         }}
       />
