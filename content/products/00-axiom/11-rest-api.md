@@ -1,17 +1,44 @@
-# Hypi RESTful APIs Developer Guide
+---
+title: "RESTful APIs"
+metaTitle: "Hypi RESTful APIs Developer Guide"
+metaDescription: "Hypi Platform RESTful APIs Authentication, CRUD Operations, and GraphQL Operations Documentation"
+---
 
-# Authentication
+## Overview
+
+Hypi platform provides APIs with multiple flavors that suit different developers tastes. The RESTful APIs are no different and at the same time they were redesigned to abide by the HATEOS code of conduct for better semantics and easier interpretation.
+
+The examples use the following GraphQL schema as an example.
+
+```graphql
+type URL  @indices(sets: [
+  ["path"]
+]){
+  path: String!
+  queryParams: Json
+  port: Int
+  host: String
+}
+```
+
+## Authentication
 Users can login either by username or email and logins can be triggered either by Get or Post.
-## - GET
-### -- Username
+### GET
+#### Username
+The first is the login using the username method.
+
+<div className={"code-container"}>
+
+<div className={"code-column"}>
 ```
 $ curl --location --request GET 'http://localhost:10000/rest/v1/fn/query/login?username=x&password=y&type=query' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "login": {
@@ -23,18 +50,27 @@ $ curl --location --request GET 'http://localhost:10000/rest/v1/fn/query/login?u
     }
   }
 }
-
 ```
 
-### -- Email
+</div>
+
+</div>
+
+#### Email
+The second is the login using the email method.
+
+<div className={"code-container"}>
+
+<div className={"code-column"}>
 ```
 $ curl --location --request GET 'http://localhost:10000/rest/v1/fn/query/loginByEmail?email=x&password=y&type=query' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "loginByEmail": {
@@ -46,10 +82,19 @@ $ curl --location --request GET 'http://localhost:10000/rest/v1/fn/query/loginBy
     }
   }
 }
-
 ```
-## - POST
-### -- Username
+</div>
+</div>
+
+### POST
+Authentication can also be performed using POST method.
+
+#### Username
+The first is the login using the username method.
+
+<div className={"code-container"}>
+
+<div className={"code-column"}>
 ```
 $ curl --location --request POST 'http://localhost:10000/rest/v1/login' \
   --header 'authorization: eyJhb ...' \
@@ -60,9 +105,10 @@ $ curl --location --request POST 'http://localhost:10000/rest/v1/login' \
       "password": "y"
   }'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "login": {
@@ -75,8 +121,15 @@ $ curl --location --request POST 'http://localhost:10000/rest/v1/login' \
   }
 }
 ```
+</div>
+</div>
 
-### -- Email
+#### Email
+The second is the login using the email method.
+
+<div className={"code-container"}>
+
+<div className={"code-column"}>
 ```
 $ curl --location --request POST 'http://localhost:10000/rest/v1/login' \
   --header 'authorization: eyJhb ...' \
@@ -87,9 +140,10 @@ $ curl --location --request POST 'http://localhost:10000/rest/v1/login' \
       "password": "y"
   }'
 ```
-
+</div>
+<div className={"code-column"}>
 **Response**
-```
+```json
 {
   "data": {
     "loginByEmail": {
@@ -102,6 +156,8 @@ $ curl --location --request POST 'http://localhost:10000/rest/v1/login' \
   }
 }
 ```
+</div>
+</div>
 
 # CRUD Operations
 
