@@ -35,7 +35,7 @@ The first is the login using the username method.
 
 **Request**
 
-```
+```bash
 $ curl --location --request GET 'http://localhost:10000/rest/v1/fn/query/login?username=x&password=y&type=query' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
