@@ -24,7 +24,8 @@ type URL  @indices(sets: [
 > There could be multiple ways to perform the same functionality allowing Hypi developers to take advantage of flexibility and tuning the APIs to their awesome applications.
 
 ## Authentication
-Users can login either by username or email and logins can be triggered either by Get or Post.
+Users can login either by username or email and logins can be triggered either by `GET` or `POST`.
+
 ### GET
 #### Username
 The first is the login using the username method.
@@ -183,7 +184,7 @@ $ curl --location --request POST 'http://localhost:10000/rest/v1/login' \
 
 ## CRUD Operations
 
-The four basic CRUD operations **C**reate, **R**ead, **U**pdate, and **D**elete can be performed using the semantics of **P**ost, **G**et, **P**ut, and **D**elete HTTP methods. Furthermore, the APIs endpoints can be mapped to resources using the /{{aggregate}} or /{{aggregate}}/{{identifier}} for both GET and DELETE whilst POST and PUT will capture the identifiers from the GraphQL request body to avoid redundancy. Hereby, the RESTful APIs explained herein allow the same functionality as the CRUD operations manifested under [Hypi Platform CRUD Documentation](https://docs.hypi.app/products/axiom/crud)
+The four basic CRUD operations **C**reate, **R**ead, **U**pdate, and **D**elete can be performed using the semantics of **P**ost, **G**et, **P**ut, and **D**elete HTTP methods. Furthermore, the APIs endpoints can be mapped to resources using the /{{aggregate}} or /{{aggregate}}/{{identifier}} for both GET and DELETE whilst POST and PUT will capture the identifiers from the GraphQL request body to avoid redundancy. Hereby, the RESTful APIs explained herein allow the same functionality as the CRUD operations manifested under [Hypi Platform CRUD Documentation](/products/axiom/crud)
 
 ### POST
 In order to create a resource, send a POST request to the `/rest/v1` endpoint with the body containing the resource signature as defined by the GraphQL types.
@@ -243,7 +244,8 @@ $ curl --location --request POST 'http://localhost:10000/rest/v1' \
 </div>
 
 ### PUT
-In order to update a request, the same endpoint and the payload can be used, however, the HTTP method should be PUT.
+In order to make an update request, the same endpoint and the payload can be used, however, the HTTP method should be `PUT`.
+
 <div className={"code-container"}>
 
 <div className={"code-column"}>
@@ -300,7 +302,7 @@ $ curl --location --request PUT 'http://localhost:10000/rest/v1' \
 
 ### GET by ID
 
-In order to access a resource, replace `URL/url1` with {{aggregate}}/{{identifier}}. Unlike the `GET` function, this returns a list of objects matching the filter provided.
+In order to access a resource, replace `URL/url1` with {{aggregate}}/{{identifier}} where {{aggregate}} is the GraphQL type name from your app's schema and {{identifier}} is the ID of the object to get. Unlike the `GET` function, this returns a list of objects matching the filter provided.
 
 <div className={"code-container"}>
 
@@ -367,7 +369,10 @@ $ curl --location --request GET 'http://localhost:10000/rest/v1/URL/url1' \
 </div>
 
 ## GET by ArcQL
-GraphQL find method can be used to access a resource, so replace `URL` with {{aggregate}}
+GraphQL find method can be used to access a resource, so replace `URL` with {{aggregate}}.
+> Any valid ArcQL supported
+>
+> The ArcQL parameter accepts any valid filter supported by [ArcQL](/reference/arcql). The example here uses `hypi.id = 'url1'` only for simplicity.
 
 <div className={"code-container"}>
 
@@ -493,10 +498,11 @@ $ curl --location --request DELETE "http://localhost:10000/rest/v1/URL?arcql=hyp
 # GraphQL/ArcQL Functions
 Any arbitrary GraphQL function can be triggered using the following endpoint.
 - Endpoints: /rest/v1/fn/{root}/{fn}
-- Replace {root} with either of query or mutation
-- Replace {fn} with ArcQL functions such as get, find, login, ... etc.
+- Replace {root} with either of `query` or `mutation`
+- Replace {fn} with ArcQL functions such as get, find, login, or your own GraphQL function that you defined in your app's schema.
+
 ## POST
-`POST` can be used with functions that create resources on the server. The mutation upsert is an example.
+`POST` can be used to create resources on the server. This is equivalent to calling the Hypi `upsert` function in GraphQL.
 
 <div className={"code-container"}>
 
@@ -611,57 +617,9 @@ $ curl --location --request PUT 'http://localhost:10000/rest/v1/fn/mutation/upse
 ### GET
 For further flexibility the **R**ead requests discussed above can be rephrased as arbitrary GraphQL functions by using `query/get` or `query/fin`.
 
-#### ID
-Instead of using /{{aggregate}}/{{identifier}}, pass the `aggregate` to `type` query parameter and the `identifier` to `id`.
-
-<div className={"code-container"}>
-
-<div className={"code-column"}>
-
-**Request**
-
-```bash
-$ curl --location --request GET "http://localhost:10000/rest/v1/fn/query/get?type=URL&id=url1" \
-  --header 'authorization: eyJhb ...' \
-  --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
-  --header 'content-type: application/json'
-```
-</div>
-<div className={"code-column"}>
-
-**Response**
-
-```json
-{
-  "data": {
-    "get": {
-      "hypi": {
-        "created": "2020-08-01T06:03:07Z",
-        "updated": "2020-08-01T06:04:00Z",
-        "trashed": null,
-        "id": "url1",
-        "createdBy": "01E8TR0ZVWJC7JTK0Z04TVZ7HT",
-        "impl": null,
-        "app": "store",
-        "release": "latest",
-        "instance": "hypi",
-        "publisherRealm": "hypi",
-        "publisherApp": "core",
-        "publisherRelease": "latest",
-        "instanceId": "01E8TQXPF01QR7QYFZA038DM2P"
-      },
-      "path": "/",
-      "queryParams": null,
-      "port": null,
-      "host": "hypi.app"
-    }
-  }
-}
-```
-</div>
-
 #### Find
-Similarly, pass the `aggregate` to type query parameter when using find GraphQL function.
+The `GET`, `PUT`, `POST` and `DELETE` methods above are all semantics to make the API more familiar and inline with existing common practice but the same thing can be done by explicitly calling the appropriate function by passing the `aggregate` to `type` query parameter when using `find` GraphQL function.
+
 <div className={"code-container"}>
 
 <div className={"code-column"}>
