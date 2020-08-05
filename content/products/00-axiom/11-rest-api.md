@@ -6,7 +6,7 @@ metaDescription: "Hypi Platform RESTful APIs Authentication, CRUD Operations, an
 
 ## Overview
 
-Hypi platform provides APIs with multiple flavors that suit different developers tastes. The RESTful APIs are no different and at the same time they were redesigned to abide by the HATEOS code of conduct for better semantics and easier interpretation.
+Hypi platform provides APIs with multiple flavors that suit different developers tastes. The RESTful APIs are no different and at the same time they were redesigned to abide by the HATEOS code of conduct for better semantics and easier interpretation. The API endpoints available are documented in [Hypi Platform API Documentation](/products/axiom/api).
 
 The examples use the following GraphQL schema as an example.
 
@@ -37,7 +37,7 @@ The first is the login using the username method.
 **Request**
 
 ```bash
-$ curl --location --request GET 'http://localhost:10000/rest/v1/fn/query/login?username=x&password=y&type=query' \
+$ curl --location --request GET '/rest/v1/fn/query/login?username=x&password=y&type=query' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
 ```
@@ -74,7 +74,7 @@ The second is the login using the email method.
 **Request**
 
 ```bash
-$ curl --location --request GET 'http://localhost:10000/rest/v1/fn/query/loginByEmail?email=x&password=y&type=query' \
+$ curl --location --request GET '/rest/v1/fn/query/loginByEmail?email=x&password=y&type=query' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
 ```
@@ -112,7 +112,7 @@ The first is the login using the username method.
 **Request**
 
 ```bash
-$ curl --location --request POST 'http://localhost:10000/rest/v1/login' \
+$ curl --location --request POST '/rest/v1/login' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json' \
@@ -152,7 +152,7 @@ The second is the login using the email method.
 **Request**
 
 ```bash
-$ curl --location --request POST 'http://localhost:10000/rest/v1/login' \
+$ curl --location --request POST '/rest/v1/login' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json' \
@@ -196,7 +196,7 @@ In order to create a resource, send a POST request to the `/rest/v1` endpoint wi
 **Request**
 
 ```bash
-$ curl --location --request POST 'http://localhost:10000/rest/v1' \
+$ curl --location --request POST '/rest/v1' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json' \
@@ -253,7 +253,7 @@ In order to make an update request, the same endpoint and the payload can be use
 **Request**
 
 ```bash
-$ curl --location --request PUT 'http://localhost:10000/rest/v1' \
+$ curl --location --request PUT '/rest/v1' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json' \
@@ -302,7 +302,7 @@ $ curl --location --request PUT 'http://localhost:10000/rest/v1' \
 
 ### GET by ID
 
-In order to access a resource, replace `URL/url1` with {{aggregate}}/{{identifier}} where {{aggregate}} is the GraphQL type name from your app's schema and {{identifier}} is the ID of the object to get. Unlike the `GET` function, this returns a list of objects matching the filter provided.
+In order to access a resource, replace `URL/url1` with {{aggregate}}/{{identifier}} where {{aggregate}} is the GraphQL type name from your app's schema and {{identifier}} is the ID of the object to get.
 
 <div className={"code-container"}>
 
@@ -311,7 +311,7 @@ In order to access a resource, replace `URL/url1` with {{aggregate}}/{{identifie
 **Request**
 
 ```bash
-$ curl --location --request GET 'http://localhost:10000/rest/v1/URL/url1' \
+$ curl --location --request GET '/rest/v1/URL/url1' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
@@ -381,7 +381,7 @@ GraphQL find method can be used to access a resource, so replace `URL` with {{ag
 **Request**
 
 ```bash
-$ curl --location --request GET "http://localhost:10000/rest/v1/URL?first=2&arcql=hypi.id='url1'" \
+$ curl --location --request GET "/rest/v1/URL?first=2&arcql=hypi.id='url1'" \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
@@ -446,7 +446,7 @@ In order to delete a resource, replace `URL/url1` with {{aggregate}}/{{identifie
 **Request**
 
 ```bash
-$ curl --location --request DELETE 'http://localhost:10000/rest/v1/URL/url1' \
+$ curl --location --request DELETE '/rest/v1/URL/url1' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
@@ -475,7 +475,7 @@ The same can be achieved using GraphQL by passing the identifier as a query para
 **Request**
 
 ```bash
-$ curl --location --request DELETE "http://localhost:10000/rest/v1/URL?arcql=hypi.id='url1'" \
+$ curl --location --request DELETE "/rest/v1/URL?arcql=hypi.id='url1'" \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
@@ -511,7 +511,7 @@ Any arbitrary GraphQL function can be triggered using the following endpoint.
 **Request**
 
 ```bash
-$ curl --location --request POST 'http://localhost:10000/rest/v1/fn/mutation/upsert' \
+$ curl --location --request POST '/rest/v1/fn/mutation/upsert' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json' \
@@ -567,7 +567,7 @@ Similar to `POST`, `PUT` is used to update/modify existing resources.
 **Request**
 
 ```bash
-$ curl --location --request PUT 'http://localhost:10000/rest/v1/fn/mutation/upsert' \
+$ curl --location --request PUT '/rest/v1/fn/mutation/upsert' \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json' \
@@ -618,7 +618,7 @@ $ curl --location --request PUT 'http://localhost:10000/rest/v1/fn/mutation/upse
 For further flexibility the **R**ead requests discussed above can be rephrased as arbitrary GraphQL functions by using `query/get` or `query/fin`.
 
 #### Find
-The `GET`, `PUT`, `POST` and `DELETE` methods above are all semantics to make the API more familiar and inline with existing common practice but the same thing can be done by explicitly calling the appropriate function by passing the `aggregate` to `type` query parameter when using `find` GraphQL function.
+The `GET`, `PUT`, `POST` and `DELETE` methods above are all semantics to make the API more familiar and inline with existing common practice but the same thing can be done by explicitly calling the appropriate function by passing the `aggregate` to `type` query parameter when using `find` GraphQL function. Unlike the `GET` function, this returns a list of objects matching the filter provided.
 
 <div className={"code-container"}>
 
@@ -627,7 +627,7 @@ The `GET`, `PUT`, `POST` and `DELETE` methods above are all semantics to make th
 **Request**
 
 ```bash
-$ curl --location --request GET "http://localhost:10000/rest/v1/fn/query/find?first=1&type=URL&arcql=hypi.id='url1'" \
+$ curl --location --request GET "/rest/v1/fn/query/find?first=1&type=URL&arcql=hypi.id='url1'" \
   --header 'authorization: eyJhb ...' \
   --header 'hypi-domain: latest.store.hypi.hypi.hypi.app' \
   --header 'content-type: application/json'
