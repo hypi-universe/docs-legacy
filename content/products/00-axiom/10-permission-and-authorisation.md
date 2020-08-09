@@ -77,9 +77,7 @@ A resource or object is the thing being protected. In Hypi, there are three prim
 
  1. `AggregatePolicy` - allows grouping one or more policies
       ```
-      type AggregatedPolicy implements Policy @indices(sets: [
-         ["decisionStrategy"]
-      ]){
+      type AggregatedPolicy implements Policy {
          policies: [Policy!]!
          decisionStrategy: DecisionStrategy
       }
