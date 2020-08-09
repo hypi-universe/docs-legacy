@@ -8,7 +8,7 @@ metaDescription: "Hypi platform documentation for resource based permission"
 Allows protecting a specific resource by ID. The owner of the resource can give permission for other users to access the resource and also can give permission for other users to modify permissions of the resource.
 
 ## Examples
-For the examples below we will need some data. Use add these entries to be able to get the results shown in the example.
+For the examples below we will need some data. Add these entries to be able to get the results shown in the example.
 
 ### Creating a Resource Based Permission
 
@@ -23,7 +23,7 @@ For the examples below we will need some data. Use add these entries to be able 
     mutation Upsert($values: HypiUpsertInputUnion!) {
       upsert(values: $values) {
         release
-        instance
+        instanceUse a
         publisherRelease
         id
         created
@@ -56,7 +56,7 @@ For the examples below we will need some data. Use add these entries to be able 
                       hypi    : [id: 'r1'],
                       name    : 'role 1',
                       accounts: [
-                        [hypi: [id: accId1]]
+                        [hypi: [id: "accountId"]]
                       ]
                     ]
                   ]
@@ -127,30 +127,30 @@ For the examples below we will need some data. Use add these entries to be able 
         ResourceBasedPermission: [
             [
               "hypi"          : ["id": "rbp2"],
-              name            : 'rbp2',
-              decisionStrategy: 'Unanimous',
-              type            : 'URL',
-              resource        : 'url123',
+              name            : "rbp2",
+              decisionStrategy: "Unanimous",
+              type            : "URL",
+              resource        : "url123",
               policies        : [
                 [
-                  hypi  : [impl: 'GroupPolicy', id: 'gp1'],
-                  name  : 'gp 1',
-                  logic : 'Positive',
+                  hypi  : [impl: "GroupPolicy", id: "gp1"],
+                  name  : "gp 1",
+                  logic : "Positive",
                   groups: [
                     [
-                      hypi    : [id: 'g1'],
-                      name    : 'group 1',
+                      hypi    : [id: "g1"],
+                      name    : "group 1",
                       accounts: [
-                        [hypi: [id: accId1]]
+                        [hypi: [id: "accountId"]]
                       ]
                     ]
                   ],
                   organisations: [
                     [
-                      hypi   : [id: 'o1'],
-                      name   : 'Org 1',
+                      hypi   : [id: "o1"],
+                      name   : "Org 1",
                       members: [
-                        [hypi: [id: accId1]]
+                        [hypi: [id: "accountId"]]
                       ]
                     ]
                   ]
@@ -221,19 +221,19 @@ For the examples below we will need some data. Use add these entries to be able 
         ResourceBasedPermission: [
             [
               "hypi"          : ["id": "rbp2"],
-              name            : 'rbp2',
-              decisionStrategy: 'Unanimous',
-              type            : 'URL',
-              resource        : 'url123',
+              name            : "rbp2",
+              decisionStrategy: "Unanimous",
+              type            : "URL",
+              resource        : "url123",
               policies        : [
                 [
-                  hypi  : [impl: 'RealmPolicy', id: 'rp2'],
-                  name  : 'rp 2',
-                  logic : 'Positive',
+                  hypi  : [impl: "RealmPolicy", id: "rp2"],
+                  name  : "rp 2",
+                  logic : "Positive",
                   realms: [
                     [
-                      hypi    : [id: 'rl1'],
-                      name    : 'hypi',
+                      hypi    : [id: "rl1"],
+                      name    : "hypi",
                       accounts: [
                         [
                           "hypi"    : ["id": "example.user1"],
@@ -315,30 +315,30 @@ For the examples below we will need some data. Use add these entries to be able 
         ResourceBasedPermission: [
             [
               "hypi"          : ["id": "rbp2"],
-              name            : 'rbp2',
-              decisionStrategy: 'Unanimous',
-              type            : 'URL',
-              resource        : 'url123',
+              name            : "rbp2",
+              decisionStrategy: "Unanimous",
+              type            : "URL",
+              resource        : "url123",
               policies        : [
                 [
-                  hypi   : [impl: 'TimePolicy', id: 'tp1'],
-                  name   : 'time policy 1',
-                  from   : '2020-04-03 11:13:34',
+                  hypi   : [impl: "TimePolicy", id: "tp1"],
+                  name   : "time policy 1",
+                  from   : "2020-04-03 11:13:34",
                   to     : SqlHelper.timestamp(DateTime.now().plusDays(1)),
-                  logic  : 'Positive',
+                  logic  : "Positive",
                   groups: [
                     [
-                      hypi    : [id: 'g1'],
-                      name    : 'group 1',
+                      hypi    : [id: "g1"],
+                      name    : "group 1",
                       accounts: [
-                        [hypi: [id: accId1]]
+                        [hypi: [id: "accountId"]]
                       ]
                     ]
                   ],
                   roles: [
                     [
-                      hypi    : [id: 'r1'],
-                      name    : 'role 1',
+                      hypi    : [id: "r1"],
+                      name    : "role 1",
                       accounts: [
                         [hypi: [id: accId2]]
                       ]
