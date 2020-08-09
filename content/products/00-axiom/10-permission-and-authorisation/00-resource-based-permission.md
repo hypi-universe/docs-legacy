@@ -39,30 +39,30 @@ For the examples below we will need some data. Add these entries to be able to g
     #Data
     {
       "values": {
-        ResourceBasedPermission: [
-            [
-              "hypi"          : ["id": "rbp2"],
-              name            : "rbp2",
-              decisionStrategy: "Unanimous",
-              type            : "URL",
-              resource        : "url123",
-              policies        : [
-                [
-                  hypi : [impl: "RolePolicy", id: "rp1"],
-                  name : "rp 1",
-                  logic: "Positive",
-                  roles: [
-                    [
-                      hypi    : [id: "r1"],
-                      name    : "role 1",
-                      accounts: [
-                        [hypi: [id: "accountId"]]
+        "ResourceBasedPermission": [
+            {
+              "hypi"                : {"id": "rbp2"},
+              "name"                : "rbp2",
+              "decisionStrategy"    : "Unanimous",
+              "type"                : "URL",
+              "resource"            : "url123",
+              "policies"            : [
+                {
+                  "hypi"  : {"impl": "RolePolicy", "id": "rp1"},
+                  "name"  : "rp 1",
+                  "logic" : "Positive",
+                  "roles" : [
+                    {
+                      "hypi"     : {"id": "r1"},
+                      "name"     : "role 1",
+                      "accounts" : [
+                        {"hypi": {"id": "accountId"}}
                       ]
-                    ]
+                    }
                   ]
-                ]
+                }
               ]
-            ]
+            }
           ]
       }
     }
@@ -124,39 +124,39 @@ For the examples below we will need some data. Add these entries to be able to g
     #Data
     {
       "values": {
-        ResourceBasedPermission: [
-            [
-              "hypi"          : ["id": "rbp2"],
-              name            : "rbp2",
-              decisionStrategy: "Unanimous",
-              type            : "URL",
-              resource        : "url123",
-              policies        : [
-                [
-                  hypi  : [impl: "GroupPolicy", id: "gp1"],
-                  name  : "gp 1",
-                  logic : "Positive",
-                  groups: [
-                    [
-                      hypi    : [id: "g1"],
-                      name    : "group 1",
-                      accounts: [
-                        [hypi: [id: "accountId"]]
+        "ResourceBasedPermission": [
+            {
+              "hypi"             : {"id": "rbp2"},
+              "name"             : "rbp2",
+              "decisionStrategy" : "Unanimous",
+              "type"             : "URL",
+              "resource"         : "url123",
+              "policies"         : [
+                {
+                  "hypi"   : {"impl": "GroupPolicy", "id": "gp1"},
+                  "name"   : "gp 1",
+                  "logic"  : "Positive",
+                  "groups" : [
+                    {
+                      "hypi"     : {"id": "g1"},
+                      "name"     : "group 1",
+                      "accounts" : [
+                        {"hypi": {"id": "accountId"}}
                       ]
-                    ]
+                    }
                   ],
-                  organisations: [
-                    [
-                      hypi   : [id: "o1"],
-                      name   : "Org 1",
-                      members: [
-                        [hypi: [id: "accountId"]]
+                  "organisations": [
+                    {
+                      "hypi"    : {"id": "o1"},
+                      "name"    : "Org 1",
+                      "members" : [
+                        {"hypi": {"id": "accountId"}}
                       ]
-                    ]
+                    }
                   ]
-                ]
+                }
               ]
-            ]
+            }
           ]
       }
     }
@@ -218,39 +218,39 @@ For the examples below we will need some data. Add these entries to be able to g
     #Data
     {
       "values": {
-        ResourceBasedPermission: [
-            [
-              "hypi"          : ["id": "rbp2"],
-              name            : "rbp2",
-              decisionStrategy: "Unanimous",
-              type            : "URL",
-              resource        : "url123",
-              policies        : [
-                [
-                  hypi  : [impl: "RealmPolicy", id: "rp2"],
-                  name  : "rp 2",
-                  logic : "Positive",
-                  realms: [
-                    [
-                      hypi    : [id: "rl1"],
-                      name    : "hypi",
-                      accounts: [
-                        [
-                          "hypi"    : ["id": "example.user1"],
+        "ResourceBasedPermission": [
+            {
+              "hypi"             : {"id": "rbp2"},
+              "name"             : "rbp2",
+              "decisionStrategy" : "Unanimous",
+              "type"             : "URL",
+              "resource"         : "url123",
+              "policies"         : [
+                {
+                  "hypi"   : {"impl": "RealmPolicy", "id": "rp2"},
+                  "name"   : "rp 2",
+                  "logic"  : "Positive",
+                  "realms" : [
+                    {
+                      "hypi"     : {"id": "rl1"},
+                      "name"     : "hypi",
+                      "accounts" : [
+                        {
+                          "hypi"    : {"id": "example.user1"},
                           "username": "user1",
-                          "password": ["value": "pass1"],
-                          "emails"  : [["value": "user1@hypi.io"]],
-                          "owner"   : ["names": [
-                            ["firstName": "Something"]
+                          "password": {"value": "pass1"},
+                          "emails"  : [{"value": "user1@hypi.io"}],
+                          "owner"   : {"names": [
+                            {"firstName": "Something"}
                           ]
-                          ]
-                        ]
+                          }
+                        }
                       ]
-                    ]
+                    }
                   ]
-                ]
+                }
               ]
-            ]
+            }
           ]
       }
     }
@@ -312,44 +312,44 @@ For the examples below we will need some data. Add these entries to be able to g
     #Data
     {
       "values": {
-        ResourceBasedPermission: [
-            [
-              "hypi"          : ["id": "rbp2"],
-              name            : "rbp2",
-              decisionStrategy: "Unanimous",
-              type            : "URL",
-              resource        : "url123",
-              policies        : [
-                [
-                  hypi   : [impl: "TimePolicy", id: "tp1"],
-                  name   : "time policy 1",
-                  from   : "2020-04-03 11:13:34",
-                  to     : SqlHelper.timestamp(DateTime.now().plusDays(1)),
-                  logic  : "Positive",
-                  groups: [
-                    [
-                      hypi    : [id: "g1"],
-                      name    : "group 1",
-                      accounts: [
-                        [hypi: [id: "accountId"]]
+        "ResourceBasedPermission": [
+            {
+              "hypi"             : {"id": "rbp2"},
+              "name"             : "rbp2",
+              "decisionStrategy" : "Unanimous",
+              "type"             : "URL",
+              "resource"         : "url123",
+              "policies"         : [
+                {
+                  "hypi"    : {"impl": "TimePolicy", "id": "tp1"},
+                  "name"    : "time policy 1",
+                  "from"    : "2020-04-03 11:13:34",
+                  "to"      : "2021-04-03 11:13:34",
+                  "logic"   : "Positive",
+                  "groups"  : [
+                    {
+                      "hypi"     : {"id": "g1"},
+                      "name"     : "group 1",
+                      "accounts" : [
+                        {"hypi": {"id": "accountId"}}
                       ]
-                    ]
+                    }
                   ],
-                  roles: [
-                    [
-                      hypi    : [id: "r1"],
-                      name    : "role 1",
-                      accounts: [
-                        [hypi: [id: accId2]]
+                  "roles": [
+                    {
+                      "hypi"     : {"id": "r1"},
+                      "name"     : "role 1",
+                      "accounts" : [
+                        {"hypi": {"id": "accId2"}}
                       ]
-                    ]
+                    }
                   ],
-                  accounts: [
-                    [hypi: [id: accId3]]
+                  "accounts": [
+                    {"hypi": {"id": "accId3"}}
                   ]
-                ]
+                }
               ]
-            ]
+            }
           ]
       }
     }
