@@ -39,7 +39,8 @@
 <url> <loc>https://docs.hypi.app/tutorials/crud</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://docs.hypi.app/products/axiom/crud</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://docs.hypi.app/products/axiom/aggregations-api</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://docs.hypi.app/products/axiom/permission-and-authorisation</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://docs.hypi.app/tutorials/dateGranularity</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://docs.hypi.app/products/axiom/rest-api</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://docs.hypi.app/products/axiom/permission-and-authorisation</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://docs.hypi.app/products/axiom/permission-and-authorisation/resource-based-permission</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
