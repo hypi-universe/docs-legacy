@@ -23,6 +23,7 @@ Run the following GraphQL query to retrieve the App ID available as hypi.id. Not
 <div className={"code-container"}>
 
 <div className={"code-column"}>
+
 ```graphql
 {
   find(type: App, arcql:"*"){
@@ -43,6 +44,7 @@ Run the following GraphQL query to retrieve the App ID available as hypi.id. Not
   }
 }
 ```
+
 </div>
 </div>
 
@@ -51,6 +53,7 @@ At this point, you are ready to create the Serverless function. In order to crea
 <div className={"code-container"}>
 
 <div className={"code-column"}>
+
 ```graphql
 mutation upsert($values:HypiUpsertInputUnion!) {
   upsert(values:$values){
@@ -58,6 +61,7 @@ mutation upsert($values:HypiUpsertInputUnion!) {
   }
 }
 ```
+
 </div>
 </div>
 
@@ -65,6 +69,7 @@ Under the query variables, you can supply the actual parameters. Note that the p
 <div className={"code-container"}>
 
 <div className={"code-column"}>
+
 ```json
 {
   "values": {
@@ -96,6 +101,7 @@ Under the query variables, you can supply the actual parameters. Note that the p
   }
 }
 ```
+
 </div>
 </div>
 
@@ -104,6 +110,7 @@ In order to double check that the serverless was created successfully, then run 
 <div className={"code-container"}>
 
 <div className={"code-column"}>
+
 ```graphql
 {
   find(type: App, arcql:"*"){
@@ -132,6 +139,7 @@ In order to double check that the serverless was created successfully, then run 
   }
 }
 ```
+
 </div>
 </div>
 
@@ -140,9 +148,11 @@ Before you start using the serverless function, you need to define a GraphQL que
 <div className={"code-container"}>
 
 <div className={"code-column"}>
+
 ```graphql
   f1(a: String, b: Int, c: Boolean):Json @tan(type:OpenFaaS, name:"count-app", handler:"wc -m")
 ```
+
 </div>
 </div>
 
@@ -159,8 +169,10 @@ It is now time to run the function and pass some real values and obtain the resu
 <div className={"code-container"}>
 
 <div className={"code-column"}>
+
 ```graphql
     f1(a: "hello, @tan", b: 2376, c: true);
 ```
+
 </div>
 </div>
