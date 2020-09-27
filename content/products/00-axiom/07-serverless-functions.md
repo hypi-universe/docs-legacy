@@ -89,7 +89,7 @@ Under the query variables, you can supply the actual parameters. Note that the p
               "impl": "OpenFaaSFn"
             },
             "image": "functions/alpine:latest",
-            "name": "count-app",
+            "name": "echo-app",
             "credentials": {
               "server": "hub.docker.com",
               "username": "example",
@@ -150,7 +150,15 @@ Before you start using the serverless function, you need to define a GraphQL que
 <div className={"code-column"}>
 
 ```graphql
-  f1(a: String, b: Int, c: Boolean):Json @tan(type:OpenFaaS, name:"count-app", handler:"wc -m")
+type Query {
+    f1(a:String!, b: Int!, c:Boolean!):EchoType @tan(type:OpenFaaS, name:"echoit", handler:"cat")
+}
+
+type EchoType {
+        a: String
+        b: Int
+        c: Boolean
+}
 ```
 
 </div>
@@ -158,10 +166,12 @@ Before you start using the serverless function, you need to define a GraphQL que
 
 This has just defined a @tan function that accepts 3 parameters of types String, Integer, and Boolean. It returns a JSON object.
 The @tan directive has a few options; type, name, handler, and saveAs. They are explained below:
-* type: instructs the system on which serverless backend to use, currently only OpenFaaS is available.
+* type: instructs the system on which serverless backend to use, currently OpenFaaS is available as well as inline scripts written in Groovy or Velocity.
 * name: the name field should match the name provided under the GraphQL "serverless" object.
 * handler: is the script/entrypoint to execute inside the container. For example, "python main.py -env=prod" or "go run quickstart.go" ... etc.
-* saveAs: instructs the ArcOS system to persist the result of the serverless function call as a GraphQL type in the database. For example, saveAs: "ServerlessResponse".
+* saveAs: instructs the Hypi platform to persist the result of the serverless function call as a GraphQL type in the database. For example, saveAs: "ServerlessResponse".
+
+Observe here how the @tan directive is instructed to return payload of user-defined type "EchoType". Thus, any user-defined type can be returned.
 
 ## Trigger Function
 
@@ -170,9 +180,34 @@ It is now time to run the function and pass some real values and obtain the resu
 
 <div className={"code-column"}>
 
+**Request**
+
 ```graphql
-    f1(a: "hello, @tan", b: 2376, c: true);
+query{
+    f1(a:"Hello, @tan", b:2329, c:true) {
+        a
+        b
+        c
+    }
+}
 ```
 
 </div>
+<div className={"code-column"}>
+
+**Response**
+
+```json
+{
+  "data": {
+    "f1": {
+      "a": "Hello, @tan",
+      "b": 2329,
+      "c": true
+    }
+  }
+}
+```
+</div>
+
 </div>
