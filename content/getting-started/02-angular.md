@@ -36,7 +36,6 @@ Things you'll need:
 <li> <strong>Instance API domian</strong>  — copy or create a instance API domain in Hypi</li>
 <li> <strong>Auth token</strong> — copy your auth token from the developer hub</li>
 <li> <strong><a href="https://www.apollographql.com/docs/angular/basics/setup/#request-data">Apollo Angular</a></strong> — add apollo angular</li>
-<li>  <strong><a href="https://graphql-code-generator.com/">GraphQL Codegen</a></strong>   — add and start using code-gen to inspec and generate  </li>
 </ol>
 
 ### Installing Angular CLI and Setting Up An Angular Project
