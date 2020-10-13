@@ -93,15 +93,19 @@ export default class HTML extends React.Component {
               }, 500);
             })
 
-             <!-- Google Tag Manager (noscript) -->
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVVGXD5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-            <!-- End Google Tag Manager (noscript) -->
             `
         }}
       />
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVVGXD5"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `
+              <!-- Google Tag Manager (noscript) -->
+              <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVVGXD5"
+              height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+              <!-- End Google Tag Manager (noscript) -->
+            `
+        }}
+      />
       </body>
       </html>
     )
