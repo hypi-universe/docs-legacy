@@ -43,6 +43,19 @@ export default class HTML extends React.Component {
                 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
                 crossOrigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+        <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WVVGXD5');</script>
+            <!-- End Google Tag Manager -->
+            `
+        }}
+      />
         {this.props.headComponents}
       </head>
       <body {...this.props.bodyAttributes}>
@@ -79,6 +92,11 @@ export default class HTML extends React.Component {
                 });
               }, 500);
             })
+
+             <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVVGXD5"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
             `
         }}
       />
