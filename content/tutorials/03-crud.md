@@ -4,7 +4,7 @@ metaTitle: Hypi GraphQL CRUD Tutorial
 metaDescription: Hypi GraphQL CRUD Tutorial showing you how to use the generated CRUD API
 ---
 
-# Hypi GraphQL CRUD Tutorial
+# Overview
 
 In this tutorial we’re going to show you how to use our GraphQL API to perform CRUD operations on your app.
 

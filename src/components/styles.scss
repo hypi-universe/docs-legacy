@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 $font-family: 'IBM Plex Sans', sans-serif;
 
@@ -21,9 +22,6 @@ $border-radius: 0;
   }
 }
 
-:root {
-  font-size: 14px;
-}
 
 html, body {
   font-family: $font-family-sans-serif;
@@ -59,12 +57,21 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2rem 0;
 }
 
+a {
+  color: $primary;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
 .css-1u7ohul {
   font-size: 1.2rem;
   @extend .section-scroll-bar;
 
 }
 
+//code pre
 .code-container {
   display: flex;
   margin: 1rem 0;
@@ -84,14 +91,63 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.css-kxcmf {
+  padding: 10px 16px !important;
+}
+
 pre {
-  background-color: $black !important;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #ffffff !important;
+  position: relative;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.08), inset -1px 0 0 rgba(0, 0, 0, 0.08), inset 4px 0 0 rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+
+  /*background-color: $black !important;
   @extend .section-scroll-bar;
   margin: 2rem 0;
 
   &::-webkit-scrollbar-thumb {
     background-color: $white !important;
+  }*/
 
+  .token.function,
+  .token.keyword,
+  .token.plain {
+    color: #b11a04 !important;
+  }
+
+  .token.parameter,
+  .token.maybe-class-name {
+    color: #CA9800 !important;
+  }
+  .token.class-name {
+    color: #09b18f !important;
+  }
+
+  .token.template-string.interpolation,
+  .token.dom.variable {
+    color: #00a7ff !important;
+  }
+  .token.property-access,
+  .token.boolean,
+  .token.number {
+    color: #D64292 !important;
+  }
+
+  .token.string,
+  .token.keyword.module {
+    color: #1F61A0 !important;
+  }
+
+  .token.operator,
+  .token.punctuation {
+    color: #2d343e !important;
+  }
+
+  .token.known-class-name.class-name {
+    color: #e83f8b !important;
   }
 }
 
@@ -371,11 +427,6 @@ pre {
   opacity: .7;
 }
 
-pre {
-  border: 0 !important;
-  background-color: rgb(245, 247, 249); /* !important; */
-  border-radius: $border-radius;
-}
 
 .mainWrapper ul, .mainWrapper ol {
   -webkit-padding-start: 40px;
@@ -769,6 +820,18 @@ table tr th :last-child, table tr td :last-child {
 /* Image styling */
 img {
   max-width: 100%;
+
+}
+
+// img shadow
+.css-147o0ag img,
+.gatsby-resp-image-wrapper img {
+  -webkit-box-shadow: -1px 2px 20px 2px #d9d9d9;
+  -moz-box-shadow: -1px 2px 20px 2px #d9d9d9;
+  box-shadow: -1px 2px 20px 2px #d9d9d9;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 70%;
 }
 
 /* end image */

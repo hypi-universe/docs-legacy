@@ -19,7 +19,6 @@ injectGlobal`
 
   a {
     transition: color 0.15s;
-    color: #663399;
   }
 `;
 
@@ -28,7 +27,7 @@ const Edit = styled('div')`
   text-align: right;
 
   a {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1em;
     text-decoration: none;
