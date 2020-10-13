@@ -261,4 +261,16 @@ In `profile.component.ts`:
         });
       }
     }
+### What's next
+ Great! well done for making this for! let's take a look back:
+
+ 1. Created our `App`, `Release`, `Instance` domain in Hypi
+
+ 2. Installed `angular CLI` and set our project up
+
+ 3. Installed `Apollo client` and connected to your Hypi app's instance domain
+
+ 4. Made a request to your instance's domain
+
+Setting up and connecting to Hypi is very easy. We are excited to see what you build next. Checkout the <a href="/references/crud"> CRUD</a> section of documentation, so you get familiar with the operations you can run against your APIs.
 
