@@ -1,5 +1,5 @@
 ---
-title: "Hypi Platform Documentation"
+title: "Platform Documentation"
 metaTitle: "Hypi Platform Documentation"
 metaDescription: "Documentation and tutorials for learning how to build data driven applications on the Hypi platform"
 ---

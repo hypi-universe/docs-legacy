@@ -1,5 +1,5 @@
 export default {
   fonts: {
-    mono: '"Open Sans","SF Mono", "Roboto Mono", Menlo, monospace'
+    mono: '"IBM PLEX SANS","Helvetica nue", "Arial", Menlo, monospace'
   }
 };
