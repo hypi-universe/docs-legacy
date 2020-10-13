@@ -100,6 +100,8 @@ export default class HTML extends React.Component {
             `
         }}
       />
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVVGXD5"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </body>
       </html>
     )
