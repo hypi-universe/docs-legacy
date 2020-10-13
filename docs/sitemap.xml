@@ -14,7 +14,6 @@
 <url> <loc>https://docs.hypi.app/tutorials/arcql</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://docs.hypi.app/tutorials/crud</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://docs.hypi.app/tutorials/graph</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://docs.hypi.app/references/app</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://docs.hypi.app/references/crud</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://docs.hypi.app/references/authorisation</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://docs.hypi.app/references/api-gateway</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -43,4 +42,5 @@
 <url> <loc>https://docs.hypi.app/getting-started/angular</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://docs.hypi.app/getting-started</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://docs.hypi.app/getting-started/scratch</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://docs.hypi.app/references/app</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
