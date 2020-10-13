@@ -55,7 +55,7 @@ Start by searching for the app you like to use as a dependency, then select the 
 <hr/>
 
 ### Modelling your schema
-Navigate to the editor to create your data types for a release. In Hypi, by defining types and modelling a release schema, you are actually defining the data tables for your release and building relationships between them. If you want to learn more about Graphql Schemas & Types <a href="/tutorials/graphql/schema-and-types" target="_blank">click here.</a>
+Navigate to the editor to create your data types for a release. In Hypi, by defining types and modelling a release schema, you are actually defining the data tables for your release and building relationships between them. If you want to learn more about Graphql Schemas & Types <a href="https://graphql.org/learn/schema/#type-system" target="_blank">click here.</a>
 
   ![Modelling Schema!](../assets/img/modelling.gif)
 <hr/>
@@ -80,7 +80,7 @@ Here's the fun part! You can start querying your APIs instantly by clicking on t
 <hr/>
 
 ### Next steps
-Learn how to add Hypi to your front end client using your favourite <a href="/getting-started/frontend-client">front-end client here.</a> Also, see  Hypi's Graphql CRUD tutorial <a href="/tutorials/crud">here.</a>
+Learn how to add Hypi to your front end client using your favourite <a href="/getting-started/angular">front-end client here.</a> Also, see  Hypi's Graphql CRUD tutorial <a href="/tutorials/crud">here.</a>
 
 ![Front-end frameworks!](../assets/img/frontend-framework.png)
 

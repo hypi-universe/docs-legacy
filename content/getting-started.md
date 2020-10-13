@@ -31,14 +31,14 @@ You can follow the <a href="/getting-started/scratch">start from the scratch gui
 
 ![Front-end frameworks!](assets/img/frontend-framework.png)
 
-<a href="/getting-started/frontend-client">Front-end frameworks</a> —
-Flexibility is important, which is why Hypi is front-end agnostic; meaning you can use Hypi with your favourite front-end framework. Checkout the <a href="/getting-started/frontend-client">framework guide</a>, we will show you how to get set up.
+<a href="/getting-started/angular">Front-end frameworks</a> —
+Flexibility is important, which is why Hypi is front-end agnostic; meaning you can use Hypi with your favourite front-end framework. Checkout the <a href="/getting-started/angular">framework guide</a>, we will show you how to get set up.
 
 <hr/>
 
 ### Making a request
 
-<a href="/getting-started/frontend-client">Making requests</a> —
+<a href="/getting-started/angular">Making requests</a> —
 No API is truly complete until you can successfully make requests and carry out your desired transactions. After creating an API, you can use the built-in GraphQL editor to test and run operations against the API. For example,
 
 `create`, `Read`, `Update`, `Delete` (CRUD) and even add `Trash` which lets you remove data without deleting it. That's just the basic, imaging using:
@@ -50,4 +50,4 @@ No API is truly complete until you can successfully make requests and carry out 
 <li><a href="/references/api-gateway">API Gateway for interoperability</a></li>
 <li><a href="/references/workflow">webhooks</a></li>
 </ul>
-The above is tip of the iceberg. You can also see how to integrate Hypi with a <a href="https://hypi.io/2020/10/12/how-to-build-react-native-app-and-integrate-it-with-hypi-io/">native react app here.</a> Hypi is easy to set up and easy to use. <a href="/getting-started/frontend-client">Here</a> you will learn how to make request to your APIs and more.
+The above is tip of the iceberg. You can also see how to integrate Hypi with a <a href="https://hypi.io/2020/10/12/how-to-build-react-native-app-and-integrate-it-with-hypi-io/">native react app here.</a> Hypi is easy to set up and easy to use. <a href="/getting-started/angular">Here</a> you will learn how to make request to your APIs and more.
