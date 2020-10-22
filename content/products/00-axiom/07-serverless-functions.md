@@ -31,6 +31,9 @@ Run the following GraphQL query to retrieve the App ID available as hypi.id. Not
       node{
         ... on App {
           name
+          hypi {
+            id
+          }
           releases{
             hypi {
               id
