@@ -151,3 +151,51 @@ A match all query is simple a query with the value *, it will return all documen
 1. `Origin Field` is the name of the field on the Origin Type for which the edge exists
 1. `Origin ID` is the ID of the object/vertex to find references from
 1. `ArcQL filter` is any valid ArcQL query, this is optional and if present will only return edges that match
+
+### ArcQL Geo Location
+Hypi allows developers to run search within a radius of a point defined by longitude and latitude.
+
+`geo(latitude, longitude, radius, latitudeFieldName, longitudeFieldName)`
+
+1. `latitude`: defined in radians by `latitude * Pi / 180`
+1. `longitude`: defined in radians by `longitude * Pi / 180`
+1. `radius`: defined in kilometers, for example, 0.5 stands for 500 meters
+1. `latitudeFieldName`: The name of the latitude field as defined on the GraphQL type
+1. `longitudeFieldName`: The name of the longitude field as defined on the GraphQL type
+
+`latitudeFieldName` and `longitudeFieldName` give the developers the flexibility to use any float/double decimal point numbers as the source of latitude and longitude. For example, assume that a type `GPS` is defined in your App schema as follows:
+
+```graphql
+type GPS {
+    x: Float
+    y: Float
+}
+```
+
+Then, in this case, `latitudeFieldName` should be set to `x`, and `longitudeFieldName` should be set to `y`.
+
+In order to query the locations within a radius of 500 meters of a point degrees(31.9913129, 34.8661077) which is equal to radians(0.55835, 0.60852). Then, the query should look like this:
+```graphql
+{
+    find(
+        type:GPS,
+        arcql:"geo(0.55835,0.60852,0.5,'x','y')"
+    ) {
+        edges{
+            node{
+                ... on GPS {
+                    hypi {
+                        id
+                    }
+                    x
+                    y
+                }
+            }
+        }
+    }
+}
+```
+
+In summary, the Geo Location features of ArcQL, can be described to satisfy the following:
+* Any object with float fields can be used - not just GPS as shown in example
+* The value of the fields MUST be radians NOT degrees
