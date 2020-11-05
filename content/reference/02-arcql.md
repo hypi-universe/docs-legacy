@@ -167,19 +167,19 @@ Hypi allows developers to run search within a radius of a point defined by longi
 
 ```graphql
 type GPS {
-    Laengengrad: Float
-    Breitengrad: Float
+    x: Float
+    y: Float
 }
 ```
 
-Then, in this case, `latitudeFieldName` should be set to `Laengengrad`, and `longitudeFieldName` should be set to `Breitengrad`.
+Then, in this case, `latitudeFieldName` should be set to `x`, and `longitudeFieldName` should be set to `y`.
 
 In order to query the locations within a radius of 500 meters of a point degrees(31.9913129, 34.8661077) which is equal to radians(0.55835, 0.60852). Then, the query should look like this:
 ```graphql
 {
     find(
         type:GPS,
-        arcql:"geo(,,0.5,'Laengengrad','Breitengrad')"
+        arcql:"geo(0.55835,0.60852,0.5,'x','y')"
     ) {
         edges{
             node{
@@ -187,8 +187,8 @@ In order to query the locations within a radius of 500 meters of a point degrees
                     hypi {
                         id
                     }
-                    Laengengrad
-                    Breitengrad
+                    x
+                    y
                 }
             }
         }
@@ -197,5 +197,5 @@ In order to query the locations within a radius of 500 meters of a point degrees
 ```
 
 In summary, the Geo Location features of ArcQL, can be described to satisfy the following:
-* Any object with float fields can be used - not just Coordinate as shown in example
+* Any object with float fields can be used - not just GPS as shown in example
 * The value of the fields MUST be radians NOT degrees
