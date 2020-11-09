@@ -35,13 +35,13 @@ From the official homepage "GraphQL is a query language for APIs and a runtime f
 Hypi chose GraphQL to take advantage of the flexibility it brings in enabling applications to seamlessly connect to otherwise disparate system. By using a unified language for both data models and querying Hypi's has made it easier than ever to make interoperability an easy task.
 
  ## Q. What is a GraphQL Schema? 
- 
+
 A GraphQL schema is a collection of data types that are available (for query, subscription and/or mutation) to a client for operation on an application. GraphQL Schemas stop client applications from needing to know the underlying data source within the app being queried. Schema declarations express the relationships and the shape of the data being returned. Resolvers define where the data comes from. 
 
 A Hypi schema automatically provides resolvers for the instant CRUD functions and enables a developer to define custom resolvers pointing to serverless functions or external services. 
 
  ## Q. Do I need to know GraphQL to begin? 
- 
+
 No - although the Hypi platform is built on GraphQL Hypi provides a "core" app which includes most data models a typical app will need. This means you can get started without knowing GraphQL and as your understanding increases, you can add custom data models. It is also possible to find existing Hypi apps that other developers have built and made public, you can then add a dependency on these apps to get more data models without knowing GraphQL.
 
 
@@ -100,7 +100,7 @@ Users can currently benefit from, 
 * No matter the data volume, variety or velocity, Hypi's built in scalable storage is available to meet your application needs
 
 ** 5. Hypi NET** 
-* A community connecting ideas and developers. Share programming ​knowledge and find customers. 
+* A community connecting ideas and developers. Share programming knowledge and find customers. 
 * For non- developers Hypi NET provides an opportunity for collaborative working connecting those with development skills to those with a development need.
  
 **6. Marketplace**

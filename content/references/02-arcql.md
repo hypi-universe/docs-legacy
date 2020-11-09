@@ -5,40 +5,27 @@ metaDescription: "How to find data in the Hypi platform using ArcQL"
 ---
 
 ## Introduction
-A SQL-like query language used to filter, sort and paginate data in the platform.
+A SQL-like query language used to filter and sort data in the platform.
 Hypi offers a powerful query language as part of its platform.
 
-ArcQL is modelled off of the Apache Lucene query language. We went further and included some SQL like features e.g. SORT, FROM, LIMIT.
-
 ## Query Structure
-‌ArcQL is made up of four major components.
+ArcQL is made up of four major components.
 
 
 
-`<query> <sort> <from> <limit>`  i.e. it is very SQL like. Designed intentionally so to help make the learning curve as small as possible for our developers.
+`<query> <sort>`  i.e. it is very SQL like. Designed intentionally so to help make the learning curve as small as possible for our developers.
 If you’re familiar with SQL or the Lucene query language you’ll probably be able to write ArcQL queries by just guessing at it.
-‌Let’s break the four components down but leave query for last since it is the most complex.
+Let’s break the four components down but leave query for last since it is the most complex.
 
-
-### ArcQL Pagination
-For specifying a paging token
-`FROM 'some token'`  this is all there is to it. When you search, every object returned by the API includes their paging token in the special hypi field.
-Take the token from the last object we returned to you and pass it back. We will then send back results after this object.
-**Examples:** `${_arcql} LIMIT ${limit} FROM ${fromToken}`
 
 ### ArcQL: Sorting
 For specifying how to sort matching results
-**Examples:** `{arcql: fieldName SORT hypi.created ASC|DES}‌`
+**Examples:** `{arcql: fieldName SORT hypi.created ASC|DES}`
 
 1. `SORT a`
 2. `SORT a ASC`
 3. `SORT a DESC`
 4. `SORT a, b.c DESC, c`
-
-### ArcQL Limiting
-For limiting the number of results returned, `LIMIT 50`  this is all there is to it, when you search we will impose a max limit the query, currently `100`.
-
-**Examples:** `${_arcql} LIMIT ${limit}`
 
 ### ArcQL Term Query
 A term query is a simple filter asking to return results that match the value provided exactly. Examples:
@@ -47,10 +34,10 @@ A term query is a simple filter asking to return results that match the value pr
     a = 123
     a = 'some string' OR 123 AND 'abc'
 
-‌Boolean Logic is possible on all query types. The general form is as demonstrated on line 3 (the last example). The last example says “return objects where field a is
+Boolean Logic is possible on all query types. The general form is as demonstrated on line 3 (the last example). The last example says “return objects where field a is
 `some string` or where a is `123`  `AND` a is `abc`
 
-> This query is non-sensical because and will only return objects that have a set to  `abc`.  ‌The reason for this is that `AND` is treated as an absolute assertion requiring that the given field `MUST`  have the requested value in order for it to match.
+> This query is non-sensical because and will only return objects that have a set to  `abc`.  The reason for this is that `AND` is treated as an absolute assertion requiring that the given field `MUST`  have the requested value in order for it to match.
 
 ### ArcQL Phrase Query
 A phrase query is similar to what an end user might expect a search engine to do. You search for  `New York` it will return objects containing this exact phrase or the individual words.
@@ -111,7 +98,7 @@ A fuzzy query takes the terms searched for and tries to match words that are sim
 The numbers and the boolean all you to tweak how the fuzzy algorithm runs. The parameters are `1. max edits` `2. prefix length` ` 3. max expansion`  `4. allow transpositions`  In that order.
 
 ### ArcQL Range Query
-‌Range queries are a means for you to search for content that falls within the given range.
+Range queries are a means for you to search for content that falls within the given range.
     a IN [0, 1)
 
     a IN (0, 1]
@@ -139,15 +126,15 @@ These are the standard mathematical representations of ranges and work exactly a
 
 ### ArcQL Match All Query
 A match all query is simple a query with the value *, it will return all documents unless other filters restrict it.
-‌‌Combining the various queries work as expected
+Combining the various queries work as expected
 `(a = 'something' OR b ~ 'New York') AND (c ^ 'alpha' OR ~d~ "something" OR a IN [0,10))`
 
 ### ArcQL REF FROM
-‌Hypi is a polyglot storage service, one of the supported storage paradigms is for graph data, see the API Guide for more information. ArcQL has support for querying graph data.
+Hypi is a polyglot storage service, one of the supported storage paradigms is for graph data, see the API Guide for more information. ArcQL has support for querying graph data.
 
 `REF FROM '<Origin Type>' ON '<Origin Field>' FOR '<Origin ID>' WHERE <ArcQL filter>`
 
-1. `‌Origin Type` is the name of the GraphQL type from which you would like to find edges
+1. `Origin Type` is the name of the GraphQL type from which you would like to find edges
 1. `Origin Field` is the name of the field on the Origin Type for which the edge exists
 1. `Origin ID` is the ID of the object/vertex to find references from
 1. `ArcQL filter` is any valid ArcQL query, this is optional and if present will only return edges that match
