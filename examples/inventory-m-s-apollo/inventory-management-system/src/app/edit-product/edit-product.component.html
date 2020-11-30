@@ -1,0 +1,36 @@
+<h1>Edit Product Details</h1>
+<div class="example-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Product Code</mat-label>
+    <input matInput name="code" [(ngModel)]="code">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Product Name</mat-label>
+    <input matInput  name="name1" [(ngModel)]="name">
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Total Quantity</mat-label>
+    <input matInput type="number" name="total" [(ngModel)]="total" >
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Remaining Quantity</mat-label>
+    <input matInput  type="number" name="remaining" [(ngModel)]="remaining" >
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Price</mat-label>
+    <input matInput type="number" name="price" [(ngModel)]="price" >
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="fill">
+    <mat-label>Comments</mat-label>
+    <textarea matInput name="comments" [(ngModel)]="comments"></textarea>
+  </mat-form-field>
+  <br>
+  <button mat-raised-button (click) = "editProduct()" >Edit</button>
+
+
+</div>
