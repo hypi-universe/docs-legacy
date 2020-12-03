@@ -16,6 +16,7 @@ in your apps.
 
 * Register Developer Account
 * Create OAuthProvider Object
+* Trigger Authorization Flow
 * Retrieve Access Token
 
 ### Register Developer Account
@@ -214,7 +215,7 @@ service. It is always set to as follows:
 </div>
 
 Then provide the redirection Uri that the enduser should land on after the OAuth2 flow is complete. The value must represent
-a valid Http formatted Uri that exists on your Hypi app domain.
+a valid Http formatted Uri.
 
 <div className={"code-container"}>
 
@@ -230,7 +231,21 @@ a valid Http formatted Uri that exists on your Hypi app domain.
 </div>
 
 Hypi will add a query parameter `token` to the redirectUri that can be used to communicate with Hypi Platform representing
-the resource owner who has completed the authorization process.
+the resource owner who has completed the authorization process. This token is the same as if you were to call the built in
+`login` or `loginByEmail` methods in Hypi i.e. it is a JWT token which can be used to call any Hypi API that would otherwise be
+called with a token returned by one of these methods.
+
+### Trigger Authorization Flow
+
+In order to start the authorization process, send the user to the following URL
+`https://api.hypi.app/graphql/oauth2/authorization/${registrationId`
+
+The `registrationId` is constructed as `instanceId`-`OAuthProviderId`. `instanceId` is the Hypi App Instance ID and
+`OAuthProviderId` is the ID of the `OAuthProvider` which is created in the first step. For example, if
+`instanceId` is `NOV5MNZTF01Q8XIUCCA099CXZY` and `OAuthProviderId` is `01ERDGNV0W50J8WZZRVXR4KASC`
+then the `registrationId` is `NOV5MNZTF01Q8XIUCCA099CXZY-01ERDGNV0W50J8WZZRVXR4KASC`
+and the URL to initialize the flow is
+`https://api.hypi.app/graphql/oauth2/authorization/NOV5MNZTF01Q8XIUCCA099CXZY-01ERDGNV0W50J8WZZRVXR4KASC`
 
 ### Retrieve Access Token
 
