@@ -16,6 +16,7 @@ in your apps.
 
 * Register Developer Account
 * Create OAuthProvider Object
+* Enable Anonymous Registration
 * Trigger Authorization Flow
 * Retrieve Access Token
 
@@ -234,6 +235,48 @@ Hypi will add a query parameter `token` to the redirectUri that can be used to c
 the resource owner who has completed the authorization process. This token is the same as if you were to call the built in
 `login` or `loginByEmail` methods in Hypi i.e. it is a JWT token which can be used to call any Hypi API that would otherwise be
 called with a token returned by one of these methods.
+
+### Enable Anonymous Registration
+
+In order for OAuth2 authorization flow to function properly, then the `enableAnonymousRegistrations` flag must be set.
+In order to set the flag, you can run the following query using the correct `appInstanceId`.
+
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+
+```graphql
+mutation upsert($values:HypiUpsertInputUnion!) {
+  upsert(values:$values){
+    id
+  }
+}
+```
+
+</div>
+</div>
+
+And for the variables tab, use the following Json payload.
+
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+
+```json
+{
+  "values": {
+    "AppInstance": {
+      "hypi": {
+        "id": "appInstanceId"
+      },
+      "enableAnonymousRequests": true
+    }
+  }
+}
+```
+
+</div>
+</div>
 
 ### Trigger Authorization Flow
 
