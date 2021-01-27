@@ -6,8 +6,14 @@ metaDescription: "Hypi platform documentation for its serverless functions suppo
 
 ## Overview
 
-Serverless technology are a means of adding custom behaviour without having to worry too much about infrastructure, deployment or maintenance.
+Serverless technology are a means of adding custom behaviour without having to worry too much about infrastructure,
+deployment or maintenance. Hypi supports both of OpenFaaS and OpenWhisk serverless functions.
 
+## Outline
+* OpenFaaS Serverless Functions
+* OpenWhisk Serverless Functions
+
+### OpenFaaS Serverless Functions
 ### How to setup and use a serverless?
 * Create an App
 * Get App ID
@@ -210,4 +216,143 @@ query{
 ```
 </div>
 
+</div>
+
+
+### OpenWhisk Serverless Functions
+### How to setup and use a serverless?
+* Create Serverless
+* Define @tan directive
+* Trigger Function
+
+## Create Serverless
+
+Navigate to Hypi's app release dashboard, and scroll down to the serverless functions list view.
+
+<img className="img-responsive" src="/content/assets/img/serverless-section.jpg" alt="serverless section"/>
+
+Click on the `Create` button and the serverless modal shall popup.
+
+<img className="img-responsive" src="/content/assets/img/serverless-modal.jpg" alt="serverless section"/>
+
+Choose `OpenWhisk` and fill the form. `OpenWhisk` supports two kinds of serverless functions; `sequence` and  many coding
+programming languages. As the time of publishing this documentation, these are the supported `kind` values:
+
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+
+**kind**
+
+```json
+"sequence"
+"dotnet:2.2"
+"go:1.11"
+"nodejs:10"
+"ballerina:0.990"
+"ruby:2.5"
+"dotnet:3.1"
+"swift:5.1"
+"blackbox"
+"swift:4.2"
+"rust:1.34"
+"java:8"
+"nodejs:12"
+"python:3"
+"go:1.15"
+"python:2"
+"php:7.4"
+"nodejs:14"
+"php:7.3"
+"swift:5.3"
+```
+
+</div>
+</div>
+
+For the latest supported programming runtimes, checkout the official `OpenWhisk` documentation
+<a href="http://openwhisk.apache.org/documentation.html#actions-creating-and-invoking" target="_blank">Docs</a>.
+
+If you choose `kind` to be `sequence`, then you can supply `components` as a comma separated string, for example,
+`/whisk.system/utils/split,/whisk.system/utils/sort`
+
+If you choose `kind` to be any programming runtime, for example, `nodejs:14`, then provide the `code` string, for example,
+`function main(params) { return {body:{"a":"a","b":123,"c":true}}}`.
+
+## Define @tan directive
+
+Then, navigate to release schema under release dashboard and define the tan function and observe here how you can choose
+the return type to be `Json` and you can provide the `saveAs` parameter to persist the response in Hypi's data layer as any custom type.
+
+
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+
+**@tan**
+
+```graphql
+type Query {
+  owskf1(a: String, b: Int, c: Boolean):Json @tan(type:OpenWhisk, name:"owskf1")
+  owskf2(a: String, b: Int, c: Boolean):Json @tan(type:OpenWhisk, name:"owskf2", saveAs: "OWSKRepeaterType")
+}
+
+type OWSKRepeaterType {
+  activationId: String
+  duration: Int
+  response: OWSKCustomResult
+}
+
+type OWSKCustomResult {
+  result: OWSKCustomBody
+  status: String
+  success: Boolean
+}
+
+type OWSKCustomBody {
+  a: String
+  b: Int
+  c: Boolean
+}
+```
+</div>
+</div>
+
+## Trigger Function
+
+Now invoke the function and obtain the results;
+
+
+<div className={"code-container"}>
+
+<div className={"code-column"}>
+
+**@tan**
+
+```graphql
+{
+  owskf1(a: "a", b: 123, c: true)
+}
+```
+</div>
+<div className={"code-column"}>
+
+**@tan**
+
+```json
+{
+  "activationId": "8629ec7d38c84feca9ec7d38c87fecaf",
+  "duration": 3,
+  "response": {
+    "result": {
+      "a": "a",
+      "b": 123,
+      "c": true
+    },
+    "status": "success",
+    "success": true
+  }
+}
+```
+</div>
 </div>
