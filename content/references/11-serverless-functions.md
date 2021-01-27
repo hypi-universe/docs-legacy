@@ -16,7 +16,6 @@ deployment or maintenance. Hypi supports both of OpenFaaS and OpenWhisk serverle
 ### OpenFaaS Serverless Functions
 ### How to setup and use a serverless?
 * Create an App
-* Get App ID
 * Create Serverless
 * Define @tan directive
 * Trigger Function
@@ -24,130 +23,25 @@ deployment or maintenance. Hypi supports both of OpenFaaS and OpenWhisk serverle
 ## Create an App
 Reference the create app guide [Hypi Platform App Documentation](/products/axiom/app)
 
-## Get App ID
-Run the following GraphQL query to retrieve the App ID available as hypi.id. Note that the query returns multiple apps in your realm, so pick the one related the App that you have just created in the previous step.
-<div className={"code-container"}>
-
-<div className={"code-column"}>
-
-```graphql
-{
-  find(type: App, arcql:"*"){
-    edges{
-      node{
-        ... on App {
-          name
-          releases{
-            hypi {
-              id
-            }
-            name
-          }
-        }
-      }
-      cursor
-    }
-  }
-}
-```
-
-</div>
-</div>
-
 ## Create Serverless
 At this point, you are ready to create the Serverless function. In order to create a serverless you should already have a containerized image  ready to deploy available either in a public or a private docker registry.
-<div className={"code-container"}>
 
-<div className={"code-column"}>
+Navigate to Hypi's app release dashboard, and scroll down to the serverless functions list view.
 
-```graphql
-mutation upsert($values:HypiUpsertInputUnion!) {
-  upsert(values:$values){
-    id
-  }
-}
-```
+<img className="img-responsive" src="/content/assets/img/serverless-section.jpg" alt="serverless section"/>
 
-</div>
-</div>
+Click on the `Create` button and the serverless modal shall popup.
 
-Under the query variables, you can supply the actual parameters. Note that the parameters are a typical JSON payload. The values supplied here are for illustrative purposes only, and you need to edit them to match your use case.
-<div className={"code-container"}>
+<img className="img-responsive" src="/content/assets/img/serverless-modal.jpg" alt="serverless section"/>
 
-<div className={"code-column"}>
+Choose `OpenFaaS` and fill the form. The values supplied here are for illustrative purposes only, and you need to edit them to match your use case.
 
-```json
-{
-  "values": {
-    "App": {
-      "name": "test-serverless",
-      "hypi": {
-        "id": "01EJX6A9VWTV3EMDKRMW9G757X"
-      },
-      "releases": [
-        {
-          "name": "initial",
-          "hypi": {
-            "id": "01EJX6BHM5YDNX30DWTNWJB5DH"
-          },
-          "serverless": {
-            "hypi": {
-              "impl": "OpenFaaSFn"
-            },
-            "image": "functions/alpine:latest",
-            "name": "echo-app",
-            "credentials": {
-              "server": "hub.docker.com",
-              "username": "example",
-              "password": "example"
-          }
-        }
-      ]
-    }
-  }
-}
-```
-
-</div>
-</div>
-
-#### Verify that the serverless was created
-In order to double check that the serverless was created successfully, then run the following GraphQL query and make sure that the serverless name exists in the retrieved list.
-<div className={"code-container"}>
-
-<div className={"code-column"}>
-
-```graphql
-{
-  find(type: App, arcql:"*"){
-    edges{
-      node{
-        ... on App {
-          name
-          releases{
-            name
-            serverless{
-              ... on OpenFaaSFn{
-                name
-                image
-                credentials {
-                  server
-                  username
-                  password
-                }
-              }
-            }
-          }
-        }
-      }
-      cursor
-    }
-  }
-}
-```
-
-</div>
-</div>
+* `Name` defines the serverless function name and for this example it is initialized with the value `echo-app`
+* `Image URL` defines the serverless docker image absolute URL or any of the predefined `OpenFaaS` templates such as `functions/alpine:latest`
+* `envProcess` defines the script to run inside the container, for example, `echo`, `cat`, `wc -l`, or `python script.py`.
+* `Environment Variables` define key value environment settings that should be available for the container environment, for example,
+key: EXTERNAL_API_SECRET and value: "secret key"
+* `Credentials` allows you to provide the URL, username, and password for a previate Docker repository from which the image will be pulled
 
 ## Define @tan directive
 Before you start using the serverless function, you need to define a GraphQL query type that provides the parameters of the function. Here is an example definition.
